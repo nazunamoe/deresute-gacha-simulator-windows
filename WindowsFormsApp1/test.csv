@@ -1,0 +1,783 @@
+﻿100002	島村卯月＋	島村卯月	RARE	CUTE	2257	2761	4347	9365	available	usual	score bonus	6	110	2	3	cute makeup	start	gacha
+100004	中野有香＋	中野有香	NORMAL	CUTE	2613	2592	2587	7792	unavailable	usual							start	local_gacha
+100006	持田亜里沙＋	持田亜里沙	NORMAL	CUTE	2239	1826	3549	7614	unavailable	usual							2016-03-09 15:00:00	local_gacha
+100008	三村かな子＋	三村かな子	NORMAL	CUTE	2266	3495	1868	7629	unavailable	usual							start	local_gacha
+100010	奥山沙織＋	奥山沙織	NORMAL	CUTE	3522	2252	1846	7620	unavailable	usual							start	local_gacha
+100012	間中美里＋	間中美里	RARE	CUTE	2685	3234	4897	10816	available	usual	score bonus	7	110	2	4	cute makeup	2016-12-17 15:00:00	gacha
+100014	小日向美穂＋	小日向美穂	NORMAL	CUTE	2233	1814	3563	7610	unavailable	usual							start	local_gacha
+100016	緒方智絵里＋	緒方智絵里	NORMAL	CUTE	2608	2584	2734	7926	unavailable	usual							start	local_gacha
+100018	柳瀬美由紀＋	柳瀬美由紀	RARE	CUTE	3810	3523	3572	10905	available	usual	life recovery	9	2	2	3	cute energy	2016-10-17 15:00:00	gacha
+100020	前川みく＋	前川みく	RARE	CUTE	3163	3234	3175	9572	available	usual	life recovery	9	2	2	3	cute energy	start	gacha
+100022	宮本フレデリカ＋	宮本フレデリカ	RARE	CUTE	3599	3647	3608	10854	available	usual	life recovery	11	2	2	4	cute abillity	start	gacha
+100024	小早川紗枝＋	小早川紗枝	RARE	CUTE	4803	3080	2527	10410	available	usual	combo bonus	9	108	2	5	cute voice	start	gacha
+100026	西園寺琴歌＋	西園寺琴歌	RARE	CUTE	2435	3022	4922	10379	available	usual	score bonus	9	110	2	5	cute makeup	2015-10-09 15:00:00	gacha
+100028	双葉杏＋	双葉杏	RARE	CUTE	3272	3252	3249	9773	available	usual	perfect support	11	1	2	4	cute abillity	start	gacha
+100038	安部菜々＋	安部菜々	RARE	CUTE	3567	3689	3587	10843	available	usual	perfect support	9	1	2	3	cute energy	start	gacha
+100044	［セクシーキャット］前川みく＋	前川みく	S RARE	CUTE	3792	3145	5755	12692	available	usual	score bonus	9	115	3	4	cute makeup	start	gacha
+100050	［ふわふわスマイル］三村かな子＋	三村かな子	S RARE	CUTE	5934	3703	3003	12640	available	usual	score bonus	11	115	3	5	cute voice	start	gacha
+100056	［はにかみ乙女］小日向美穂＋	小日向美穂	S RARE	CUTE	4419	4398	4394	13211	available	usual	combo support	12	1	3	4	cute abillity	start	gacha
+100058	［小悪魔メイド］宮本フレデリカ＋	宮本フレデリカ	S RARE	CUTE	3106	5806	3766	12678	available	usual	score bonus	7	115	3	3	cute step	start	gacha
+100062	［はりきりお嬢様］西園寺琴歌＋	西園寺琴歌	S RARE	CUTE	5623	3525	2864	12012	unavailable	limited	perfect support	12	1	3	3	cute voice	2015-12-04 15:00:00	LIVE Groove Vocal burst
+100064	［冬のメロディー］緒方智絵里＋	緒方智絵里	S RARE	CUTE	4260	4223	4434	12917	available	usual	life recovery	11	3	3	3	cute energy	start	gacha
+100066	水本ゆかり＋	水本ゆかり	NORMAL	CUTE	3685	1717	2170	7572	unavailable	usual							start	local_gacha
+100068	椎名法子＋	椎名法子	NORMAL	CUTE	2707	2622	2605	7934	unavailable	usual							start	local_gacha
+100070	福山舞＋	福山舞	NORMAL	CUTE	1759	3630	2198	7587	unavailable	usual							start	local_gacha
+100072	藤本里奈＋	藤本里奈	NORMAL	CUTE	2206	1771	3618	7595	unavailable	usual							start	local_gacha
+100074	輿水幸子＋	輿水幸子	RARE	CUTE	3121	2591	4725	10437	available	usual	combo bonus	6	108	2	3	cute makeup	start	gacha
+100076	［ステージオブマジック］島村卯月＋	島村卯月	SS RARE	CUTE	5349	5289	5278	15916	available	usual	perfect support	9	1	4	2	cute brilliance	start	gacha
+100078	［ぐうたら王国］双葉杏＋	双葉杏	SS RARE	CUTE	4595	3830	6892	15317	available	usual	score bonus	13	117	4	5	cute makeup	start	gacha
+100080	道明寺歌鈴＋	道明寺歌鈴	RARE	CUTE	3530	3517	3589	10636	available	usual	life recovery	13	2	2	5	cute energy	start	gacha
+100082	桃井あずき＋	桃井あずき	RARE	CUTE	3074	4817	2518	10409	available	usual	combo bonus	7	108	2	4	cute step	start	gacha
+100084	［ピュアリーガール］奥山沙織＋	奥山沙織	S RARE	CUTE	4329	4498	4357	13184	available	usual	perfect support	9	1	3	2	cute abillity	start	gacha
+100086	［リトルプリンセス］福山舞＋	福山舞	S RARE	CUTE	4356	4298	4287	12941	available	usual	demage guard	11	1	3	5	cute energy	start	gacha
+100088	一ノ瀬志希＋	一ノ瀬志希	NORMAL	CUTE	2384	2408	2525	7317	unavailable	usual							start	local_gacha
+100090	佐久間まゆ＋	佐久間まゆ	RARE	CUTE	4896	2454	3036	10386	available	usual	score bonus	7	110	2	4	cute voice	2015-09-17 12:00:00	gacha
+100092	［キャットパーティー］前川みく＋	前川みく	SS RARE	CUTE	4570	6943	3789	15302	available	usual	score bonus	9	117	4	3	cute step	2015-09-17 12:00:00	gacha
+100094	［アタシポンコツアンドロイド］小日向美穂＋	小日向美穂	S RARE	CUTE	3557	5558	2915	12030	unavailable	limited	perfect support	15	1	3	4	cute step	2015-09-25 12:00:00	アタシポンコツアンドロイド
+100096	［アタシポンコツアンドロイド］安部菜々＋	安部菜々	S RARE	CUTE	6016	3169	3862	13047	unavailable	limited	combo bonus	9	112	3	4	cute voice	2015-09-25 12:00:00	アタシポンコツアンドロイド
+100098	［ホワイトウィッチ］三村かな子＋	三村かな子	SS RARE	CUTE	5140	5334	5102	15576	unavailable	limited	life recovery	10	3	4	3	cute energy	2015-09-30 15:00:00	gacha
+100100	五十嵐響子＋	五十嵐響子	NORMAL	CUTE	3549	1826	2239	7614	unavailable	usual							2015-10-06 01:00:00	local_gacha
+100102	［パフュームトリッパー］一ノ瀬志希＋	一ノ瀬志希	S RARE	CUTE	3761	5818	3094	12673	available	usual	score bonus	6	115	3	2	cute step	2015-10-19 15:00:00	gacha
+100106	クラリス＋	クラリス	RARE	CUTE	2565	4759	3104	10428	available	usual	score bonus	6	110	2	3	cute step	2015-10-31 15:00:00	gacha
+100108	［夢色クローバー］緒方智絵里＋	緒方智絵里	SS RARE	CUTE	6960	4561	3773	15294	unavailable	limited	combo bonus	7	118	3	3	cute voice	2015-10-31 15:00:00	gacha
+100110	横山千佳＋	横山千佳	NORMAL	CUTE	2239	3549	1826	7614	unavailable	usual							2015-11-09 15:00:00	local_gacha
+100112	［ファイティングチアー］中野有香＋	中野有香	S RARE	CUTE	3136	3786	5767	12689	available	usual	score bonus	9	115	3	4	cute makeup	2015-11-20 15:00:00	gacha
+100114	工藤忍＋	工藤忍	RARE	CUTE	4797	3086	2532	10415	available	usual	combo bonus	6	108	2	3	cute voice	2015-11-13 15:00:00	gacha
+100116	［クラシカルハーモニー］水本ゆかり＋	水本ゆかり	S RARE	CUTE	4323	4402	4803	13528	unavailable	limited	combo bonus	11	112	4	4	cute brilliance	2015-10-31 15:00:00	LIVE Groove Vocal burst
+100118	［艶娘大作戦］桃井あずき＋	桃井あずき	S RARE	CUTE	4275	3806	3884	11965	unavailable	limited	life recovery	8	3	3	2	cute energy	2015-11-12 15:00:00	シンデレラキャラバン
+100120	白菊ほたる＋	白菊ほたる	RARE	CUTE	3603	3522	3507	10632	available	usual	combo support	12	1	2	3	cute energy	2015-11-30 15:00:00	gacha
+100122	［スイートクリスマス］五十嵐響子＋	五十嵐響子	S RARE	CUTE	3706	3008	5928	12642	unavailable	limited	score bonus	7	115	3	3	cute makeup	2015-11-30 15:00:00	gacha
+100124	［自称・カンペキ］輿水幸子＋	輿水幸子	SS RARE	CUTE	4920	5867	5077	15864	available	usual	score bonus	11	117	4	4	cute brilliance	2015-12-14 15:00:00	gacha
+100126	［プリプリウサミン］安部菜々＋	安部菜々	SS RARE	CUTE	3832	6957	4608	15397	unavailable	limited	combo bonus	9	118	4	3	cute step	2015-12-30 15:00:00	gacha
+100128	櫻井桃華＋	櫻井桃華	NORMAL	CUTE	2750	2601	2572	7923	unavailable	usual							2015-12-08 15:00:00	local_gacha
+100130	兵藤レナ＋	兵藤レナ	RARE	CUTE	3121	4795	2576	10492	available	usual	score bonus	9	110	2	5	cute step	2015-12-14 15:00:00	gacha
+100132	井村雪菜＋	井村雪菜	RARE	CUTE	4789	2581	3124	10494	available	usual	score bonus	7	110	2	4	cute voice	2015-12-21 15:00:00	gacha
+100134	原田美世＋	原田美世	RARE	CUTE	3439	3837	3359	10635	available	usual	life recovery	9	2	2	3	cute energy	2015-12-21 15:00:00	gacha
+100136	［ドーナッツ☆マーメイド］椎名法子＋	椎名法子	S RARE	CUTE	6004	3613	2885	12502	unavailable	limited	combo bonus	9	112	4	3	cute voice	2016-03-11 15:00:00	シンデレラキャラバン
+100138	［マジカル☆プリティーハート］横山千佳＋	横山千佳	S RARE	CUTE	3072	5905	3758	12735	available	usual	score bonus	6	115	3	2	cute step	2015-12-21 15:00:00	gacha
+100140	［大器晩成］道明寺歌鈴＋	道明寺歌鈴	S RARE	CUTE	4095	4839	3946	12880	unavailable	limited	life recovery	14	3	3	4	cute energy	2015-12-30 15:00:00	gacha
+100142	今井加奈＋	今井加奈	NORMAL	CUTE	1900	2288	3455	7643	unavailable	usual							2016-01-09 15:00:00	local_gacha
+100144	早坂美玲＋	早坂美玲	RARE	CUTE	3623	3612	3685	10920	available	usual	perfect support	13	1	2	5	cute brilliance	2016-01-09 15:00:00	gacha
+100146	［セクシーバニー］兵藤レナ＋	兵藤レナ	S RARE	CUTE	4200	4788	4083	13071	available	usual	life recovery	10	3	4	2	cute energy	2016-08-23 15:00:00	gacha
+100148	［ハッピーマジシャン］工藤忍＋	工藤忍	S RARE	CUTE	5917	3752	3063	12732	available	usual	score bonus	4	115	4	1	cute voice	2016-01-15 15:00:00	gacha
+100152	村松さくら＋	村松さくら	RARE	CUTE	2462	4939	3048	10449	available	usual	combo bonus	9	108	2	5	cute step	2016-02-29 15:00:00	gacha
+100154	［ミスティックエリクシル］一ノ瀬志希＋	一ノ瀬志希	SS RARE	CUTE	3832	4608	6957	15397	available	usual	score bonus	11	117	3	5	cute makeup	2016-02-10 15:00:00	gacha
+100156	［プリティパティシエ］中野有香＋	中野有香	S RARE	CUTE	4599	4140	4216	12955	unavailable	limited	demage guard	9	1	3	4	cute abillity	2016-01-31 15:00:00	gacha
+100158	［Tulip］宮本フレデリカ＋	宮本フレデリカ	S RARE	CUTE	3147	6103	3860	13110	unavailable	limited	combo bonus	11	112	3	5	cute step	2016-01-31 15:00:00	LIVE Groove Visual burst
+100160	棟方愛海＋	棟方愛海	NORMAL	CUTE	2522	2751	2478	7751	unavailable	usual							2016-02-08 15:00:00	local_gacha
+100162	［ラヴリー☆ハート］藤本里奈＋	藤本里奈	S RARE	CUTE	4090	4069	4066	12225	unavailable	limited	perfect support	6	1	3	1	cute abillity	2016-02-10 15:00:00	シンデレラキャラバン
+100164	日下部若葉＋	日下部若葉	NORMAL	CUTE	2751	2522	2478	7751	unavailable	usual							2016-11-09 15:00:00	local_gacha
+100166	［フィールマイハート］佐久間まゆ＋	佐久間まゆ	SS RARE	CUTE	6976	3816	4599	15391	available	usual	score bonus	7	117	4	2	cute voice	2016-01-22 15:00:00	gacha
+100168	［パステルピンクな恋］小早川紗枝＋	小早川紗枝	S RARE	CUTE	3270	3936	5949	13155	unavailable	limited	combo bonus	7	112	3	3	cute makeup	2016-01-20 15:00:00	パステルピンクな恋
+100170	［パステルピンクな恋］三村かな子＋	三村かな子	S RARE	CUTE	3523	5708	2842	12073	unavailable	limited	score bonus	9	115	3	4	cute step	2016-01-20 15:00:00	パステルピンクな恋
+100172	涼宮星花＋	涼宮星花	RARE	CUTE	3189	2630	4907	10726	available	usual	combo support	12	1	2	3	cute makeup	2016-09-23 15:00:00	gacha
+100174	［ユースフルロマンス］小日向美穂＋	小日向美穂	SS RARE	CUTE	5736	5144	5024	15904	unavailable	limited	score bonus	9	117	3	4	cute brilliance	2016-02-29 15:00:00	gacha
+100176	［秘めた輝き］原田美世＋	原田美世	S RARE	CUTE	4504	3977	4065	12546	unavailable	limited	score bonus	9	115	4	3	cute brilliance	2016-02-29 15:00:00	LIVE Groove Vocal burst
+100182	［薔薇色お姫様］櫻井桃華＋	櫻井桃華	S RARE	CUTE	3957	4101	4828	12886	available	usual	life recovery	17	3	3	5	cute energy	2016-02-16 15:00:00	gacha
+100184	月宮雅＋	月宮雅	RARE	CUTE	3170	4777	2637	10584	available	usual	combo bonus	6	108	2	3	cute step	2016-03-11 15:00:00	gacha
+100186	［ロック・ポップMIX］早坂美玲＋	早坂美玲	S RARE	CUTE	6012	2925	3650	12587	unavailable	limited	combo bonus	11	112	4	4	cute voice	2016-06-10 15:00:00	LIVE PARTY!!
+100188	［ファンシーガール］今井加奈＋	今井加奈	S RARE	CUTE	3983	4853	4130	12966	available	usual	life recovery	11	3	3	3	cute energy	2016-03-18 15:00:00	gacha
+100190	［花舞うまほろば］小早川紗枝＋	小早川紗枝	SS RARE	CUTE	7004	4625	3840	15469	available	usual	score bonus	13	117	4	5	cute voice	2016-03-25 15:00:00	gacha
+100192	［ローズフルール］櫻井桃華＋	櫻井桃華	SS RARE	CUTE	4600	7054	3801	15455	unavailable	limited	combo bonus	11	118	4	4	cute step	2016-03-31 15:00:00	gacha
+100194	［マジメ／ネコチャン］前川みく＋	前川みく	S RARE	CUTE	3807	5888	3134	12829	unavailable	limited	perfect support	9	1	3	2	cute step	2016-03-31 15:00:00	gacha
+100196	榊原里美＋	榊原里美	RARE	CUTE	2618	4803	3156	10577	available	usual	score bonus	7	110	2	4	cute step	2016-03-31 15:00:00	gacha
+100198	関裕美＋	関裕美	NORMAL	CUTE	3501	2264	1863	7628	unavailable	usual							2016-04-08 15:00:00	local_gacha
+100200	［微笑みの聖女］クラリス＋	クラリス	S RARE	CUTE	2557	5823	3299	11679	unavailable	limited	score bonus	11	115	4	4	cute step	2016-04-11 15:00:00	シンデレラキャラバン
+100202	［清純令嬢］水本ゆかり＋	水本ゆかり	S RARE	CUTE	5939	3092	3781	12812	available	usual	perfect support	7	1	4	1	cute abillity	2016-04-14 15:00:00	gacha
+100204	［つぼみ］一ノ瀬志希＋	一ノ瀬志希	S RARE	CUTE	3929	3240	6047	13216	unavailable	limited	combo bonus	11	112	4	4	cute brilliance	2016-04-19 15:00:00	つぼみ
+100206	［あったかハート］五十嵐響子＋	五十嵐響子	SS RARE	CUTE	4860	5998	5051	15909	available	usual	score bonus	13	117	4	5	cute brilliance	2016-04-25 18:00:00	gacha
+100208	楊菲菲＋	楊菲菲	RARE	CUTE	3156	2618	4803	10577	available	usual	score bonus	6	110	2	3	cute makeup	2016-04-25 18:00:00	gacha
+100210	［自称・カワイイ］輿水幸子＋	輿水幸子	S RARE	CUTE	3010	3730	6041	12781	unavailable	limited	score bonus	9	115	3	4	cute makeup	2016-04-30 15:00:00	gacha
+100214	乙倉悠貴＋	乙倉悠貴	NORMAL	CUTE	2709	2510	2543	7762	unavailable	usual							2016-05-09 15:00:00	local_gacha
+100216	［花園の春風］西園寺琴歌＋	西園寺琴歌	S RARE	CUTE	4233	4645	4150	13028	available	usual	demage guard	7	1	3	3	cute energy	2016-05-10 15:00:00	gacha
+100218	松原早耶＋	松原早耶	RARE	CUTE	4882	3118	2554	10554	available	usual	perfect support	9	1	2	3	cute voice	2016-05-11 15:00:00	gacha
+100222	有浦柑奈＋	有浦柑奈	RARE	CUTE	3805	3562	3601	10968	available	usual	score bonus	7	110	2	4	cute brilliance	2016-05-19 15:00:00	gacha
+100224	［明日また会えるよね］中野有香＋	中野有香	S RARE	CUTE	4121	4463	4054	12638	unavailable	limited	overload	9	116	3	4	cute abillity	2016-05-19 15:00:00	明日また会えるよね
+100228	［ドリーミンブライド］前川みく＋	前川みく	SS RARE	CUTE	7074	4591	3785	15450	unavailable	limited	combo bonus	11	118	4	4	cute voice	2016-05-31 15:00:00	gacha
+100232	［純情Midnight伝説］藤本里奈＋	藤本里奈	S RARE	CUTE	3569	2902	5689	12160	unavailable	limited	score bonus	7	115	4	2	cute makeup	2016-05-31 15:00:00	LIVE Groove Vocal burst
+100234	大原みちる＋	大原みちる	NORMAL	CUTE	2260	3510	1858	7628	unavailable	usual							2016-06-08 15:00:00	local_gacha
+100236	［ピーチウェーブ］村松さくら＋	村松さくら	S RARE	CUTE	3184	3850	5884	12918	available	usual	perfect support	9	1	3	2	cute makeup	2016-06-09 15:00:00	gacha
+100238	大西由里子＋	大西由里子	RARE	CUTE	3148	2583	4904	10635	available	usual	score bonus	7	110	2	4	cute makeup	2016-06-09 15:00:00	gacha
+100240	［わきわきハンター］棟方愛海＋	棟方愛海	S RARE	CUTE	3707	5898	3016	12621	unavailable	limited	combo bonus	9	112	4	3	cute step	2016-08-12 15:00:00	LIVE PARTY!!
+100242	［マイ・フェアリーテイル］緒方智絵里＋	緒方智絵里	SS RARE	CUTE	4648	3860	7037	15545	available	usual	score bonus	9	117	4	3	cute makeup	2016-06-23 15:00:00	gacha
+100244	［なまけものフェアリー］双葉杏＋	双葉杏	SS RARE	CUTE	5157	5544	5080	15781	unavailable	limited	life recovery	11	3	4	3	cute energy	2016-06-30 15:00:00	gacha
+100246	［一輪の幸せ］白菊ほたる＋	白菊ほたる	S RARE	CUTE	3728	2988	6129	12845	unavailable	limited	score bonus	4	115	4	1	cute makeup	2016-07-31 15:00:00	gacha
+100248	栗原ネネ＋	栗原ネネ	RARE	CUTE	3580	3719	3549	10848	available	usual	life recovery	11	2	2	4	cute energy	2016-06-30 15:00:00	gacha
+100252	［アベニュー・モード］宮本フレデリカ＋	宮本フレデリカ	SS RARE	CUTE	3811	7043	4606	15460	available	usual	score bonus	4	117	4	1	cute step	2016-05-19 15:00:00	gacha
+100254	［明日また会えるよね］櫻井桃華＋	櫻井桃華	S RARE	CUTE	6099	3904	3198	13201	unavailable	limited	combo bonus	7	112	4	2	cute voice	2016-05-19 15:00:00	明日また会えるよね
+100256	［ピースフルデイズ］島村卯月＋	島村卯月	SS RARE	CUTE	4596	3725	7381	15702	unavailable	limited	combo bonus	11	118	3	5	tricolore makeup	2016-06-28 15:00:00	gacha
+100258	太田優＋	太田優	NORMAL	CUTE	2763	2594	2560	7917	unavailable	usual							2016-07-08 15:00:00	local_gacha
+100260	［スパニッシュダンサー］関裕美＋	関裕美	S RARE	CUTE	4501	4069	4141	12711	unavailable	limited	perfect support	12	1	3	3	cute brilliance	2016-07-10 15:00:00	シンデレラキャラバン
+100262	［ドライブインサマー］原田美世＋	原田美世	S RARE	CUTE	5872	3856	3193	12921	available	usual	overload	9	116	3	4	cute voice	2016-07-19 15:00:00	gacha
+100264	［スターティングデイズ］乙倉悠貴＋	乙倉悠貴	SS RARE	CUTE	6248	4966	4707	15921	available	usual	score bonus	6	117	3	2	cute brilliance	2016-07-25 15:00:00	gacha
+100266	大沼くるみ＋	大沼くるみ	RARE	CUTE	3586	3562	3705	10853	available	usual	life recovery	13	2	2	5	cute energy	2016-07-25 15:00:00	gacha
+100268	［シュガーリーボディ］榊原里美＋	榊原里美	S RARE	CUTE	4219	4906	4083	13208	available	usual	demage guard	7	1	4	2	cute energy	2017-01-10 15:00:00	gacha
+100270	［Love∞Destiny］佐久間まゆ＋	佐久間まゆ	S RARE	CUTE	3964	3278	6058	13300	unavailable	limited	combo bonus	9	112	3	4	cute makeup	2016-06-30 15:00:00	LIVE Groove Dance burst
+100272	［サンシャインビーチ］道明寺歌鈴＋	道明寺歌鈴	S RARE	CUTE	3151	5924	3830	12905	available	usual	score bonus	13	115	4	5	cute step	2016-06-30 15:00:00	gacha
+100274	安斎都＋	安斎都	NORMAL	CUTE	3495	2266	1868	7629	unavailable	usual							2016-08-09 15:00:00	local_gacha
+100276	［メイク★インパクト］早坂美玲＋	早坂美玲	SS RARE	CUTE	3860	7037	4648	15545	available	usual	score bonus	11	117	4	4	cute step	2016-08-10 15:00:00	gacha
+100278	柳清良＋	柳清良	RARE	CUTE	3589	3833	3629	11051	available	usual	combo support	15	1	2	4	cute brilliance	2016-08-12 15:00:00	gacha
+100280	池袋晶葉＋	池袋晶葉	RARE	CUTE	3887	3644	3685	11216	available	usual	combo bonus	9	108	2	5	cute brilliance	2016-12-12 15:00:00	gacha
+100282	［インビテーション・ダイブ］一ノ瀬志希＋	一ノ瀬志希	SS RARE	CUTE	4642	7051	3849	15542	unavailable	limited	overload	9	118	3	4	cute step	2016-08-31 15:00:00	gacha
+100284	遊佐こずえ＋	遊佐こずえ	RARE	CUTE	4892	3154	2595	10641	available	usual	combo bonus	7	108	2	4	cute voice	2016-08-31 15:00:00	gacha
+100286	［ビヨンド・ザ・スターライト］緒方智絵里＋	緒方智絵里	S RARE	CUTE	2931	5711	3599	12241	unavailable	limited	score bonus	7	115	4	2	cute step	2016-08-31 15:00:00	LIVE Groove Vocal burst
+100288	古賀小春＋	古賀小春	NORMAL	CUTE	2573	2806	2526	7905	unavailable	usual							2016-09-09 15:00:00	local_gacha
+100290	［うたのおねえさん］持田亜里沙＋	持田亜里沙	S RARE	CUTE	4645	4311	4244	13200	available	usual	life recovery	14	3	3	4	cute energy	2016-09-09 15:00:00	gacha
+100292	［P.C.S］小日向美穂＋	小日向美穂	SS RARE	CUTE	7092	3863	4662	15617	available	usual	score bonus	4	117	4	1	cute voice	2016-09-17 15:00:00	gacha
+100294	［ラブレター］島村卯月＋	島村卯月	S RARE	CUTE	6123	3272	3970	13365	unavailable	limited	combo bonus	13	112	4	5	cute voice	2016-09-20 15:00:00	ラブレター
+100296	［ラブレター］五十嵐響子＋	五十嵐響子	S RARE	CUTE	4096	4168	4528	12792	unavailable	limited	overload	7	116	3	3	cute brilliance	2016-09-20 15:00:00	ラブレター
+100298	［自称・スウィートヒロイン］輿水幸子＋	輿水幸子	SS RARE	CUTE	4596	7381	3725	15702	unavailable	limited	combo bonus	6	118	3	2	tricolore step	2016-09-28 15:00:00	gacha
+100300	［トリート・オア・トリート］佐久間まゆ＋	佐久間まゆ	SS RARE	CUTE	3847	4652	7110	15609	unavailable	limited	combo bonus	7	118	4	2	cute makeup	2016-09-30 15:00:00	gacha
+100302	［モグモグバレンタイン］大原みちる＋	大原みちる	S RARE	CUTE	3200	5979	3883	13062	unavailable	limited	score bonus	4	115	4	1	cute step	2017-01-31 15:00:00	gacha
+100304	長富蓮実＋	長富蓮実	NORMAL	CUTE	2252	3522	1846	7620	unavailable	usual							2016-10-09 15:00:00	local_gacha
+100306	［華･美･雅］月宮雅＋	月宮雅	S RARE	CUTE	4317	4255	4631	13203	available	usual	demage guard	7	1	4	2	cute energy	2016-10-09 15:00:00	gacha
+100308	［ドルチェ・クラシカ］三村かな子＋	三村かな子	SS RARE	CUTE	3898	4683	7047	15628	available	usual	score bonus	7	117	4	2	cute makeup	2016-10-22 15:00:00	gacha
+100310	［湯けむり大作戦］桃井あずき＋	桃井あずき	S RARE	CUTE	4338	4858	4234	13430	available	usual	perfect support	11	1	4	2	cute abillity	2016-10-31 15:00:00	gacha
+100312	［あいくるしい］小早川紗枝＋	小早川紗枝	S RARE	CUTE	3340	6040	4013	13393	unavailable	limited	combo bonus	7	112	4	2	cute step	2016-10-31 15:00:00	LIVE Groove Dance burst
+100314	浅野風香＋	浅野風香	RARE	CUTE	4927	2615	3178	10720	available	usual	score bonus	6	110	2	3	cute voice	2016-10-12 15:00:00	gacha
+100316	［ハロウィンぷちデビル］双葉杏＋	双葉杏	S RARE	CUTE	4764	4386	4309	13459	unavailable	limited	perfect support	15	1	3	4	cute abillity	2016-09-30 15:00:00	gacha
+100318	［ディアマイレディ］櫻井桃華＋	櫻井桃華	SS RARE	CUTE	7098	4658	3859	15615	available	usual	score bonus	11	117	3	5	cute voice	2016-11-09 15:00:00	gacha
+100320	［マジカルエンジェル］遊佐こずえ＋	遊佐こずえ	S RARE	CUTE	2985	3699	5995	12679	unavailable	limited	combo bonus	6	112	3	2	cute makeup	2016-11-11 15:00:00	シンデレラキャラバン
+100322	［繚乱の舞姫］楊菲菲＋	楊菲菲	S RARE	CUTE	5944	3183	3860	12987	available	usual	score bonus	6	115	3	2	cute voice	2016-11-17 15:00:00	gacha
+100324	相原雪乃＋	相原雪乃	RARE	CUTE	3198	2646	4888	10732	available	usual	perfect support	13	1	2	5	cute abillity	2016-11-22 15:00:00	gacha
+100326	［リュミエール・エトワール］宮本フレデリカ＋	宮本フレデリカ	SS RARE	CUTE	7123	3838	4646	15607	unavailable	limited	overload	6	118	3	2	cute voice	2016-11-30 15:00:00	gacha
+100328	丹羽仁美＋	丹羽仁美	NORMAL	CUTE	2225	1804	3577	7606	unavailable	usual							2017-01-10 15:00:00	local_gacha
+100330	［EVERMORE］前川みく＋	前川みく	S RARE	CUTE	4554	4074	4155	12783	unavailable	limited	score bonus	13	115	4	5	cute brilliance	2016-11-30 15:00:00	LIVE Parade
+100332	江上椿＋	江上椿	NORMAL	CUTE	1826	3549	2239	7614	unavailable	usual							2016-12-09 15:00:00	local_gacha
+100334	［だだもれエモーション］大沼くるみ＋	大沼くるみ	S RARE	CUTE	3889	5966	3212	13067	available	usual	overload	9	116	3	4	cute step	2016-12-09 15:00:00	gacha
+100336	［ロマンチックナイト］井村雪菜＋	井村雪菜	S RARE	CUTE	3440	2728	5785	11953	unavailable	limited	score bonus	11	115	3	5	cute makeup	2016-12-12 15:00:00	LIVE PARTY!!
+100338	［エアリアルメロディア］水本ゆかり＋	水本ゆかり	SS RARE	CUTE	3878	7132	4680	15690	available	usual	score bonus	6	117	3	2	cute step	2016-12-17 15:00:00	gacha
+100340	［あんきら ! ？狂騒曲］双葉杏＋	双葉杏	S RARE	CUTE	4017	3327	6114	13458	unavailable	limited	combo bonus	7	112	4	2	cute makeup	2016-12-21 15:00:00	あんきら ! ？狂騒曲
+100342	赤西瑛梨華＋	赤西瑛梨華	RARE	CUTE	3572	3509	3890	10971	available	usual	life recovery	11	2	2	4	cute energy	2016-12-22 15:00:00	gacha
+100344	［ウサミン・ザ・シークレット］安部菜々＋	安部菜々	SS RARE	CUTE	7381	4596	3725	15702	unavailable	limited	combo bonus	6	118	3	2	tricolore voice	2016-12-28 15:00:00	gacha
+100346	［華ほころびる宴］小早川紗枝＋	小早川紗枝	SS RARE	CUTE	4649	3828	7196	15673	unavailable	limited	combo bonus	9	118	3	4	cute makeup	2016-12-31 15:00:00	gacha
+100348	［Lunatic Show］輿水幸子＋	輿水幸子	S RARE	CUTE	3651	5767	2980	12398	unavailable	limited	perfect support	12	1	3	3	cute step	2017-01-20 15:00:00	Lunatic Show
+100350	［ラブ ! ストレート］中野有香＋	中野有香	SS RARE	CUTE	4707	4966	6248	15921	available	usual	score bonus	4	117	4	1	cute brilliance	2017-01-24 15:00:00	gacha
+100352	［Sweet Witches' Night］三村かな子＋	三村かな子	S RARE	CUTE	3318	4011	6125	13454	unavailable	limited	combo bonus	13	112	4	5	cute makeup	2017-01-31 15:00:00	LIVE Parade
+100354	［Ring♪Ring♪フィーリン］椎名法子＋	椎名法子	SS RARE	CUTE	7106	3897	4694	15697	available	usual	score bonus	9	117	3	4	cute voice	2017-02-08 15:00:00	gacha
+100356	［水彩の乙姫］栗原ネネ＋	栗原ネネ	S RARE	CUTE	4255	4835	4139	13229	unavailable	limited	combo bonus	4	112	3	1	cute brilliance	2017-02-10 15:00:00	LIVE PARTY!!
+100360	［ドラマティック・ナイト］五十嵐響子＋	五十嵐響子	SS RARE	CUTE	7132	3878	4680	15690	unavailable	limited	combo bonus	4	118	4	1	cute voice	2017-02-28 15:00:00	gacha
+100362	［桜の頃］道明寺歌鈴＋	道明寺歌鈴	S RARE	CUTE	4554	4122	4195	12871	unavailable	limited	concentration	7	117	4	2	cute brilliance	2017-02-28 15:00:00	LIVE Groove Vocal burst
+100364	［二面性の天使］柳清良＋	柳清良	S RARE	CUTE	4619	4364	4313	13296	available	usual	life recovery	6	3	3	1	cute energy	2017-03-09 15:00:00	gacha
+100366	［ロワイヤルハート］松原早耶＋	松原早耶	S RARE	CUTE	5748	2759	3458	11965	unavailable	limited	score bonus	7	115	3	3	cute voice	2017-03-13 15:00:00	シンデレラキャラバン
+100368	［∀NSWER］早坂美玲＋	早坂美玲	S RARE	CUTE	3339	6100	4023	13462	unavailable	limited	combo bonus	4	112	3	1	cute step	2017-03-21 15:00:00	∀NSWER
+100370	［出逢えた憧憬］関裕美＋	関裕美	SS RARE	CUTE	3883	7126	4683	15692	available	usual	concentration	11	119	4	4	cute step	2017-03-22 15:00:00	gacha
+100372	［カム・ウィズミー ! ］乙倉悠貴＋	乙倉悠貴	SS RARE	CUTE	3832	4652	7188	15672	unavailable	limited	cute focus	11	116	4	4	cute princess	2017-03-31 22:00:00	gacha
+100374	［小悪魔お嬢様］涼宮星花＋	涼宮星花	S RARE	CUTE	4135	4839	4252	13226	unavailable	limited	demage guard	9	1	4	3	cute abillity	2017-03-31 22:00:00	gacha
+100376	［shabon song］小日向美穂＋	小日向美穂	S RARE	CUTE	6114	4017	3327	13458	unavailable	limited	combo bonus	11	112	3	5	cute voice	2017-04-01 15:00:00	LIVE Parade
+100378	［わんダフルチアー］太田優＋	太田優	S RARE	CUTE	3895	5954	3221	13070	available	usual	score bonus	11	115	3	5	cute step	2017-02-16 15:00:00	gacha
+100380	［ピースドリーマー］有浦柑奈＋	有浦柑奈	S RARE	CUTE	4134	4108	4274	12516	unavailable	limited	score bonus	7	115	3	3	cute brilliance	2017-04-11 15:00:00	LIVE PARTY!!
+100382	［フィーチャースイートピー］長富蓮実＋	長富蓮実	S RARE	CUTE	3212	5966	3889	13067	available	usual	score bonus	9	115	4	3	cute step	2017-04-17 15:00:00	gacha
+100384	［ラブモリ☆パーリィー］藤本里奈＋	藤本里奈	SS RARE	CUTE	7157	3858	4669	15684	available	usual	all round	9	113	3	3	cute voice	2017-04-22 15:00:00	gacha
+100386	［ふかふかプリンセス］古賀小春＋	古賀小春	S RARE	CUTE	3149	3851	6043	13043	unavailable	limited	perfect support	7	1	4	1	cute makeup	2017-04-30 15:00:00	gacha
+100388	［Nothing but You］中野有香＋	中野有香	S RARE	CUTE	5755	3657	2989	12401	unavailable	limited	perfect support	15	1	3	4	cute voice	2017-04-30 15:00:00	LIVE Groove Dance burst
+100390	［ようせいのこ］遊佐こずえ＋	遊佐こずえ	SS RARE	CUTE	4694	7106	3897	15697	available	usual	all round	8	113	4	2	cute step	2017-05-09 15:00:00	gacha
+100392	［ヴォヤージュ・ブレイバー］白菊ほたる＋	白菊ほたる	S RARE	CUTE	6005	3023	3734	12762	unavailable	limited	combo bonus	6	112	3	2	cute voice	2017-05-11 15:00:00	シンデレラキャラバン
+100394	［ロワイヤルリトル］日下部若葉＋	日下部若葉	S RARE	CUTE	4631	4356	4301	13288	available	usual	life recovery	13	3	4	3	cute energy	2017-05-23 15:00:00	gacha
+100396	［アヴァンチュール・シャト］前川みく＋	前川みく	SS RARE	CUTE	3725	4596	7381	15702	unavailable	limited	skill boost	8	1	4	4	tricolore abillity	2017-06-29 22:00:00	gacha
+100398	［えにしの結び手］道明寺歌鈴＋	道明寺歌鈴	SS RARE	CUTE	4694	3897	7106	15697	unavailable	limited	overload	7	118	3	3	cute makeup	2017-05-31 15:00:00	gacha
+100402	［With Love］五十嵐響子＋	五十嵐響子	S RARE	CUTE	5741	2999	3663	12403	unavailable	limited	overload	7	116	3	3	cute voice	2017-05-31 15:00:00	LIVE Parade
+100406	［ぷるるんスポーティ］赤西瑛梨華＋	赤西瑛梨華	S RARE	CUTE	3895	3221	5954	13070	available	usual	score bonus	13	115	4	5	cute makeup	2017-06-09 15:00:00	gacha
+100408	［わきわきわんだほー］棟方愛海＋	棟方愛海	SS RARE	CUTE	4700	7095	3908	15703	available	usual	score bonus	7	117	4	2	cute step	2017-06-17 15:00:00	gacha
+100410	［Yes ! Party Time ! ! ］櫻井桃華＋	櫻井桃華	S RARE	CUTE	4019	6108	3332	13459	unavailable	limited	combo bonus	6	112	3	2	cute step	2017-06-19 15:00:00	Yes! Party Time!!
+100412	［自称・パーリーピーポー］輿水幸子＋	輿水幸子	SS RARE	CUTE	7188	3832	4652	15672	unavailable	limited	cute focus	7	116	4	2	cute princess	2017-07-02 15:00:00	gacha
+100414	［シークレットクイーン］浅野風香＋	浅野風香	S RARE	CUTE	5914	3914	3252	13080	available	usual	score bonus	9	115	3	4	cute voice	2017-07-02 15:00:00	gacha
+100416	［リトルリドル］双葉杏＋	双葉杏	S RARE	CUTE	5715	3020	3677	12412	unavailable	limited	concentration	13	117	4	5	cute voice	2017-06-30 15:00:00	LIVE Groove Visual burst
+100418	［Kawaii make MY day ! ］椎名法子＋	椎名法子	S RARE	CUTE	3297	3997	6151	13445	unavailable	limited	combo bonus	4	112	3	1	cute makeup	2017-07-20 15:00:00	Kawaii make MY day!
+100420	［Kawaii make MY day ! ］水本ゆかり＋	水本ゆかり	S RARE	CUTE	3619	5832	2929	12380	unavailable	limited	score bonus	7	115	3	3	cute step	2017-07-20 15:00:00	Kawaii make MY day!
+100422	［手折られぬ花］白菊ほたる＋	白菊ほたる	SS RARE	CUTE	4706	3918	7081	15705	available	usual	score bonus	6	117	3	2	cute makeup	2017-07-24 15:00:00	gacha
+100424	［目覚めし淑女］大西由里子＋	大西由里子	S RARE	CUTE	4218	4304	4736	13258	available	usual	life recovery	11	3	3	3	cute energy	2017-07-24 15:00:00	gacha
+100426	［太陽より熱く ! ］中野有香＋	中野有香	SS RARE	CUTE	4652	7188	3832	15672	unavailable	limited	cute focus	9	116	4	3	cute princess	2017-07-31 15:00:00	gacha
+100428	［夏色ガール］柳瀬美由紀＋	柳瀬美由紀	S RARE	CUTE	4671	4430	4471	13572	available	usual	perfect support	18	1	3	5	cute brilliance	2017-07-31 15:00:00	gacha
+100430	［Take me☆Take you］前川みく＋	前川みく	S RARE	CUTE	6139	3306	4005	13450	unavailable	limited	combo bonus	7	112	3	3	cute voice	2017-07-31 15:00:00	LIVE Parade
+100432	［小さな名探偵］安斎都＋	安斎都	S RARE	CUTE	5734	3466	2768	11968	unavailable	limited	score bonus	13	115	4	5	cute voice	2017-08-12 15:00:00	LIVE PARTY!!
+100434	［フリルドウェスタン］相原雪乃＋	相原雪乃	S RARE	CUTE	3889	3212	5966	13067	available	usual	score bonus	6	115	3	2	cute makeup	2017-08-18 15:00:00	gacha
+100436	［メモリアルデイズ］今井加奈＋	今井加奈	SS RARE	CUTE	3908	4700	7095	15703	available	usual	concentration	9	119	4	3	cute makeup	2017-08-23 15:00:00	gacha
+100438	［ハッピー☆ジーニアス］池袋晶葉＋	池袋晶葉	S RARE	CUTE	3233	5940	3903	13076	available	usual	score bonus	9	115	3	4	cute step	2017-09-03 15:00:00	gacha
+100440	［イリュージョニスタ ! ］佐久間まゆ＋	佐久間まゆ	S RARE	CUTE	5729	3010	3671	12410	unavailable	limited	overload	7	116	4	2	cute voice	2017-08-31 15:00:00	LIVE Groove Vocal burst
+100442	［大傾奇娘］丹羽仁美＋	丹羽仁美	S RARE	CUTE	4298	4749	4209	13256	available	usual	life recovery	8	3	3	2	cute energy	2017-09-11 15:00:00	gacha
+100444	［私だけのステージ］工藤忍＋	工藤忍	S RARE	CUTE	2993	3714	6043	12750	unavailable	limited	combo bonus	9	112	4	3	cute makeup	2017-09-11 15:00:00	シンデレラキャラバン
+100446	［ピュア・ユーフォリア］西園寺琴歌＋	西園寺琴歌	SS RARE	CUTE	4702	3913	7087	15702	available	usual	all round	5	113	4	1	cute makeup	2017-09-19 15:00:00	gacha
+100448	［スマイル・アンド・トリート］島村卯月＋	島村卯月	SS RARE	CUTE	6236	4720	4972	15928	unavailable	limited	cute focus	6	116	3	2	cute princess	2017-09-30 15:00:00	gacha
+100450	［ゆかしい花椿］江上椿＋	江上椿	S RARE	CUTE	3883	3200	5979	13062	available	usual	overload	7	116	4	2	cute makeup	2017-10-10 15:00:00	gacha
+100452	［Halloween♥Code］乙倉悠貴＋	乙倉悠貴	S RARE	CUTE	3306	4005	6139	13450	unavailable	limited	combo bonus	11	112	3	5	cute makeup	2017-10-20 15:00:00	Halloween♥Code
+100454	［Halloween♥Code］安部菜々＋	安部菜々	S RARE	CUTE	3606	5857	2908	12371	unavailable	limited	concentration	9	117	3	4	cute step	2017-10-20 15:00:00	Halloween♥Code
+100456	［あこがれのプリンセス］古賀小春＋	古賀小春	SS RARE	CUTE	7106	4694	3897	15697	available	usual	concentration	7	119	4	2	cute voice	2017-10-23 15:00:00	gacha
+100458	［秋風に手を振って］中野有香＋	中野有香	S RARE	CUTE	4011	6125	3318	13454	unavailable	limited	combo bonus	13	112	4	5	cute step	2017-10-31 15:00:00	LIVE Groove Dance burst
+100460	［ピュアリー・ロワイヤル］奥山沙織＋	奥山沙織	S RARE	CUTE	4657	4280	4344	13281	available	usual	life recovery	14	3	3	4	cute energy	2017-11-02 15:00:00	gacha
+100462	［夢追い人の光］工藤忍＋	工藤忍	SS RARE	CUTE	7145	3867	4675	15687	available	usual	score bonus	6	117	3	2	cute voice	2017-11-10 15:00:00	gacha
+100464	［プリマヴェーラビアッジョ］間中美里＋	間中美里	S RARE	CUTE	4121	4300	4086	12507	unavailable	limited	perfect support	7	1	4	1	cute brilliance	2017-11-10 15:00:00	シンデレラキャラバン
+100466	［マジカルガール・アクア］福山舞＋	福山舞	S RARE	CUTE	5954	3221	3895	13070	available	usual	score bonus	9	115	4	3	cute voice	2017-11-17 15:00:00	gacha
+100468	［メリー・メリー・ホワイト］緒方智絵里＋	緒方智絵里	SS RARE	CUTE	4972	6236	4720	15928	unavailable	limited	overload	6	118	3	2	cute brilliance	2017-11-30 15:00:00	gacha
+100470	［ウサコちゃんとチアー］持田亜里沙＋	持田亜里沙	S RARE	CUTE	3877	3191	5991	13059	available	usual	score bonus	11	115	4	4	cute makeup	2017-11-30 15:00:00	gacha
+100472	［恋が咲く季節］関裕美＋	関裕美	S RARE	CUTE	2917	5844	3612	12373	unavailable	limited	overload	7	116	4	2	cute step	2017-11-30 15:00:00	LIVE Parade
+100474	［ビューティーウィッチ］兵藤レナ＋	兵藤レナ	S RARE	CUTE	4796	4171	4274	13241	unavailable	limited	combo bonus	6	112	3	2	cute brilliance	2017-12-13 15:00:00	シンデレラキャラバン
+100476	［祝福のまなざし］クラリス＋	クラリス	SS RARE	CUTE	3918	4706	7081	15705	available	usual	score bonus	4	117	4	1	cute makeup	2017-12-18 15:00:00	gacha
+100478	［スウィート・ロワイヤル］榊原里美＋	榊原里美	S RARE	CUTE	3212	3889	5966	13067	available	usual	score bonus	9	115	4	3	cute makeup	2017-12-22 15:00:00	gacha
+100480	［おーる・ふぉー・ふぁん］双葉杏＋	双葉杏	SS RARE	CUTE	3725	7381	4596	15702	unavailable	limited	skill boost	10	1	4	5	tricolore abillity	2017-12-31 15:00:00	gacha
+100482	［新春の彩り］三村かな子＋	三村かな子	SS RARE	CUTE	7137	3872	4677	15686	unavailable	limited	life sparkle	9	1	4	3	cute cheer	2018-01-04 15:00:00	gacha
+100484	［華傘の芸達者］乙倉悠貴＋	乙倉悠貴	S RARE	CUTE	5966	3212	3889	13067	available	usual	score bonus	11	115	4	4	cute voice	2018-01-04 15:00:00	gacha
+100486	［ドリーミン☆ウサミン］安部菜々＋	安部菜々	SS RARE	CUTE	3897	4694	7106	15697	available	usual	concentration	11	119	4	4	cute makeup	2018-01-19 15:00:00	gacha
+100488	［美に入り彩を穿つ］小早川紗枝＋	小早川紗枝	S RARE	CUTE	5792	3637	2959	12388	unavailable	limited	concentration	9	117	3	4	cute voice	2018-01-12 15:00:00	美に入り彩を穿つ
+100490	［モグモグオータム］大原みちる＋	大原みちる	S RARE	CUTE	4645	4350	4292	13287	available	usual	life recovery	7	3	4	1	cute energy	2018-01-24 15:00:00	gacha
+100492	［ビタースイート・タイム］小日向美穂＋	小日向美穂	SS RARE	CUTE	4649	7196	3828	15673	unavailable	limited	cute focus	7	116	4	2	cute princess	2018-01-31 15:00:00	gacha
+100494	［コール・ミー・メイビー］長富蓮実＋	長富蓮実	S RARE	CUTE	4684	4421	4465	13570	available	usual	score bonus	6	115	3	2	cute brilliance	2018-02-09 15:00:00	gacha
+100496	［すこやかな願い］栗原ネネ＋	栗原ネネ	SS RARE	CUTE	7120	4688	3888	15696	available	usual	concentration	9	119	4	3	cute voice	2018-02-20 15:00:00	gacha
+100498	［ツインテールの風］小日向美穂＋	小日向美穂	S RARE	CUTE	3313	4007	6133	13453	unavailable	limited	life sparkle	9	2	4	3	tricolore makeup	2018-02-28 15:00:00	LIVE Groove Vocal burst
+100500	［アイロニカル・エトランゼ］一ノ瀬志希＋	一ノ瀬志希	SS RARE	CUTE	11641	1671	2388	15700	unavailable	limited	tricolore synergy	11	116	4	4	cinderella charm	2018-02-28 15:00:00	gacha
+100502	［小さなおひな様］横山千佳＋	横山千佳	S RARE	CUTE	6017	3863	3170	13050	unavailable	limited	all round	5	110	4	1	cute abillity	2018-03-03 15:00:00	gacha
+100504	［ホワイトテイル］遊佐こずえ＋	遊佐こずえ	S RARE	CUTE	3688	6094	2953	12735	unavailable	limited	combo bonus	11	112	4	4	cute step	2018-01-22 15:00:00	ススメ ! シンデレラロード
+100506	［ニューウェーブ・ピーチ］村松さくら＋	村松さくら	SS RARE	CUTE	3888	7120	4688	15696	available	usual	perfect support	15	1	4	4	cute step	2018-03-12 15:00:00	gacha
+100510	［キラッ ! 満開スマイル］島村卯月＋	島村卯月	S RARE	CUTE	3288	6165	3991	13444	unavailable	limited	life sparkle	9	2	4	3	tricolore step	2018-03-20 15:00:00	キラッ ! 満開スマイル
+100512	［キラッ ! 満開スマイル］櫻井桃華＋	櫻井桃華	S RARE	CUTE	4182	4581	4101	12864	unavailable	limited	score bonus	9	115	3	4	cute brilliance	2018-03-20 15:00:00	キラッ ! 満開スマイル
+100514	［桜ガール］月宮雅＋	月宮雅	S RARE	CUTE	3903	5940	3233	13076	available	usual	score bonus	11	115	4	4	cute step	2018-03-23 15:00:00	gacha
+100516	［青春デビュー］関裕美＋	関裕美	SS RARE	CUTE	4655	3837	7182	15674	unavailable	limited	life sparkle	13	1	4	5	cute cheer	2018-03-31 15:00:00	gacha
+100518	［お嬢様の一幕］涼宮星花＋	涼宮星花	S RARE	CUTE	5979	3883	3200	13062	available	usual	score bonus	7	115	4	2	cute voice	2018-03-31 15:00:00	gacha
+100520	［Vast world］緒方智絵里＋	緒方智絵里	S RARE	CUTE	3062	3702	5664	12428	unavailable	limited	concentration	9	117	3	4	cute makeup	2018-04-02 15:00:00	LIVE Parade
+100522	［ぷるんぷるんB.B］大沼くるみ＋	大沼くるみ	S RARE	CUTE	5954	3759	3065	12778	unavailable	limited	combo bonus	4	112	3	1	cute voice	2018-04-12 15:00:00	シンデレラキャラバン
+100524	［乙女の素顔］原田美世＋	原田美世	S RARE	CUTE	3221	5954	3895	13070	available	usual	perfect support	6	1	3	1	cute step	2018-04-19 15:00:00	gacha
+100526	［ひたむきな歩み］道明寺歌鈴＋	道明寺歌鈴	SS RARE	CUTE	4680	7132	3878	15690	available	usual	all round	9	113	3	3	cute step	2018-04-23 15:00:00	gacha
+100528	［桜の風］五十嵐響子＋	五十嵐響子	S RARE	CUTE	4005	6139	3306	13450	unavailable	limited	life sparkle	13	2	4	5	tricolore step	2018-04-30 15:00:00	LIVE Groove Dance burst
+100530	［なぞときツアーズ］安斎都＋	安斎都	S RARE	CUTE	2789	5708	3477	11974	unavailable	limited	overload	7	116	3	3	cute step	2018-03-12 15:00:00	ススメ ! シンデレラロード
+100532	［魅惑のショウタイム］佐久間まゆ＋	佐久間まゆ	SS RARE	CUTE	7196	4649	3828	15673	unavailable	limited	cute focus	11	116	4	4	cute princess	2018-05-03 15:00:00	gacha
+100534	［花畑マキアージュ］井村雪菜＋	井村雪菜	S RARE	CUTE	4356	4301	4631	13288	unavailable	usual	life recovery	17	3	3	5	cute energy	2018-05-14 15:00:00	gacha
+100536	［パンパンの夢］大原みちる＋	大原みちる	SS RARE	CUTE	7095	3908	4700	15703	unavailable	usual	all round	5	113	4	1	cute voice	2018-05-20 15:00:00	gacha
+100538	［HARURUNRUN］棟方愛海＋	棟方愛海	S RARE	CUTE	6125	3318	4011	13454	unavailable	limited	life sparkle	13	2	4	5	tricolore voice	2018-05-21 15:00:00	HARURUNRUN
+100540	［HARURUNRUN］水本ゆかり＋	水本ゆかり	S RARE	CUTE	3050	3696	5678	12424	unavailable	limited	overload	9	116	3	4	cute makeup	2018-05-21 15:00:00	HARURUNRUN
+100542	［ローゼスゴシック］日下部若葉＋	日下部若葉	S RARE	CUTE	3242	5928	3909	13079	unavailable	usual	score bonus	6	115	3	2	cute step	2018-05-31 15:00:00	gacha
+100544	［Virgin Love］藤本里奈＋	藤本里奈	S RARE	CUTE	5767	3651	2980	12398	unavailable	limited	concentration	11	117	4	4	cute voice	2018-05-31 15:00:00	LIVE Parade
+100546	［ひらめきロボティクス］池袋晶葉＋	池袋晶葉	SS RARE	CUTE	3867	7145	4675	15687	unavailable	usual	concentration	9	119	4	3	cute step	2018-06-11 15:00:00	gacha
+100548	［グラマラス・ロワイヤル］柳清良＋	柳清良	S RARE	CUTE	3226	5946	3899	13071	unavailable	usual	score bonus	13	115	4	5	cute step	2018-06-21 15:00:00	gacha
+100550	［銀のイルカと熱い風］緒方智絵里＋	緒方智絵里	S RARE	CUTE	4569	4188	4112	12869	unavailable	limited	score bonus	11	115	4	4	cute brilliance	2018-06-30 12:00:00	LIVE Groove Visual burst
+100552	［モンスター・パーティー ! ］早坂美玲＋	早坂美玲	SS RARE	CUTE	4663	7171	3846	15680	unavailable	limited	life sparkle	11	1	4	4	cute cheer	2018-07-03 15:00:00	gacha
+100554	［船上の音楽家］有浦柑奈＋	有浦柑奈	S RARE	CUTE	3903	3233	5940	13076	unavailable	usual	score bonus	6	115	3	2	cute makeup	2018-07-13 15:00:00	gacha
+100556	［絢爛華麗］西園寺琴歌＋	西園寺琴歌	S RARE	CUTE	3765	3075	5940	12780	unavailable	limited	combo bonus	9	112	3	4	cute makeup	2018-07-10 15:00:00	ススメ ! シンデレラロード
+100558	［P.C.S］五十嵐響子＋	五十嵐響子	SS RARE	CUTE	4688	3888	7120	15696	unavailable	usual	concentration	11	119	3	5	cute makeup	2018-07-19 15:00:00	gacha
+100560	［愛盛り☆フラッペ］棟方愛海＋	棟方愛海	SS RARE	CUTE	4644	3816	7207	15667	unavailable	limited	cute focus	9	116	4	3	cute princess	2018-07-31 15:00:00	gacha
+100562	［スイートサマータイム］三村かな子＋	三村かな子	S RARE	CUTE	3869	6005	3181	13055	unavailable	limited	all round	8	110	4	2	cute abillity	2018-07-31 15:00:00	gacha
+100564	［凸凹スピードスター］安部菜々＋	安部菜々	S RARE	CUTE	3327	4017	6114	13458	unavailable	limited	life sparkle	13	2	4	5	tricolore makeup	2018-07-31 15:00:00	LIVE Parade
+200002	渋谷凛＋	渋谷凛	RARE	COOL	4281	2309	2793	9383	available	usual	score bonus	6	110	2	3	cool voice	start	gacha
+200004	黒川千秋＋	黒川千秋	NORMAL	COOL	2694	2628	2617	7939	unavailable	usual							2015-11-09 15:00:00	local_gacha
+200006	相川千夏＋	相川千夏	NORMAL	COOL	1890	3467	2279	7636	unavailable	usual							start	local_gacha
+200008	川島瑞樹＋	川島瑞樹	NORMAL	COOL	1858	2260	3509	7627	unavailable	usual							start	local_gacha
+200010	神谷奈緒＋	神谷奈緒	NORMAL	COOL	2627	2679	2638	7944	unavailable	usual							start	local_gacha
+200012	上条春菜＋	上条春菜	NORMAL	COOL	2576	2626	2585	7787	unavailable	usual							start	local_gacha
+200014	荒木比奈＋	荒木比奈	NORMAL	COOL	2225	3576	1804	7605	unavailable	usual							start	local_gacha
+200016	多田李衣菜＋	多田李衣菜	NORMAL	COOL	3603	1781	2212	7596	unavailable	usual							start	local_gacha
+200018	佐々木千枝＋	佐々木千枝	NORMAL	COOL	2653	2571	2553	7777	unavailable	usual							start	local_gacha
+200020	新田美波＋	新田美波	NORMAL	COOL	2593	2722	2616	7931	unavailable	usual							start	local_gacha
+200022	松永涼＋	松永涼	RARE	COOL	2445	4908	3028	10381	available	usual	score bonus	6	110	2	3	cool step	2015-09-30 15:00:00	gacha
+200024	高垣楓＋	高垣楓	RARE	COOL	4777	2549	3094	10420	available	usual	combo bonus	9	108	2	5	cool voice	start	gacha
+200026	神崎蘭子＋	神崎蘭子	RARE	COOL	3246	3236	3286	9768	available	usual	perfect support	11	1	2	4	cool abillity	start	gacha
+200028	北条加蓮＋	北条加蓮	RARE	COOL	3635	3614	3611	10860	available	usual	perfect support	9	1	2	3	cool abillity	start	gacha
+200030	ケイト＋	ケイト	RARE	COOL	3617	3860	3567	11044	available	usual	score bonus	7	110	2	4	cool brilliance	2016-07-10 15:00:00	gacha
+200038	速水奏＋	速水奏	RARE	COOL	2580	3115	4739	10434	available	usual	combo bonus	6	108	2	3	cool makeup	start	gacha
+200040	アナスタシア＋	アナスタシア	RARE	COOL	3189	3184	3207	9580	available	usual	life recovery	9	2	2	3	cool energy	start	gacha
+200052	［神秘の女神］高垣楓＋	高垣楓	S RARE	COOL	3715	3022	5908	12645	available	usual	score bonus	11	115	3	5	cool makeup	start	gacha
+200054	［恥じらい乙女］神谷奈緒＋	神谷奈緒	S RARE	COOL	5898	3842	3172	12912	available	usual	score bonus	13	115	4	5	cool voice	2016-08-10 15:00:00	gacha
+200056	［煌めきの乙女］北条加蓮＋	北条加蓮	S RARE	COOL	4330	4311	4306	12947	available	usual	life recovery	11	3	3	3	cool energy	start	gacha
+200058	［永遠のプリンセス］川島瑞樹＋	川島瑞樹	S RARE	COOL	3927	4083	4866	12876	available	usual	demage guard	7	1	3	3	cool energy	2015-12-21 15:00:00	gacha
+200060	［笑顔の女神］新田美波＋	新田美波	S RARE	COOL	5780	3125	3780	12685	available	usual	score bonus	9	115	3	4	cool voice	start	gacha
+200062	［新春ロッカー］多田李衣菜＋	多田李衣菜	S RARE	COOL	3741	5857	3064	12662	available	usual	score bonus	7	115	3	3	cool step	start	gacha
+200064	［蒼翼の乙女］速水奏＋	速水奏	S RARE	COOL	4017	4978	4176	13171	unavailable	limited	combo bonus	11	112	3	5	cool abillity	2015-11-12 15:00:00	シンデレラキャラバン
+200066	［スターリービーチ］アナスタシア＋	アナスタシア	S RARE	COOL	4371	4351	4471	13193	available	usual	combo support	12	1	3	4	cool abillity	start	gacha
+200068	橘ありす＋	橘ありす	NORMAL	COOL	3482	2272	1880	7634	unavailable	usual							start	local_gacha
+200070	松本沙理奈＋	松本沙理奈	NORMAL	COOL	1749	2191	3645	7585	unavailable	usual							start	local_gacha
+200072	［ステージオブマジック］渋谷凛＋	渋谷凛	SS RARE	COOL	5278	5349	5289	15916	available	usual	perfect support	12	1	4	3	cool brilliance	start	gacha
+200074	［薔薇の闇姫］神崎蘭子＋	神崎蘭子	SS RARE	COOL	6892	4595	3830	15317	available	usual	score bonus	11	117	4	4	cool voice	start	gacha
+200076	佐城雪美＋	佐城雪美	RARE	COOL	3529	3575	3537	10641	available	usual	life recovery	13	2	2	5	cool energy	start	gacha
+200078	綾瀬穂乃香＋	綾瀬穂乃香	RARE	COOL	3106	4751	2570	10427	available	usual	combo bonus	7	108	2	4	cool step	start	gacha
+200080	［プチ・マドモアゼル］佐城雪美＋	佐城雪美	S RARE	COOL	4551	4330	4288	13169	available	usual	perfect support	9	1	3	2	cool abillity	start	gacha
+200082	［ブルーフロートパーティー］荒木比奈＋	荒木比奈	S RARE	COOL	4245	4202	4463	12910	available	usual	demage guard	11	1	3	5	cool energy	start	gacha
+200084	白坂小梅＋	白坂小梅	RARE	COOL	3581	3556	3702	10839	available	usual	life recovery	11	2	2	4	cool energy	start	gacha
+200086	塩見周子＋	塩見周子	NORMAL	COOL	3700	1705	2164	7569	unavailable	usual							start	local_gacha
+200088	［眼鏡プリンセス］上条春菜＋	上条春菜	S RARE	COOL	2992	5946	3697	12635	available	usual	score bonus	6	115	3	2	cool step	2015-10-13 15:00:00	gacha
+200090	［ハロウィンナイトメア］白坂小梅＋	白坂小梅	S RARE	COOL	3034	3723	5895	12652	unavailable	limited	combo bonus	7	112	3	3	cool makeup	2015-09-30 15:00:00	gacha
+200092	鷺沢文香＋	鷺沢文香	NORMAL	COOL	2246	1836	3537	7619	unavailable	usual							2015-10-06 01:00:00	local_gacha
+200094	二宮飛鳥＋	二宮飛鳥	RARE	COOL	3107	2570	4751	10428	available	usual	combo bonus	9	108	2	5	cool makeup	2015-10-19 15:00:00	gacha
+200096	［ノーブルヴィーナス］新田美波＋	新田美波	SS RARE	COOL	3805	4578	6923	15306	available	usual	score bonus	9	117	4	3	cool makeup	2015-10-19 15:00:00	gacha
+200098	［Nation Blue］神崎蘭子＋	神崎蘭子	S RARE	COOL	5566	3553	2910	12029	unavailable	limited	perfect support	12	1	3	3	cool voice	2015-10-19 15:00:00	Nation Blue
+200100	［Nation Blue］高垣楓＋	高垣楓	S RARE	COOL	3825	6093	3108	13026	unavailable	limited	combo bonus	9	112	3	4	cool step	2015-10-19 15:00:00	Nation Blue
+200102	柊志乃＋	柊志乃	NORMAL	COOL	2538	2579	2791	7908	unavailable	usual							2016-11-09 15:00:00	local_gacha
+200104	［ヒート＆ビート］多田李衣菜＋	多田李衣菜	SS RARE	COOL	5144	5106	5328	15578	unavailable	limited	life recovery	13	3	4	4	cool energy	2015-10-31 15:00:00	gacha
+200108	［ブライトメモリーズ］鷺沢文香＋	鷺沢文香	SS RARE	COOL	4572	6935	3793	15300	available	usual	score bonus	7	117	4	2	cool step	2015-11-13 15:00:00	gacha
+200110	［クロネコチアー］綾瀬穂乃香＋	綾瀬穂乃香	S RARE	COOL	2936	3570	5532	12038	unavailable	limited	perfect support	15	1	3	4	cool makeup	2015-10-09 15:00:00	シンデレラキャラバン
+200112	脇山珠美＋	脇山珠美	RARE	COOL	3498	3649	3470	10617	available	usual	combo support	12	1	2	3	cool energy	2015-10-31 15:00:00	gacha
+200114	［深淵への招待］二宮飛鳥＋	二宮飛鳥	S RARE	COOL	3901	3230	5939	13070	unavailable	limited	combo bonus	6	112	3	2	cool brilliance	2015-12-04 15:00:00	LIVE Groove Vocal burst
+200116	［ナイトエレガンス］相川千夏＋	相川千夏	S RARE	COOL	5946	3697	2992	12635	available	usual	score bonus	9	115	3	4	cool voice	2015-11-30 15:00:00	gacha
+200118	［クリスタルスノー］アナスタシア＋	アナスタシア	SS RARE	COOL	6980	3759	4550	15289	unavailable	limited	combo bonus	7	118	3	3	cool voice	2015-11-30 15:00:00	gacha
+200120	森久保乃々＋	森久保乃々	RARE	COOL	4934	3016	2423	10373	available	usual	score bonus	7	110	2	4	cool voice	2015-11-30 15:00:00	gacha
+200122	［ロッキンヴォーカリスト］松永涼＋	松永涼	S RARE	COOL	4278	4396	4255	12929	available	usual	life recovery	8	3	3	2	cool energy	2015-11-20 15:00:00	gacha
+200124	三船美優＋	三船美優	NORMAL	COOL	2577	2565	2641	7783	unavailable	usual							2015-12-08 15:00:00	local_gacha
+200126	大和亜季＋	大和亜季	RARE	COOL	2567	3115	4809	10491	available	usual	score bonus	6	110	2	3	cool makeup	2015-12-21 15:00:00	gacha
+200128	八神マキノ＋	八神マキノ	RARE	COOL	3054	4925	2472	10451	available	usual	score bonus	9	110	2	5	cool step	2015-12-30 15:00:00	gacha
+200130	［Snow Wings］上条春菜＋	上条春菜	S RARE	COOL	2853	5696	3529	12078	unavailable	limited	perfect support	6	1	3	1	cool step	2015-12-18 15:00:00	Snow Wings
+200132	［小さな自信家］脇山珠美＋	脇山珠美	S RARE	COOL	5891	3084	3764	12739	unavailable	limited	perfect support	9	1	3	2	cool voice	2015-12-30 15:00:00	gacha
+200134	［ゴキゲンParty Night］多田李衣菜＋	多田李衣菜	S RARE	COOL	4044	3944	4544	12532	unavailable	limited	score bonus	7	115	3	3	cool abillity	2015-12-30 15:00:00	LIVE Groove Dance burst
+200136	藤原肇＋	藤原肇	NORMAL	COOL	1846	3522	2252	7620	unavailable	usual							2016-01-09 15:00:00	local_gacha
+200138	［エンドレスナイト］速水奏＋	速水奏	SS RARE	COOL	4616	3842	6945	15403	available	usual	score bonus	13	117	4	5	cool makeup	2016-01-09 15:00:00	gacha
+200140	［魔法のスマイル］佐々木千枝＋	佐々木千枝	S RARE	COOL	3695	5763	3030	12488	unavailable	limited	combo bonus	4	112	3	1	cool step	2016-01-12 15:00:00	シンデレラキャラバン
+200142	結城晴＋	結城晴	RARE	COOL	3599	3617	3697	10913	available	usual	perfect support	13	1	2	5	cool abillity	2016-01-15 15:00:00	gacha
+200146	大石泉＋	大石泉	RARE	COOL	2498	3072	4893	10463	available	usual	combo bonus	7	108	2	4	cool makeup	2016-02-10 15:00:00	gacha
+200148	［ラグジュアリーメモリー］川島瑞樹＋	川島瑞樹	SS RARE	COOL	5003	5129	5761	15893	unavailable	limited	score bonus	11	117	4	4	cool brilliance	2016-01-31 15:00:00	gacha
+200154	岡崎泰葉＋	岡崎泰葉	RARE	COOL	3824	3371	3445	10640	available	usual	life recovery	9	2	2	3	cool energy	2016-01-31 15:00:00	gacha
+200156	水木聖來＋	水木聖來	NORMAL	COOL	1831	3543	2243	7617	unavailable	usual							2016-02-08 15:00:00	local_gacha
+200158	［オーバー・ザ・レインボー］神谷奈緒＋	神谷奈緒	SS RARE	COOL	3837	6951	4612	15400	available	usual	score bonus	9	117	3	4	cool step	2016-02-16 15:00:00	gacha
+200160	［シークレットナイト］八神マキノ＋	八神マキノ	S RARE	COOL	3036	5932	3730	12698	unavailable	limited	combo bonus	7	112	4	2	cool step	2016-09-12 15:00:00	シンデレラキャラバン
+200162	ライラ＋	ライラ	RARE	COOL	2545	4835	3101	10481	available	usual	score bonus	7	110	2	4	cool step	2016-01-22 15:00:00	gacha
+200164	［癒しの女神］三船美優＋	三船美優	S RARE	COOL	4311	4671	4239	13221	available	usual	perfect support	18	1	3	5	cool abillity	2016-02-23 15:00:00	gacha
+200166	［夜風の誘い］高垣楓＋	高垣楓	SS RARE	COOL	7021	4577	3782	15380	unavailable	limited	combo bonus	11	118	4	4	cool voice	2016-02-29 15:00:00	gacha
+200168	［黒真珠の輝き］黒川千秋＋	黒川千秋	S RARE	COOL	3936	4089	4853	12878	unavailable	limited	life recovery	14	3	3	4	cool energy	2016-02-29 15:00:00	gacha
+200170	［Tulip］塩見周子＋	塩見周子	S RARE	COOL	4078	4477	3997	12552	unavailable	limited	score bonus	9	115	3	4	cool brilliance	2016-01-31 15:00:00	LIVE Groove Visual burst
+200172	東郷あい＋	東郷あい	NORMAL	COOL	2681	2558	2533	7772	unavailable	usual							2016-03-09 15:00:00	local_gacha
+200174	［ショコラバレンタイン］森久保乃々＋	森久保乃々	S RARE	COOL	3072	3758	5905	12735	available	usual	score bonus	7	115	3	3	cool makeup	2016-01-31 15:00:00	gacha
+200176	［オルゴールの小箱］アナスタシア＋	アナスタシア	S RARE	COOL	6089	3866	3158	13113	unavailable	limited	combo bonus	13	112	4	5	cool voice	2016-02-18 15:00:00	オルゴールの小箱
+200178	藤居朋＋	藤居朋	RARE	COOL	4873	2514	3081	10468	available	usual	score bonus	9	110	2	5	cool voice	2016-02-10 15:00:00	gacha
+200180	［オルゴールの小箱］白坂小梅＋	白坂小梅	S RARE	COOL	4781	3801	3606	12188	unavailable	limited	life recovery	14	3	3	4	cool energy	2016-02-18 15:00:00	オルゴールの小箱
+200182	［オンリーマイフラッグ］橘ありす＋	橘ありす	S RARE	COOL	3899	3209	6026	13134	unavailable	limited	combo bonus	11	112	4	4	cool makeup	2016-02-29 15:00:00	LIVE Groove Vocal burst
+200184	［煌めきのひととき］北条加蓮＋	北条加蓮	SS RARE	COOL	3831	4619	7018	15468	available	usual	score bonus	11	117	3	5	cool makeup	2016-03-11 15:00:00	gacha
+200186	水野翠＋	水野翠	RARE	COOL	4916	2528	3102	10546	available	usual	score bonus	6	110	2	3	cool voice	2016-03-11 15:00:00	gacha
+200188	梅木音葉＋	梅木音葉	RARE	COOL	3470	3923	3544	10937	available	usual	combo bonus	6	108	2	3	cool abillity	2016-04-08 15:00:00	gacha
+200190	［疾風のストライカー］結城晴＋	結城晴	S RARE	COOL	3742	3031	6016	12789	available	usual	perfect support	12	1	3	3	cool makeup	2016-03-25 15:00:00	gacha
+200194	［ハイファイ☆デイズ］佐々木千枝＋	佐々木千枝	S RARE	COOL	4195	4315	4171	12681	unavailable	limited	score bonus	6	115	3	2	cool brilliance	2016-03-31 15:00:00	LIVE Groove Dance burst
+200196	成宮由愛＋	成宮由愛	NORMAL	COOL	2560	2594	2763	7917	unavailable	usual							2016-04-08 15:00:00	local_gacha
+200198	［《偶像》のフラグメント］二宮飛鳥＋	二宮飛鳥	SS RARE	COOL	7043	3811	4606	15460	available	usual	score bonus	6	117	3	2	cool voice	2016-04-08 15:00:00	gacha
+200202	［ハートビートUSA］水木聖來＋	水木聖來	S RARE	COOL	5990	2894	3621	12505	unavailable	limited	combo bonus	7	112	4	2	cool voice	2016-04-11 15:00:00	シンデレラキャラバン
+200204	［ちびっこステージ］脇山珠美＋	脇山珠美	S RARE	COOL	3833	5836	3173	12842	available	usual	score bonus	4	115	4	1	cool step	2016-04-25 18:00:00	gacha
+200206	［はじめての表情］橘ありす＋	橘ありす	SS RARE	COOL	5075	5145	5492	15712	unavailable	limited	life recovery	11	3	4	3	cool energy	2016-04-30 15:00:00	gacha
+200208	和久井留美＋	和久井留美	RARE	COOL	3130	2575	4856	10561	available	usual	perfect support	13	1	2	5	cool makeup	2016-04-30 15:00:00	gacha
+200210	［生存本能ヴァルキュリア］新田美波＋	新田美波	S RARE	COOL	4404	4964	4293	13661	unavailable	limited	combo bonus	13	112	4	5	cool brilliance	2016-04-30 15:00:00	LIVE Groove Visual burst
+200214	［センリツノヨル］白坂小梅＋	白坂小梅	SS RARE	COOL	5057	4871	5985	15913	available	usual	score bonus	7	117	4	2	cool brilliance	2016-05-10 15:00:00	gacha
+200216	［プラネットスター］岡崎泰葉＋	岡崎泰葉	S RARE	COOL	2702	3390	5644	11736	unavailable	limited	score bonus	13	115	4	5	cool makeup	2016-05-11 15:00:00	シンデレラキャラバン
+200218	［セクシービューティー］松本沙理奈＋	松本沙理奈	S RARE	COOL	5927	3101	3787	12815	available	usual	overload	7	116	3	3	cool voice	2016-05-25 15:00:00	gacha
+200220	望月聖＋	望月聖	RARE	COOL	4923	3221	2666	10810	available	usual	score bonus	9	110	2	5	cool voice	2016-12-09 15:00:00	gacha
+200222	［夜色の暁風］塩見周子＋	塩見周子	SS RARE	COOL	4707	6248	4966	15921	available	usual	score bonus	13	117	4	5	cool brilliance	2016-06-17 15:00:00	gacha
+200224	［麗しの花嫁］和久井留美＋	和久井留美	S RARE	COOL	5978	3762	3062	12802	available	usual	score bonus	11	115	4	4	cool voice	2016-05-31 15:00:00	gacha
+200230	［澄みきった世界］上条春菜＋	上条春菜	SS RARE	COOL	4654	3869	7026	15549	available	usual	score bonus	6	117	3	2	cool makeup	2016-08-18 15:00:00	gacha
+200234	［サマカニ ! ! ］川島瑞樹＋	川島瑞樹	S RARE	COOL	3274	6064	3961	13299	unavailable	limited	combo bonus	4	112	3	1	cool step	2016-07-31 15:00:00	LIVE Groove Visual burst
+200236	［あいくるしい］速水奏＋	速水奏	S RARE	COOL	5579	3084	3705	12368	unavailable	limited	score bonus	7	115	3	3	cool voice	2016-10-31 15:00:00	LIVE Groove Dance burst
+200238	［ネイビーウェーブ］大石泉＋	大石泉	S RARE	COOL	4736	4226	4124	13086	available	usual	life recovery	17	3	3	5	cool abillity	2016-06-23 15:00:00	gacha
+200240	［美貌の麗女］東郷あい＋	東郷あい	S RARE	COOL	4286	4697	4202	13185	available	usual	demage guard	11	1	3	5	cool energy	2016-09-17 15:00:00	gacha
+200244	［ドキドキ☆チャレンジ］綾瀬穂乃香＋	綾瀬穂乃香	S RARE	COOL	4122	4866	3972	12960	available	usual	life recovery	11	3	3	3	cool energy	2016-03-31 15:00:00	gacha
+200246	高橋礼子＋	高橋礼子	RARE	COOL	3492	3810	3429	10731	available	usual	combo support	15	1	2	4	cool energy	2016-05-25 15:00:00	gacha
+200248	［運命の待ち人］神崎蘭子＋	神崎蘭子	SS RARE	COOL	3780	4588	7080	15448	unavailable	limited	combo bonus	9	118	4	3	cool makeup	2016-05-31 15:00:00	gacha
+200250	［咲いてJewel］鷺沢文香＋	鷺沢文香	S RARE	COOL	3939	6109	3239	13287	unavailable	limited	combo bonus	6	112	3	2	cool step	2016-06-20 15:00:00	咲いてJewel
+200252	［咲いてJewel］二宮飛鳥＋	二宮飛鳥	S RARE	COOL	4162	4101	4463	12726	unavailable	limited	overload	9	116	3	4	cool abillity	2016-06-20 15:00:00	咲いてJewel
+200254	［オーバー・マイセルフ］渋谷凛＋	渋谷凛	SS RARE	COOL	7381	4596	3725	15702	unavailable	limited	combo bonus	7	118	4	2	tricolore voice	2016-06-28 15:00:00	gacha
+200256	吉岡沙紀＋	吉岡沙紀	NORMAL	COOL	2266	1868	3495	7629	unavailable	usual							2016-07-08 15:00:00	local_gacha
+200258	［ルージュクチュール］三船美優＋	三船美優	SS RARE	COOL	4629	7076	3830	15535	available	usual	score bonus	4	117	4	1	cool step	2016-07-10 15:00:00	gacha
+200262	［憧憬の絵姿］藤原肇＋	藤原肇	S RARE	COOL	3958	3269	6069	13296	unavailable	limited	combo bonus	9	112	3	4	cool makeup	2016-07-10 15:00:00	シンデレラキャラバン
+200264	［フォーチュン★スター］藤居朋＋	藤居朋	S RARE	COOL	3189	5878	3852	12919	available	usual	perfect support	18	1	3	5	cool step	2016-07-25 15:00:00	gacha
+200266	［夏色の南風］新田美波＋	新田美波	SS RARE	COOL	7051	3849	4642	15542	unavailable	limited	overload	9	118	3	4	cool voice	2016-07-31 15:00:00	gacha
+200268	古澤頼子＋	古澤頼子	RARE	COOL	2636	3180	4840	10656	available	usual	perfect support	9	1	2	3	cool makeup	2016-07-31 15:00:00	gacha
+200270	［Love∞Destiny］北条加蓮＋	北条加蓮	S RARE	COOL	5622	3003	3644	12269	unavailable	limited	score bonus	6	115	3	2	cool voice	2016-06-30 15:00:00	LIVE Groove Dance burst
+200272	［夏の思い出］荒木比奈＋	荒木比奈	S RARE	COOL	3374	2659	5755	11788	unavailable	limited	score bonus	9	115	3	4	cool makeup	2016-08-12 15:00:00	LIVE PARTY!!
+200274	桐野アヤ＋	桐野アヤ	NORMAL	COOL	1858	3510	2260	7628	unavailable	usual							2016-08-09 15:00:00	local_gacha
+200276	［妖しき雌豹］高橋礼子＋	高橋礼子	S RARE	COOL	4725	4341	4404	13470	available	usual	score bonus	11	115	4	4	cool brilliance	2016-10-22 15:00:00	gacha
+200278	［Near to You］橘ありす＋	橘ありす	S RARE	COOL	4155	4090	4475	12720	unavailable	limited	overload	7	116	3	3	cool brilliance	2016-08-19 15:00:00	Near to You
+200280	桐生つかさ＋	桐生つかさ	RARE	COOL	2616	3168	4866	10650	available	usual	score bonus	7	110	2	4	cool makeup	2016-08-23 15:00:00	gacha
+200282	［密やかな饗宴］鷺沢文香＋	鷺沢文香	SS RARE	COOL	7070	3835	4631	15536	unavailable	limited	combo bonus	9	118	4	3	cool voice	2016-08-31 15:00:00	gacha
+200284	［ネガティヴ乙女］森久保乃々＋	森久保乃々	S RARE	COOL	6077	3030	3753	12860	unavailable	limited	perfect support	15	1	3	4	cool voice	2016-08-31 15:00:00	gacha
+200286	松尾千鶴＋	松尾千鶴	NORMAL	COOL	3555	1819	2237	7611	unavailable	usual							2016-09-09 15:00:00	local_gacha
+200288	瀬名詩織＋	瀬名詩織	RARE	COOL	3195	4895	2641	10731	available	usual	combo bonus	9	108	2	5	cool step	2016-09-09 15:00:00	gacha
+200290	服部瞳子＋	服部瞳子	RARE	COOL	4901	2634	3192	10727	available	usual	combo support	15	1	2	4	cool voice	2016-09-12 15:00:00	gacha
+200292	［星巡る物語］アナスタシア＋	アナスタシア	SS RARE	COOL	4564	7287	3707	15558	available	usual	score bonus	6	117	3	2	cool step	2016-09-23 15:00:00	gacha
+200294	［茜色の彩り］高垣楓＋	高垣楓	SS RARE	COOL	3725	4596	7381	15702	unavailable	limited	combo bonus	4	118	4	1	tricolore makeup	2016-09-28 15:00:00	gacha
+200298	［STORY］渋谷凛＋	渋谷凛	S RARE	COOL	3293	3984	6097	13374	unavailable	limited	combo bonus	9	112	4	3	cool makeup	2016-09-30 15:00:00	LIVE Parade
+200300	［涼風のミンストレル］梅木音葉＋	梅木音葉	S RARE	COOL	4166	4683	4252	13101	unavailable	limited	demage guard	9	1	3	4	cool abillity	2016-06-30 15:00:00	gacha
+200302	岸部彩華＋	岸部彩華	NORMAL	COOL	2764	2465	2515	7744	unavailable	usual							2016-10-09 15:00:00	local_gacha
+200304	高峯のあ＋	高峯のあ	RARE	COOL	3833	3670	3639	11142	available	usual	perfect support	11	1	2	4	cool abillity	2016-10-09 15:00:00	gacha
+200306	［流麗な令嬢］水野翠＋	水野翠	S RARE	COOL	3877	4465	3758	12100	unavailable	limited	life recovery	13	3	4	3	cool energy	2016-10-12 15:00:00	LIVE PARTY!!
+200308	［ただひとつの器］藤原肇＋	藤原肇	SS RARE	COOL	7047	3898	4683	15628	available	usual	score bonus	13	117	4	5	cool voice	2016-10-17 15:00:00	gacha
+200310	［Jet to the Future］多田李衣菜＋	多田李衣菜	S RARE	COOL	6143	3258	3962	13363	unavailable	limited	combo bonus	11	112	3	5	cool voice	2016-10-20 15:00:00	Jet to the Future
+200314	［ソング・フォー・ライフ］北条加蓮＋	北条加蓮	SS RARE	COOL	4677	7059	3889	15625	unavailable	limited	combo bonus	4	118	4	1	cool step	2016-10-31 15:00:00	gacha
+200316	西川保奈美＋	西川保奈美	RARE	COOL	2582	3158	4967	10707	available	usual	score bonus	9	110	2	5	cool makeup	2016-10-31 15:00:00	gacha
+200320	［フォワードチアー］大和亜季＋	大和亜季	S RARE	COOL	3856	5952	3176	12984	available	usual	score bonus	4	115	4	1	cool step	2016-09-30 15:00:00	gacha
+200322	［ミステリアスシエラザード］ライラ＋	ライラ	S RARE	COOL	4416	4434	4413	13263	available	usual	life recovery	10	3	4	2	cool energy	2016-11-09 15:00:00	gacha
+200324	［ロワイヤルガール］氏家むつみ＋	氏家むつみ	S RARE	COOL	3480	5623	2811	11914	unavailable	limited	score bonus	11	115	4	4	cool step	2016-11-11 15:00:00	シンデレラキャラバン
+200326	伊集院惠＋	伊集院惠	RARE	COOL	4888	2646	3198	10732	available	usual	score bonus	7	110	2	4	cool voice	2016-11-11 15:00:00	gacha
+200328	小室千奈美＋	小室千奈美	RARE	COOL	3439	3919	3518	10876	available	usual	life recovery	11	2	2	4	cool energy	2016-11-17 15:00:00	gacha
+200330	［Flip Flop］脇山珠美＋	脇山珠美	S RARE	COOL	3691	3063	5605	12359	unavailable	limited	overload	9	116	3	4	cool makeup	2016-11-19 15:00:00	Flip Flop
+200332	［森のものがたり］森久保乃々＋	森久保乃々	SS RARE	COOL	6248	4707	4966	15921	available	usual	score bonus	9	117	3	4	cool brilliance	2016-11-22 15:00:00	gacha
+200334	［ドレスアップナイト］神谷奈緒＋	神谷奈緒	SS RARE	COOL	3859	4658	7098	15615	unavailable	limited	combo bonus	11	118	4	4	cool makeup	2016-11-30 15:00:00	gacha
+200336	［いきものがかり］浅利七海＋	浅利七海	S RARE	COOL	4412	4351	4710	13473	available	usual	perfect support	15	1	3	4	cool abillity	2016-11-30 15:00:00	gacha
+200338	鷹富士茄子＋	鷹富士茄子	NORMAL	COOL	2708	2605	2622	7935	unavailable	usual							2016-12-09 15:00:00	local_gacha
+200340	［リトルプリーステス］成宮由愛＋	成宮由愛	S RARE	COOL	5928	3086	3773	12787	unavailable	limited	combo bonus	9	112	4	3	cool voice	2016-12-12 15:00:00	LIVE PARTY!!
+200342	［ランウェイのカリスマ］桐生つかさ＋	桐生つかさ	S RARE	COOL	4382	4578	4344	13304	available	usual	demage guard	11	1	4	4	cool energy	2016-12-17 15:00:00	gacha
+200344	［ネクスト☆ページ］荒木比奈＋	荒木比奈	SS RARE	COOL	7171	4663	3846	15680	available	usual	score bonus	7	117	4	2	cool voice	2016-12-22 15:00:00	gacha
+200346	［うつつの華模様］塩見周子＋	塩見周子	SS RARE	COOL	3725	7381	4596	15702	unavailable	limited	combo bonus	11	118	4	4	tricolore step	2016-12-28 15:00:00	gacha
+200348	［幸運の女神］鷹富士茄子＋	鷹富士茄子	S RARE	COOL	3242	3909	5928	13079	unavailable	limited	score bonus	6	115	3	2	cool makeup	2016-12-31 15:00:00	gacha
+200350	［命燃やして恋せよ乙女］高垣楓＋	高垣楓	S RARE	COOL	6151	3297	3997	13445	unavailable	limited	combo bonus	6	112	3	2	cool voice	2016-12-31 15:00:00	LIVE Groove Visual burst
+200352	［悠久の旅人］伊集院惠＋	伊集院惠	S RARE	COOL	5759	3452	2749	11960	unavailable	limited	score bonus	11	115	3	5	cool voice	2017-01-12 15:00:00	シンデレラキャラバン
+200354	［インサイト・エクステンド］八神マキノ＋	八神マキノ	SS RARE	COOL	4706	7081	3918	15705	available	usual	score bonus	13	117	4	5	cool step	2017-01-19 15:00:00	gacha
+200356	［Lunatic Show］白坂小梅＋	白坂小梅	S RARE	COOL	5297	4169	4357	13823	unavailable	limited	combo bonus	11	112	4	4	cool brilliance	2017-01-20 15:00:00	Lunatic Show
+200358	［ゴージャスチアー］岸部彩華＋	岸部彩華	S RARE	COOL	4354	4567	4391	13312	available	usual	life recovery	6	3	3	1	cool energy	2017-01-24 15:00:00	gacha
+200360	［パレス・オブ・ファンタジア］二宮飛鳥＋	二宮飛鳥	SS RARE	COOL	4706	3918	7081	15705	unavailable	limited	overload	7	118	3	3	cool makeup	2017-01-31 15:00:00	gacha
+200362	［Sweet Witches' Night］森久保乃々＋	森久保乃々	S RARE	COOL	2856	5920	3574	12350	unavailable	limited	overload	7	116	4	2	cool step	2017-01-31 15:00:00	LIVE Parade
+200364	［意外な一面］篠原礼＋	篠原礼	S RARE	COOL	4338	4671	4271	13280	available	usual	life recovery	14	3	3	4	cool energy	2017-02-08 15:00:00	gacha
+200366	［目をあけてみる夢］多田李衣菜＋	多田李衣菜	SS RARE	COOL	3913	4702	7087	15702	available	usual	score bonus	4	117	4	1	cool makeup	2017-02-21 15:00:00	gacha
+200368	［こころ、酔わせて］三船美優＋	三船美優	SS RARE	COOL	4694	3897	7106	15697	unavailable	limited	combo bonus	13	118	4	5	cool makeup	2017-02-28 15:00:00	gacha
+200370	［クラシカルエレガント］古澤頼子＋	古澤頼子	S RARE	COOL	5954	3221	3895	13070	available	usual	score bonus	4	115	4	1	cool voice	2017-02-28 15:00:00	gacha
+200372	［寡黙の女王］高峯のあ＋	高峯のあ	S RARE	COOL	3708	2984	6056	12748	unavailable	limited	combo bonus	13	112	4	5	cool makeup	2017-03-13 15:00:00	シンデレラキャラバン
+200374	［SOUND A ROUND］松永涼＋	松永涼	SS RARE	COOL	3828	7196	4649	15673	available	usual	all round	5	113	4	1	cool step	2017-03-17 15:00:00	gacha
+200376	［エレガントマリオネット］桐野アヤ＋	桐野アヤ	S RARE	COOL	4484	4604	4504	13592	available	usual	score bonus	13	115	4	5	cool brilliance	2017-03-17 15:00:00	gacha
+200378	［エンド・オブ・ザ・ブルー］速水奏＋	速水奏	SS RARE	COOL	7381	3725	4596	15702	unavailable	limited	skill boost	8	1	4	4	tricolore abillity	2017-03-28 22:00:00	gacha
+200380	［白波の歌姫］瀬名詩織＋	瀬名詩織	S RARE	COOL	3899	5946	3226	13071	available	usual	perfect support	12	1	3	3	cool step	2017-03-31 22:00:00	gacha
+200382	［ひみつの小夜曲］佐城雪美＋	佐城雪美	SS RARE	COOL	6236	4972	4720	15928	available	usual	score bonus	4	117	4	1	cool brilliance	2017-04-09 15:00:00	gacha
+200384	［Nocturne］川島瑞樹＋	川島瑞樹	S RARE	COOL	3344	4027	6094	13465	unavailable	limited	combo bonus	4	112	3	1	cool makeup	2017-04-19 15:00:00	Nocturne
+200386	［Nocturne］松永涼＋	松永涼	S RARE	COOL	2845	5934	3568	12347	unavailable	limited	concentration	13	117	4	5	cool step	2017-04-19 15:00:00	Nocturne
+200388	［ボーイッシュエレガント］吉岡沙紀＋	吉岡沙紀	S RARE	COOL	4683	4330	4261	13274	available	usual	demage guard	9	1	4	3	cool energy	2017-04-22 15:00:00	gacha
+200390	［ヨモスガラ・パーティー］白坂小梅＋	白坂小梅	SS RARE	COOL	4665	7163	3853	15681	unavailable	limited	overload	6	118	3	2	cool step	2017-04-30 15:00:00	gacha
+200392	［Nothing but You］アナスタシア＋	アナスタシア	S RARE	COOL	4023	6100	3339	13462	unavailable	limited	combo bonus	11	112	3	5	cool step	2017-04-30 15:00:00	LIVE Groove Dance burst
+200394	［乙女の晴れ舞台］松尾千鶴＋	松尾千鶴	S RARE	COOL	3895	5954	3221	13070	available	usual	score bonus	9	115	4	3	cool step	2017-05-09 15:00:00	gacha
+200396	［シャッターチャンス］ケイト＋	ケイト	S RARE	COOL	4082	4380	4020	12482	unavailable	limited	perfect support	7	1	4	1	cool brilliance	2017-05-11 15:00:00	シンデレラキャラバン
+200398	［ステップトゥーミライ］佐々木千枝＋	佐々木千枝	SS RARE	COOL	7157	4669	3858	15684	available	usual	concentration	9	119	4	3	cool voice	2017-05-18 15:00:00	gacha
+200400	［エターナルブルーム］渋谷凛＋	渋谷凛	SS RARE	COOL	4720	6236	4972	15928	unavailable	limited	cool focus	11	116	4	4	cool princess	2017-05-31 15:00:00	gacha
+200404	［麗しきプリマドンナ］西川保奈美＋	西川保奈美	S RARE	COOL	3233	3903	5940	13076	available	usual	score bonus	11	115	4	4	cool makeup	2017-05-31 15:00:00	gacha
+200408	［ワールドイズマイン］ヘレン＋	ヘレン	S RARE	COOL	3714	2993	6043	12750	unavailable	limited	combo bonus	7	112	4	2	cool makeup	2017-06-12 15:00:00	LIVE PARTY!!
+200410	［ビーチクイーン］木場真奈美＋	木場真奈美	S RARE	COOL	4396	4553	4365	13314	available	usual	life recovery	17	3	3	5	cool energy	2017-06-17 15:00:00	gacha
+200412	［Yes ! Party Time ! ! ］佐々木千枝＋	佐々木千枝	S RARE	COOL	5729	3671	3010	12410	unavailable	limited	score bonus	4	115	4	1	cool voice	2017-06-19 15:00:00	Yes! Party Time!!
+200414	［コマンドー・オブ・ステージ］大和亜季＋	大和亜季	SS RARE	COOL	3908	4700	7095	15703	available	usual	all round	9	113	3	3	cool makeup	2017-06-22 15:00:00	gacha
+200416	［夏の戯れ］東郷あい＋	東郷あい	S RARE	COOL	3857	3161	6031	13049	unavailable	limited	all round	11	110	3	3	cool makeup	2017-07-02 15:00:00	gacha
+200418	［リトルリドル］白坂小梅＋	白坂小梅	S RARE	COOL	3327	6114	4017	13458	unavailable	limited	combo bonus	9	112	4	3	cool step	2017-06-30 15:00:00	LIVE Groove Visual burst
+200420	［真剣・一閃］脇山珠美＋	脇山珠美	SS RARE	COOL	3908	7095	4700	15703	available	usual	concentration	11	119	4	4	cool step	2017-07-10 15:00:00	gacha
+200422	［ドランカーパイレーツ］柊志乃＋	柊志乃	S RARE	COOL	3452	2749	5759	11960	unavailable	limited	score bonus	9	115	4	3	cool makeup	2017-07-12 15:00:00	シンデレラキャラバン
+200424	［ステージディーヴァ］小室千奈美＋	小室千奈美	S RARE	COOL	5966	3212	3889	13067	available	usual	overload	7	116	4	2	cool voice	2017-07-18 15:00:00	gacha
+200426	［ブルー・ホライゾン］塩見周子＋	塩見周子	SS RARE	COOL	7188	3832	4652	15672	unavailable	limited	cool focus	7	116	4	2	cool princess	2017-07-31 15:00:00	gacha
+200428	［一輪の花］服部瞳子＋	服部瞳子	S RARE	COOL	5928	3242	3909	13079	available	usual	perfect support	7	1	4	1	cool voice	2017-08-10 15:00:00	gacha
+200430	［アンビバレント・アクト］川島瑞樹＋	川島瑞樹	SS RARE	COOL	7182	3837	4655	15674	available	usual	all round	8	113	4	2	cool voice	2017-08-18 15:00:00	gacha
+200432	［双翼の独奏歌］神崎蘭子＋	神崎蘭子	S RARE	COOL	3288	3991	6165	13444	unavailable	limited	combo bonus	11	112	3	5	cool makeup	2017-08-21 15:00:00	双翼の独奏歌
+200434	［双翼の独奏歌］二宮飛鳥＋	二宮飛鳥	S RARE	COOL	5806	2948	3631	12385	unavailable	limited	concentration	9	117	3	4	cool voice	2017-08-21 15:00:00	双翼の独奏歌
+200436	［ギフト・フォー・アンサー］森久保乃々＋	森久保乃々	SS RARE	COOL	4652	3832	7188	15672	unavailable	limited	cool focus	9	116	4	3	cool princess	2017-09-03 15:00:00	gacha
+200438	［アトラクトゴシック］神谷奈緒＋	神谷奈緒	S RARE	COOL	4488	4428	4417	13333	unavailable	limited	demage guard	9	1	4	3	cool abillity	2017-09-03 15:00:00	gacha
+200440	［イリュージョニスタ ! ］鷺沢文香＋	鷺沢文香	S RARE	COOL	6165	3991	3288	13444	unavailable	limited	combo bonus	9	112	3	4	cool voice	2017-08-31 15:00:00	LIVE Groove Vocal burst
+200442	［等身大の距離で］高垣楓＋	高垣楓	SS RARE	COOL	4972	4720	6236	15928	available	usual	score bonus	6	117	3	2	cool brilliance	2017-09-11 15:00:00	gacha
+200444	［サンシャインマリナー］松本沙理奈＋	松本沙理奈	S RARE	COOL	3491	5683	2810	11984	unavailable	limited	score bonus	7	115	4	2	cool step	2017-09-11 15:00:00	シンデレラキャラバン
+200446	［サンライトマリナー］水木聖來＋	水木聖來	S RARE	COOL	3221	3895	5954	13070	available	usual	perfect support	18	1	3	5	cool makeup	2017-09-23 15:00:00	gacha
+200448	［ワンモアステップ］岡崎泰葉＋	岡崎泰葉	S RARE	COOL	5940	3233	3903	13076	available	usual	score bonus	9	115	4	3	cool voice	2017-09-30 15:00:00	gacha
+200450	［極光のしらべ］アナスタシア＋	アナスタシア	SS RARE	COOL	4596	3725	7381	15702	unavailable	limited	skill boost	10	1	4	5	tricolore abillity	2017-10-31 15:00:00	gacha
+200452	［キミのそばでずっと］脇山珠美＋	脇山珠美	S RARE	COOL	4754	3963	4095	12812	unavailable	limited	score bonus	4	115	4	1	cool brilliance	2017-09-30 15:00:00	LIVE Parade
+200454	［ありすのティーパーティー］橘ありす＋	橘ありす	SS RARE	COOL	7100	4697	3904	15701	available	usual	score bonus	4	117	4	1	cool voice	2017-10-10 15:00:00	gacha
+200456	［ミスティックブルー］和久井留美＋	和久井留美	S RARE	COOL	4808	4268	4161	13237	unavailable	limited	combo bonus	4	112	3	1	cool brilliance	2017-10-12 15:00:00	シンデレラキャラバン
+200458	［メロディ・ロワイヤル］梅木音葉＋	梅木音葉	S RARE	COOL	3889	5966	3212	13067	available	usual	score bonus	9	115	3	4	cool step	2017-10-18 15:00:00	gacha
+200460	［ミスティック・ドーン］速水奏＋	速水奏	SS RARE	COOL	3832	7188	4652	15672	unavailable	limited	cool focus	6	116	3	2	cool princess	2017-11-02 15:00:00	gacha
+200462	［夜を見る淑女］黒川千秋＋	黒川千秋	S RARE	COOL	3903	5940	3233	13076	available	usual	score bonus	13	115	4	5	cool step	2017-11-10 15:00:00	gacha
+200464	［Trinity Field］北条加蓮＋	北条加蓮	S RARE	COOL	3339	6100	4023	13462	unavailable	limited	combo bonus	11	112	4	4	cool step	2017-11-19 15:00:00	Trinity Field
+200466	［Trinity Field］神谷奈緒＋	神谷奈緒	S RARE	COOL	3050	3696	5678	12424	unavailable	limited	concentration	13	117	4	5	cool makeup	2017-11-19 15:00:00	Trinity Field
+200468	［異国に吹く風］ライラ＋	ライラ	SS RARE	COOL	4700	3908	7095	15703	available	usual	concentration	7	119	4	2	cool makeup	2017-11-22 15:00:00	gacha
+200470	［クリスマスドール］佐城雪美＋	佐城雪美	S RARE	COOL	3196	5985	3879	13060	unavailable	limited	all round	8	110	4	2	cool abillity	2017-11-30 15:00:00	gacha
+200472	［恋が咲く季節］藤原肇＋	藤原肇	S RARE	COOL	6151	3997	3297	13445	unavailable	limited	combo bonus	4	112	3	1	cool voice	2017-11-30 15:00:00	LIVE Parade
+200474	［オーダー・フォー・トップ］桐生つかさ＋	桐生つかさ	SS RARE	COOL	7132	4680	3878	15690	available	usual	all round	5	113	4	1	cool voice	2017-12-10 15:00:00	gacha
+200476	［マジカルガール・リーフ］成宮由愛＋	成宮由愛	S RARE	COOL	2768	5734	3466	11968	unavailable	limited	overload	9	116	3	4	cool step	2017-12-13 15:00:00	シンデレラキャラバン
+200478	［聖なる乙女］望月聖＋	望月聖	S RARE	COOL	4304	4736	4218	13258	available	usual	life recovery	7	3	4	1	cool energy	2017-12-18 15:00:00	gacha
+200480	［Happy New Yeah ! ］渋谷凛＋	渋谷凛	S RARE	COOL	5741	2999	3663	12403	unavailable	limited	concentration	13	117	4	5	cool voice	2018-01-01 15:00:00	LIVE Groove Visual burst
+200482	［福を呼ぶ舞姫］鷹富士茄子＋	鷹富士茄子	SS RARE	COOL	5206	5206	5206	15618	unavailable	limited	encore	12	1	4	3	fortune present	2018-01-04 15:00:00	gacha
+200484	［魅惑のカクテルレディ］高橋礼子＋	高橋礼子	S RARE	COOL	3889	3212	5966	13067	available	usual	perfect support	6	1	3	1	cool makeup	2018-01-12 15:00:00	gacha
+200488	［美に入り彩を穿つ］塩見周子＋	塩見周子	S RARE	COOL	4017	6114	3327	13458	unavailable	limited	combo bonus	13	112	4	5	cool step	2018-01-12 15:00:00	美に入り彩を穿つ
+200490	［心躍るアドベンチャー］氏家むつみ＋	氏家むつみ	SS RARE	COOL	4694	7106	3897	15697	available	usual	all round	9	113	3	3	cool step	2018-01-24 15:00:00	gacha
+200492	［ピュアバレンタイン］渋谷凛＋	渋谷凛	S RARE	COOL	3883	5979	3200	13062	unavailable	limited	all round	5	110	4	1	cool abillity	2018-01-31 15:00:00	gacha
+200494	［always］荒木比奈＋	荒木比奈	S RARE	COOL	5780	2969	3645	12394	unavailable	limited	score bonus	7	115	4	2	cool voice	2018-01-31 15:00:00	LIVE Parade
+200496	［ニューウェーブ・ネイビー］大石泉＋	大石泉	SS RARE	COOL	3918	4706	7081	15705	available	usual	perfect support	9	1	4	2	cool makeup	2018-02-09 15:00:00	gacha
+200498	［明日へのフラッグ］結城晴＋	結城晴	S RARE	COOL	5940	3765	3075	12780	unavailable	limited	combo bonus	11	112	4	4	cool voice	2018-02-12 15:00:00	シンデレラキャラバン
+200500	［招福萬来］相川千夏＋	相川千夏	S RARE	COOL	4280	4344	4657	13281	available	usual	life recovery	11	3	3	3	cool energy	2018-02-16 15:00:00	gacha
+200502	［Frost］神谷奈緒＋	神谷奈緒	S RARE	COOL	4011	6125	3318	13454	unavailable	limited	combo bonus	7	112	3	3	cool step	2018-02-19 15:00:00	Frost
+200504	［Frost］脇山珠美＋	脇山珠美	S RARE	COOL	3989	4529	4081	12599	unavailable	limited	life recovery	8	3	3	2	cool energy	2018-02-19 15:00:00	Frost
+200506	［ツインテールの風］速水奏＋	速水奏	S RARE	COOL	3606	5857	2908	12371	unavailable	limited	concentration	9	117	3	4	cool step	2018-02-28 15:00:00	LIVE Groove Vocal burst
+200508	［おしゃまなコアクマ］佐々木千枝＋	佐々木千枝	SS RARE	COOL	3842	7176	4658	15676	unavailable	limited	life sparkle	9	1	4	3	cool cheer	2018-03-03 15:00:00	gacha
+200510	［爛漫ひな娘］岡崎泰葉＋	岡崎泰葉	S RARE	COOL	3891	5960	3216	13067	available	usual	overload	7	116	3	3	cool step	2018-03-03 15:00:00	gacha
+200512	［フォーチュンチアー］藤居朋＋	藤居朋	S RARE	COOL	5979	3200	3883	13062	available	usual	score bonus	11	115	4	4	cool voice	2018-03-19 15:00:00	gacha
+200514	［ブレイク・ワン・モーメント］水木聖來＋	水木聖來	SS RARE	COOL	4691	3892	7112	15695	available	usual	concentration	11	119	4	4	cool makeup	2018-03-23 15:00:00	gacha
+200516	［放課後ロックスター］多田李衣菜＋	多田李衣菜	SS RARE	COOL	4720	4972	6236	15928	unavailable	limited	overload	6	118	3	2	cool brilliance	2018-03-31 15:00:00	gacha
+200518	［Vast world］白坂小梅＋	白坂小梅	S RARE	COOL	6139	4005	3306	13450	unavailable	limited	life sparkle	13	2	4	5	tricolore voice	2018-04-02 15:00:00	LIVE Parade
+200520	［ハイ・リベレーション］八神マキノ＋	八神マキノ	S RARE	COOL	4645	4292	4350	13287	available	usual	life recovery	11	3	3	3	cool energy	2018-04-11 15:00:00	gacha
+200522	［光彩の華］水野翠＋	水野翠	S RARE	COOL	2768	3466	5734	11968	unavailable	limited	overload	7	116	3	3	cool makeup	2018-04-12 15:00:00	シンデレラキャラバン
+200524	［プレイ・ウィズ・ミー］結城晴＋	結城晴	SS RARE	COOL	3888	7120	4688	15696	available	usual	concentration	9	119	4	3	cool step	2018-04-19 15:00:00	gacha
+200526	［幻想と神話の紡ぎ手］神崎蘭子＋	神崎蘭子	SS RARE	COOL	1671	11641	2388	15700	unavailable	limited	tricolore synergy	11	116	4	4	cinderella charm	2018-04-30 15:00:00	gacha
+200528	［桜の風］アナスタシア＋	アナスタシア	S RARE	COOL	4504	4011	4093	12608	unavailable	limited	life recovery	8	3	3	2	cool energy	2018-04-30 15:00:00	LIVE Groove Dance burst
+200530	［オープンスイート］桐野アヤ＋	桐野アヤ	S RARE	COOL	3212	5966	3889	13067	unavailable	usual	score bonus	11	115	3	5	cool step	2018-05-03 15:00:00	gacha
+200532	［ビター・エレガンス］東郷あい＋	東郷あい	SS RARE	COOL	3897	4694	7106	15697	unavailable	usual	all round	8	113	4	2	cool makeup	2018-05-14 15:00:00	gacha
+200534	［未来の風向き］古澤頼子＋	古澤頼子	S RARE	COOL	4011	4394	4074	12479	unavailable	limited	score bonus	9	115	4	3	cool brilliance	2018-05-10 15:00:00	ススメ ! シンデレラロード
+200536	［トラベル・ロワイヤル］伊集院惠＋	伊集院惠	S RARE	COOL	3909	5928	3242	13079	unavailable	usual	perfect support	9	1	3	2	cool step	2018-05-23 15:00:00	gacha
+200538	［渚の花嫁］新田美波＋	新田美波	SS RARE	COOL	3858	7157	4669	15684	unavailable	limited	cool focus	9	116	4	3	cool princess	2018-05-31 15:00:00	gacha
+200540	［エスケープブライド］森久保乃々＋	森久保乃々	S RARE	COOL	3181	3869	6005	13055	unavailable	limited	all round	5	110	4	1	cool abillity	2018-05-31 15:00:00	gacha
+200542	［クーリッシュラブリー］綾瀬穂乃香＋	綾瀬穂乃香	S RARE	COOL	2953	6094	3688	12735	unavailable	limited	combo bonus	9	112	3	4	cool step	2018-06-11 15:00:00	シンデレラキャラバン
+200544	［シンシアチアー］西川保奈美＋	西川保奈美	S RARE	COOL	4313	4619	4364	13296	unavailable	usual	life recovery	13	3	4	3	cool energy	2018-06-18 15:00:00	gacha
+200546	［エチュードは1曲だけ］三船美優＋	三船美優	S RARE	COOL	4007	6133	3313	13453	unavailable	limited	life sparkle	9	2	4	3	tricolore step	2018-06-19 15:00:00	エチュードは1曲だけ
+200548	［エチュードは1曲だけ］上条春菜＋	上条春菜	S RARE	COOL	3688	3041	5690	12419	unavailable	limited	concentration	9	117	4	3	cool makeup	2018-06-19 15:00:00	エチュードは1曲だけ
+200550	［イン・ヒューマン］高峯のあ＋	高峯のあ	SS RARE	COOL	7095	4700	3908	15703	unavailable	usual	concentration	7	119	4	2	cool voice	2018-06-21 15:00:00	gacha
+200552	［銀のイルカと熱い風］新田美波＋	新田美波	S RARE	COOL	3297	3997	6151	13445	unavailable	limited	life sparkle	13	2	4	5	tricolore makeup	2018-06-30 12:00:00	LIVE Groove Visual burst
+200554	［星祭りの夜］鷺沢文香＋	鷺沢文香	SS RARE	COOL	4663	3846	7171	15680	unavailable	limited	cool focus	7	116	4	2	cool princess	2018-07-03 15:00:00	gacha
+200556	［パーフェクトプレデター］大和亜季＋	大和亜季	S RARE	COOL	3200	3883	5979	13062	unavailable	usual	score bonus	6	115	3	2	cool makeup	2018-07-03 15:00:00	gacha
+200558	［アトラクティブレディ］篠原礼＋	篠原礼	S RARE	COOL	5734	3466	2768	11968	unavailable	limited	score bonus	7	115	4	2	cool voice	2018-07-10 15:00:00	ススメ ! シンデレラロード
+200560	［マジモード］岸部彩華＋	岸部彩華	S RARE	COOL	3221	5954	3895	13070	unavailable	usual	perfect support	11	1	4	2	cool step	2018-07-19 15:00:00	gacha
+200562	［すいすいオーシャン］浅利七海＋	浅利七海	SS RARE	COOL	4680	3878	7132	15690	unavailable	usual	all round	5	113	4	1	cool makeup	2018-07-23 15:00:00	gacha
+200564	［流麗なるバカンス］黒川千秋＋	黒川千秋	S RARE	COOL	4725	4444	4390	13559	unavailable	usual	score bonus	11	115	3	5	cool brilliance	2018-07-31 15:00:00	gacha
+220212	氏家むつみ＋	氏家むつみ	NORMAL	COOL	3564	2233	1814	7611	unavailable	usual							2016-05-09 15:00:00	local_gacha
+220226	浅利七海＋	浅利七海	NORMAL	COOL	2250	1841	3528	7619	unavailable	usual							2016-06-08 15:00:00	local_gacha
+220228	ヘレン＋	ヘレン	NORMAL	COOL	2478	2751	2522	7751	unavailable	usual							2017-01-10 15:00:00	local_gacha
+220232	木場真奈美＋	木場真奈美	RARE	COOL	3592	3691	3572	10855	available	usual	life recovery	13	2	2	5	cool abillity	2016-06-17 15:00:00	gacha
+220250	篠原礼＋	篠原礼	RARE	COOL	3136	4930	2564	10630	available	usual	score bonus	6	110	2	3	cool step	2016-06-10 15:00:00	gacha
+300002	本田未央＋	本田未央	RARE	PASSION	2340	4243	2813	9396	available	usual	score bonus	6	110	2	3	passion step	start	gacha
+300004	高森藍子＋	高森藍子	NORMAL	PASSION	2577	2565	2641	7783	unavailable	usual							start	local_gacha
+300008	龍崎薫＋	龍崎薫	NORMAL	PASSION	2665	2644	2640	7949	unavailable	usual							start	local_gacha
+300010	木村夏樹＋	木村夏樹	NORMAL	PASSION	3549	1825	2239	7613	unavailable	usual							start	local_gacha
+300012	松山久美子＋	松山久美子	NORMAL	PASSION	2616	2722	2594	7932	unavailable	usual							2015-10-06 01:00:00	local_gacha
+300014	赤城みりあ＋	赤城みりあ	NORMAL	PASSION	3658	2185	1737	7580	unavailable	usual							start	local_gacha
+300016	大槻唯＋	大槻唯	NORMAL	PASSION	2178	3672	1727	7577	unavailable	usual							start	local_gacha
+300018	姫川友紀＋	姫川友紀	NORMAL	PASSION	1836	3536	2245	7617	unavailable	usual							start	local_gacha
+300022	堀裕子＋	堀裕子	NORMAL	PASSION	1791	2218	3591	7600	unavailable	usual							start	local_gacha
+300024	野々村そら＋	野々村そら	RARE	PASSION	3607	3650	3874	11131	available	usual	score bonus	9	110	2	5	passion brilliance	2016-09-17 15:00:00	gacha
+300026	浜川愛結奈＋	浜川愛結奈	NORMAL	PASSION	2572	2601	2750	7923	unavailable	usual							2016-10-09 15:00:00	local_gacha
+300028	城ヶ崎美嘉＋	城ヶ崎美嘉	RARE	PASSION	3100	2558	4765	10423	available	usual	combo bonus	6	108	2	3	passion makeup	start	gacha
+300030	城ヶ崎莉嘉＋	城ヶ崎莉嘉	RARE	PASSION	3237	3226	3300	9763	available	usual	perfect support	11	1	2	4	passion abillity	start	gacha
+300032	日野茜＋	日野茜	RARE	PASSION	3563	3543	3540	10646	available	usual	life recovery	13	2	2	5	passion energy	start	gacha
+300034	諸星きらり＋	諸星きらり	RARE	PASSION	3221	3181	3174	9576	available	usual	life recovery	9	2	2	3	passion energy	start	gacha
+300036	十時愛梨＋	十時愛梨	RARE	PASSION	3675	3594	3576	10845	available	usual	perfect support	9	1	2	3	passion energy	start	gacha
+300052	［スイートバレンタイン］十時愛梨＋	十時愛梨	S RARE	PASSION	3085	3755	5832	12672	available	usual	score bonus	11	115	3	5	passion makeup	start	gacha
+300054	［しっぽもふもふ］赤城みりあ＋	赤城みりあ	S RARE	PASSION	4244	4408	4272	12924	available	usual	life recovery	11	3	3	3	passion energy	start	gacha
+300056	［カリスマギャル］城ヶ崎美嘉＋	城ヶ崎美嘉	S RARE	PASSION	5729	3806	3166	12701	available	usual	score bonus	7	115	3	3	passion voice	start	gacha
+300058	［カリスマちびギャル］城ヶ崎莉嘉＋	城ヶ崎莉嘉	S RARE	PASSION	3043	5883	3729	12655	available	usual	score bonus	9	115	3	4	passion step	start	gacha
+300062	［全力チアガール］姫川友紀＋	姫川友紀	S RARE	PASSION	4372	4444	4386	13202	available	usual	combo support	12	1	3	4	passion abillity	start	gacha
+300066	［ゆるふわ乙女］高森藍子＋	高森藍子	S RARE	PASSION	3709	3013	5920	12642	available	usual	perfect support	12	1	3	3	passion makeup	2015-09-17 12:00:00	gacha
+300070	星輝子＋	星輝子	NORMAL	PASSION	2669	2564	2543	7776	unavailable	usual							start	local_gacha
+300072	及川雫＋	及川雫	NORMAL	PASSION	2287	1900	3455	7642	unavailable	usual							start	local_gacha
+300074	片桐早苗＋	片桐早苗	NORMAL	PASSION	2628	2617	2693	7938	unavailable	usual							start	local_gacha
+300076	ナターリア＋	ナターリア	RARE	PASSION	4713	3127	2601	10441	available	usual	combo bonus	9	108	2	5	passion voice	start	gacha
+300078	［ステージオブマジック］本田未央＋	本田未央	SS RARE	PASSION	5289	5278	5349	15916	available	usual	perfect support	15	1	4	4	passion brilliance	start	gacha
+300080	［グレイトプレゼント］諸星きらり＋	諸星きらり	SS RARE	PASSION	3830	6892	4595	15317	available	usual	score bonus	9	117	4	3	passion step	start	gacha
+300082	仙崎恵磨＋	仙崎恵磨	RARE	PASSION	3600	3588	3663	10851	available	usual	life recovery	11	2	2	4	passion abillity	start	gacha
+300084	若林智香＋	若林智香	RARE	PASSION	2539	4791	3088	10418	available	usual	combo bonus	7	108	2	4	passion step	start	gacha
+300086	［ロッキングラヴァー］木村夏樹＋	木村夏樹	S RARE	PASSION	4344	4309	4525	13178	available	usual	perfect support	9	1	3	2	passion abillity	start	gacha
+300088	［サンフラワーイエロー］龍崎薫＋	龍崎薫	S RARE	PASSION	4266	4382	4286	12934	available	usual	demage guard	11	1	3	5	passion energy	start	gacha
+300090	相葉夕美＋	相葉夕美	NORMAL	PASSION	1695	3712	2158	7565	unavailable	usual							start	local_gacha
+300092	［絶叫★ヴァンパイア］星輝子＋	星輝子	S RARE	PASSION	3830	6081	3117	13028	unavailable	limited	combo bonus	9	112	3	4	passion step	2015-10-09 15:00:00	シンデレラキャラバン
+300094	浜口あやめ＋	浜口あやめ	RARE	PASSION	3464	3496	3655	10615	available	usual	perfect support	13	1	2	5	passion energy	2015-09-30 15:00:00	gacha
+300096	［パンプキンパーティー］十時愛梨＋	十時愛梨	SS RARE	PASSION	6954	3779	4564	15297	unavailable	limited	combo bonus	11	118	4	4	passion voice	2015-09-30 15:00:00	gacha
+300098	［湯けむりサイキッカー］堀裕子＋	堀裕子	S RARE	PASSION	3551	2906	5572	12029	unavailable	limited	score bonus	6	115	3	2	passion makeup	2015-10-31 15:00:00	LIVE Groove Vocal burst
+300100	メアリー・コクラン＋	メアリー・コクラン	RARE	PASSION	4928	2428	3020	10376	available	usual	score bonus	7	110	2	4	passion voice	2015-10-31 15:00:00	gacha
+300102	［癒しの満月］及川雫＋	及川雫	S RARE	PASSION	5940	2996	3700	12636	unavailable	limited	perfect support	15	1	3	4	passion voice	2015-10-31 15:00:00	gacha
+300104	矢口美羽＋	矢口美羽	NORMAL	PASSION	3510	2260	1858	7628	unavailable	usual							2015-11-09 15:00:00	local_gacha
+300106	向井拓海＋	向井拓海	RARE	PASSION	3078	4811	2523	10412	available	usual	score bonus	6	110	2	3	passion step	2015-11-20 15:00:00	gacha
+300108	［キラデコ☆パレード］城ヶ崎莉嘉＋	城ヶ崎莉嘉	SS RARE	PASSION	4561	3773	6960	15294	available	usual	score bonus	7	117	4	2	passion makeup	2015-11-20 15:00:00	gacha
+300110	［Orange Sapphire］諸星きらり＋	諸星きらり	S RARE	PASSION	5597	3537	2885	12019	unavailable	limited	perfect support	9	1	3	2	passion voice	2015-11-20 15:00:00	Orange Sapphire
+300112	［Orange Sapphire］城ヶ崎美嘉＋	城ヶ崎美嘉	S RARE	PASSION	3101	6099	3819	13019	unavailable	limited	score bonus	7	115	3	3	passion step	2015-11-20 15:00:00	Orange Sapphire
+300114	市原仁奈＋	市原仁奈	RARE	PASSION	2554	3098	4771	10423	available	usual	score bonus	9	110	2	5	passion makeup	2015-11-12 15:00:00	gacha
+300116	［ムーンライトフラワー］相葉夕美＋	相葉夕美	S RARE	PASSION	4365	4341	4484	13190	available	usual	score bonus	11	115	3	5	passion abillity	2015-11-13 15:00:00	gacha
+300118	［フレッシュチアガール］若林智香＋	若林智香	S RARE	PASSION	4475	4239	4193	12907	available	usual	combo support	10	1	3	3	passion energy	2015-10-13 15:00:00	gacha
+300120	［バーニングプレゼント］日野茜＋	日野茜	SS RARE	PASSION	5321	5148	5111	15580	unavailable	limited	life recovery	13	3	4	4	passion energy	2015-11-30 15:00:00	gacha
+300122	喜多日菜子＋	喜多日菜子	RARE	PASSION	3092	2544	4785	10421	available	usual	score bonus	7	110	2	4	passion makeup	2015-11-30 15:00:00	gacha
+300124	［ともだちたくさん］市原仁奈＋	市原仁奈	SS RARE	PASSION	6970	4602	3821	15393	available	usual	score bonus	11	117	4	4	passion voice	2015-12-21 15:00:00	gacha
+300126	［ハート★オーバーフロー］城ヶ崎美嘉＋	城ヶ崎美嘉	SS RARE	PASSION	5123	5776	4993	15892	unavailable	limited	score bonus	9	117	4	3	passion brilliance	2015-12-30 15:00:00	gacha
+300128	喜多見柚＋	喜多見柚	NORMAL	PASSION	2225	1804	3577	7606	unavailable	usual							2015-12-08 15:00:00	local_gacha
+300130	村上巴＋	村上巴	RARE	PASSION	4931	3052	2467	10450	available	usual	combo bonus	6	108	2	3	passion voice	2015-12-30 15:00:00	gacha
+300132	［悩めるお年頃］矢口美羽＋	矢口美羽	S RARE	PASSION	4005	4141	4828	12974	available	usual	life recovery	17	3	3	5	passion energy	2016-05-19 15:00:00	gacha
+300134	［デンジャラスアダルティ］片桐早苗＋	片桐早苗	S RARE	PASSION	3093	3772	5879	12744	available	usual	score bonus	9	115	3	4	passion makeup	2015-12-14 15:00:00	gacha
+300136	［Snow Wings］大槻唯＋	大槻唯	S RARE	PASSION	4869	4408	4318	13595	unavailable	limited	combo bonus	11	112	3	5	passion brilliance	2015-12-18 15:00:00	Snow Wings
+300138	［南国の舞姫］松山久美子＋	松山久美子	S RARE	PASSION	3746	5931	3053	12730	available	usual	score bonus	6	115	3	2	passion step	2015-12-30 15:00:00	gacha
+300140	［ゴキゲンParty Night］本田未央＋	本田未央	S RARE	PASSION	6115	3137	3854	13106	unavailable	limited	combo bonus	6	112	3	2	shiny voice	2015-12-30 15:00:00	LIVE Groove Dance burst
+300142	依田芳乃＋	依田芳乃	NORMAL	PASSION	2531	2737	2488	7756	unavailable	usual							2016-01-09 15:00:00	local_gacha
+300144	［硬派乙女］向井拓海＋	向井拓海	S RARE	PASSION	3764	3084	5891	12739	available	usual	score bonus	4	115	4	1	passion makeup	2016-01-09 15:00:00	gacha
+300146	難波笑美＋	難波笑美	RARE	PASSION	4887	2503	3075	10465	available	usual	score bonus	9	110	2	5	passion voice	2016-01-12 15:00:00	gacha
+300148	［フルスイング☆エール］姫川友紀＋	姫川友紀	SS RARE	PASSION	4605	6963	3828	15396	available	usual	score bonus	7	117	4	2	passion step	2016-01-15 15:00:00	gacha
+300150	［オトメのお勉強］メアリー・コクラン＋	メアリー・コクラン	S RARE	PASSION	4386	4525	4356	13267	available	usual	perfect support	6	1	3	1	passion abillity	2016-01-22 15:00:00	gacha
+300152	［ハッピーホイップ］赤城みりあ＋	赤城みりあ	SS RARE	PASSION	3821	4602	6970	15393	unavailable	limited	combo bonus	9	118	4	3	passion makeup	2016-01-31 15:00:00	gacha
+300154	土屋亜子＋	土屋亜子	RARE	PASSION	4801	3118	2571	10490	available	usual	combo bonus	7	108	2	4	passion voice	2016-02-29 15:00:00	gacha
+300156	的場梨沙＋	的場梨沙	NORMAL	PASSION	2791	2579	2538	7908	unavailable	usual							2016-02-08 15:00:00	local_gacha
+300158	三好紗南＋	三好紗南	RARE	PASSION	3557	3589	3752	10898	available	usual	perfect support	11	1	2	4	passion abillity	2016-02-16 15:00:00	gacha
+300160	［緋色のプリンセス］村上巴＋	村上巴	S RARE	PASSION	4223	4742	4119	13084	available	usual	life recovery	11	3	3	3	passion energy	2016-07-31 15:00:00	gacha
+300162	［浪速の派手娘］難波笑美＋	難波笑美	S RARE	PASSION	4814	4109	3967	12890	available	usual	life recovery	14	3	3	4	passion energy	2016-02-10 15:00:00	gacha
+300164	［てづくりのしあわせ］高森藍子＋	高森藍子	SS RARE	PASSION	6982	3812	4596	15390	available	usual	score bonus	13	117	4	5	passion voice	2016-02-23 15:00:00	gacha
+300166	［千夜一夜舞姫］ナターリア＋	ナターリア	S RARE	PASSION	6008	3707	2991	12706	available	usual	score bonus	9	115	3	4	passion voice	2016-02-29 15:00:00	gacha
+300168	首藤葵＋	首藤葵	NORMAL	PASSION	3577	1804	2225	7606	unavailable	usual							2016-03-09 15:00:00	local_gacha
+300170	［Near to You］片桐早苗＋	片桐早苗	S RARE	PASSION	6095	3248	3945	13288	unavailable	limited	combo bonus	11	112	3	5	passion voice	2016-08-19 15:00:00	Near to You
+300172	［フード☆メイド］喜多見柚＋	喜多見柚	S RARE	PASSION	3600	3749	4493	11842	unavailable	limited	life recovery	8	3	3	2	passion energy	2016-01-12 15:00:00	シンデレラキャラバン
+300174	［やりすぎお姉さん］片桐早苗＋	片桐早苗	S RARE	PASSION	3305	5810	2569	11684	unavailable	limited	score bonus	7	115	4	2	passion step	2016-03-11 15:00:00	シンデレラキャラバン
+300176	［紅の一指し］村上巴＋	村上巴	S RARE	PASSION	2825	3567	6019	12411	unavailable	limited	combo bonus	7	112	3	3	passion makeup	2016-02-10 15:00:00	シンデレラキャラバン
+300178	小関麗奈＋	小関麗奈	RARE	PASSION	2588	3127	4783	10498	available	usual	score bonus	6	110	2	3	passion makeup	2016-01-31 15:00:00	gacha
+300182	［華麗なくのいち］浜口あやめ＋	浜口あやめ	S RARE	PASSION	4255	4330	4710	13295	available	usual	perfect support	18	1	3	5	passion abillity	2016-03-11 15:00:00	gacha
+300184	［マッシュアップ★ボルテージ］星輝子＋	星輝子	SS RARE	PASSION	6012	5045	4851	15908	available	usual	score bonus	6	117	3	2	passion brilliance	2016-03-18 15:00:00	gacha
+300186	［絶対特権主張しますっ ! ］十時愛梨＋	十時愛梨	S RARE	PASSION	3935	3249	6035	13219	unavailable	limited	combo bonus	4	112	3	1	passion makeup	2016-03-20 15:00:00	絶対特権主張しますっ !
+300188	［絶対特権主張しますっ ! ］堀裕子＋	堀裕子	S RARE	PASSION	4074	4554	3979	12607	unavailable	limited	score bonus	13	115	4	5	passion brilliance	2016-03-20 15:00:00	絶対特権主張しますっ !
+300190	小松伊吹＋	小松伊吹	RARE	PASSION	3098	4922	2523	10543	available	usual	score bonus	7	110	2	4	passion step	2016-03-25 15:00:00	gacha
+300192	［拳火上等］向井拓海＋	向井拓海	SS RARE	PASSION	5054	5132	5518	15704	unavailable	limited	life recovery	11	3	4	3	passion energy	2016-03-31 15:00:00	gacha
+300194	［ハイファイ☆デイズ］龍崎薫＋	龍崎薫	S RARE	PASSION	6061	3228	3921	13210	unavailable	limited	combo bonus	13	112	4	5	passion voice	2016-03-31 15:00:00	LIVE Groove Dance burst
+300196	上田鈴帆＋	上田鈴帆	NORMAL	PASSION	2270	3489	1873	7632	unavailable	usual							2016-04-08 15:00:00	local_gacha
+300198	［きぐるみもふもふ］市原仁奈＋	市原仁奈	S RARE	PASSION	4005	4141	4828	12974	available	usual	demage guard	7	1	3	3	passion energy	2016-04-08 15:00:00	gacha
+300200	並木芽衣子＋	並木芽衣子	RARE	PASSION	3824	3485	3416	10725	available	usual	combo support	12	1	2	3	passion energy	2016-04-11 15:00:00	gacha
+300202	［夢みるプリンセス］喜多日菜子＋	喜多日菜子	SS RARE	PASSION	3820	7029	4614	15463	available	usual	score bonus	4	117	4	1	passion step	2016-04-14 15:00:00	gacha
+300204	［つぼみ］相葉夕美＋	相葉夕美	S RARE	PASSION	4475	4043	4115	12633	unavailable	limited	overload	9	116	3	4	passion abillity	2016-04-19 15:00:00	つぼみ
+300206	［エモーショナルビート］木村夏樹＋	木村夏樹	SS RARE	PASSION	4594	3790	7068	15452	unavailable	limited	combo bonus	13	118	4	5	passion makeup	2016-04-30 15:00:00	gacha
+300208	［アレグロ気分］松山久美子＋	松山久美子	S RARE	PASSION	3101	5927	3787	12815	available	usual	score bonus	9	115	3	4	passion step	2016-04-30 15:00:00	gacha
+300212	北川真尋＋	北川真尋	RARE	PASSION	3156	4803	2618	10577	available	usual	combo bonus	9	108	2	5	passion step	2016-05-10 15:00:00	gacha
+300214	［セクシーパンサー］的場梨沙＋	的場梨沙	S RARE	PASSION	3690	5850	3008	12548	unavailable	limited	combo bonus	11	112	4	4	passion step	2016-05-11 15:00:00	シンデレラキャラバン
+300218	［わだつみの導き手］依田芳乃＋	依田芳乃	SS RARE	PASSION	3820	4614	7029	15463	available	usual	score bonus	9	117	3	4	passion makeup	2016-05-25 15:00:00	gacha
+300220	［ハッピーブライダル］ナターリア＋	ナターリア	S RARE	PASSION	4892	4109	3953	12954	unavailable	limited	demage guard	9	1	3	4	passion abillity	2016-05-31 15:00:00	gacha
+300222	［純情Midnight伝説］向井拓海＋	向井拓海	S RARE	PASSION	3177	6124	3890	13191	unavailable	limited	combo bonus	9	112	4	3	passion step	2016-05-31 15:00:00	LIVE Groove Vocal burst
+300226	［はつらつハーヴェスト］及川雫＋	及川雫	SS RARE	PASSION	7012	4662	3881	15555	available	usual	score bonus	6	117	3	2	passion voice	2016-06-09 15:00:00	gacha
+300228	［ピコピコ☆ゲーマー］三好紗南＋	三好紗南	S RARE	PASSION	3851	4439	3733	12023	unavailable	limited	life recovery	14	3	3	4	passion energy	2016-06-10 15:00:00	LIVE PARTY!!
+300230	［サルファーウェーブ］土屋亜子＋	土屋亜子	S RARE	PASSION	3842	3172	5898	12912	available	usual	score bonus	7	115	4	2	passion makeup	2016-06-17 15:00:00	gacha
+300232	西島櫂＋	西島櫂	RARE	PASSION	2595	3154	4892	10641	available	usual	combo support	12	1	2	3	passion makeup	2016-06-23 15:00:00	gacha
+300234	［サマータイム☆ハイ］大槻唯＋	大槻唯	SS RARE	PASSION	4637	7063	3839	15539	unavailable	limited	combo bonus	7	118	4	2	passion step	2016-06-30 15:00:00	gacha
+300236	［ワンダーエンターテイナー］本田未央＋	本田未央	SS RARE	PASSION	3725	7381	4596	15702	unavailable	limited	combo bonus	9	118	3	4	tricolore step	2016-06-28 15:00:00	gacha
+300238	愛野渚＋	愛野渚	NORMAL	PASSION	2531	2737	2488	7756	unavailable	usual							2016-07-08 15:00:00	local_gacha
+300240	［スクールデビル］小関麗奈＋	小関麗奈	S RARE	PASSION	5898	3172	3842	12912	available	usual	overload	7	116	3	3	passion voice	2016-07-10 15:00:00	gacha
+300242	佐藤心＋	佐藤心	RARE	PASSION	3174	2626	4852	10652	available	usual	perfect support	11	1	2	4	passion makeup	2016-08-10 15:00:00	gacha
+300244	［束ねた気持ち］相葉夕美＋	相葉夕美	SS RARE	PASSION	7063	3839	4637	15539	available	usual	score bonus	7	117	4	2	passion voice	2016-07-19 15:00:00	gacha
+300246	南条光＋	南条光	RARE	PASSION	2574	4918	3142	10634	available	usual	combo support	15	1	2	4	passion step	2016-07-19 15:00:00	gacha
+300248	［きみにいっぱい☆］姫川友紀＋	姫川友紀	S RARE	PASSION	6058	3278	3964	13300	unavailable	limited	combo bonus	7	112	4	2	passion voice	2016-07-19 15:00:00	きみにいっぱい☆
+300250	［きみにいっぱい☆］市原仁奈＋	市原仁奈	S RARE	PASSION	4090	4475	4155	12720	unavailable	limited	score bonus	4	115	4	1	passion brilliance	2016-07-19 15:00:00	きみにいっぱい☆
+300252	［めろめろサマー］諸星きらり＋	諸星きらり	SS RARE	PASSION	4629	3830	7076	15535	unavailable	limited	combo bonus	11	118	3	5	passion makeup	2016-07-31 15:00:00	gacha
+300256	槙原志保＋	槙原志保	RARE	PASSION	4817	2606	3150	10573	available	usual	score bonus	6	110	2	3	passion voice	2016-05-31 15:00:00	gacha
+300258	衛藤美紗希＋	衛藤美紗希	RARE	PASSION	3705	3562	3586	10853	available	usual	life recovery	9	2	2	3	passion energy	2016-07-10 15:00:00	gacha
+300260	［サマカニ ! ! ］日野茜＋	日野茜	S RARE	PASSION	5724	3593	2920	12237	unavailable	limited	perfect support	15	1	3	4	passion voice	2016-07-31 15:00:00	LIVE Groove Visual burst
+300262	相馬夏美＋	相馬夏美	NORMAL	PASSION	2212	1781	3604	7597	unavailable	usual							2016-08-09 15:00:00	local_gacha
+300264	［ディアンドルガール］北川真尋＋	北川真尋	S RARE	PASSION	4593	4298	4239	13130	available	usual	demage guard	7	1	4	2	passion energy	2016-08-18 15:00:00	gacha
+300266	［カップオブラブ］十時愛梨＋	十時愛梨	SS RARE	PASSION	4966	4707	6248	15921	available	usual	score bonus	13	117	4	5	passion brilliance	2016-08-23 15:00:00	gacha
+300268	［トラベルダンサー］並木芽衣子＋	並木芽衣子	S RARE	PASSION	3830	5924	3151	12905	available	usual	score bonus	11	115	4	4	passion step	2016-08-31 15:00:00	gacha
+300270	［ビヨンド・ザ・スターライト］城ヶ崎莉嘉＋	城ヶ崎莉嘉	S RARE	PASSION	4304	5243	4117	13664	unavailable	limited	combo bonus	13	112	4	5	passion brilliance	2016-08-31 15:00:00	LIVE Groove Vocal burst
+300272	沢田麻理菜＋	沢田麻理菜	NORMAL	PASSION	1841	3528	2250	7619	unavailable	usual							2016-09-09 15:00:00	local_gacha
+300274	［セーシュンエナジー］堀裕子＋	堀裕子	SS RARE	PASSION	4691	3909	7034	15634	available	usual	score bonus	11	117	3	5	passion makeup	2016-09-09 15:00:00	gacha
+300276	［アッパーテンション］仙崎恵磨＋	仙崎恵磨	S RARE	PASSION	3468	2790	5649	11907	unavailable	limited	score bonus	7	115	4	2	passion makeup	2016-09-12 15:00:00	シンデレラキャラバン
+300278	［まごころ若女将］首藤葵＋	首藤葵	S RARE	PASSION	4442	4598	4469	13509	available	usual	perfect support	12	1	3	3	passion brilliance	2016-09-23 15:00:00	gacha
+300280	［グロリアス★グロウ］城ヶ崎美嘉＋	城ヶ崎美嘉	SS RARE	PASSION	7381	3725	4596	15702	unavailable	limited	combo bonus	13	118	4	5	tricolore voice	2016-09-28 15:00:00	gacha
+300282	［ぱーりぃー★ひゃっはー］星輝子＋	星輝子	SS RARE	PASSION	4654	3854	7104	15612	unavailable	limited	overload	9	118	3	4	passion makeup	2016-09-30 15:00:00	gacha
+300284	財前時子＋	財前時子	RARE	PASSION	3588	3731	3612	10931	available	usual	life recovery	11	2	2	4	passion energy	2016-09-30 15:00:00	gacha
+300286	［STORY］本田未央＋	本田未央	S RARE	PASSION	2918	5784	3602	12304	unavailable	limited	score bonus	7	115	4	2	passion step	2016-09-30 15:00:00	LIVE Parade
+300288	［くのいちのいろは］浜口あやめ＋	浜口あやめ	SS RARE	PASSION	3898	7047	4683	15628	available	usual	score bonus	11	117	4	4	passion step	2016-10-09 15:00:00	gacha
+300290	［ハート・モデル］佐藤心＋	佐藤心	S RARE	PASSION	3673	2943	6046	12662	unavailable	limited	combo bonus	9	112	4	3	passion makeup	2016-10-12 15:00:00	LIVE PARTY!!
+300292	冴島清美＋	冴島清美	NORMAL	PASSION	2584	2735	2608	7927	unavailable	usual							2017-01-10 15:00:00	local_gacha
+300294	［フェイバリット☆タイム］小松伊吹＋	小松伊吹	S RARE	PASSION	3854	3171	5957	12982	available	usual	perfect support	15	1	3	4	passion makeup	2016-10-17 15:00:00	gacha
+300296	［Jet to the Future］木村夏樹＋	木村夏樹	S RARE	PASSION	3021	5656	3665	12342	unavailable	limited	overload	9	116	3	4	passion step	2016-10-20 15:00:00	Jet to the Future
+300298	海老原菜帆＋	海老原菜帆	RARE	PASSION	3198	4888	2646	10732	available	usual	combo bonus	6	108	2	3	passion step	2016-10-22 15:00:00	gacha
+300302	［湯浴みの踊子］依田芳乃＋	依田芳乃	S RARE	PASSION	4736	4266	4171	13173	unavailable	limited	life recovery	10	3	4	2	passion energy	2016-10-31 15:00:00	gacha
+300304	［あたたかな居場所］高森藍子＋	高森藍子	SS RARE	PASSION	3879	7073	4671	15623	unavailable	limited	combo bonus	11	118	3	5	passion step	2016-10-31 15:00:00	gacha
+300306	イヴ・サンタクロース＋	イヴ・サンタクロース	NORMAL	PASSION	3483	1880	2273	7636	unavailable	usual							2016-11-09 15:00:00	local_gacha
+300308	キャシー・グラハム＋	キャシー・グラハム	RARE	PASSION	2667	4862	3210	10739	available	usual	score bonus	9	110	2	5	passion step	2016-11-09 15:00:00	gacha
+300310	［はぁとトゥハート］佐藤心＋	佐藤心	SS RARE	PASSION	3868	4665	7084	15617	available	usual	score bonus	13	117	4	5	passion makeup	2016-11-17 15:00:00	gacha
+300312	［Flip Flop］日野茜＋	日野茜	S RARE	PASSION	3994	6080	3310	13384	unavailable	limited	combo bonus	6	112	3	2	passion step	2016-11-19 15:00:00	Flip Flop
+300314	［みんなの太陽］上田鈴帆＋	上田鈴帆	S RARE	PASSION	4605	4330	4275	13210	available	usual	demage guard	11	1	4	4	passion energy	2016-11-22 15:00:00	gacha
+300316	［ドミネイトクリスマス］財前時子＋	財前時子	S RARE	PASSION	5932	3866	3192	12990	unavailable	limited	score bonus	7	115	4	2	passion voice	2016-11-30 15:00:00	gacha
+300318	［EVERMORE］城ヶ崎美嘉＋	城ヶ崎美嘉	S RARE	PASSION	3982	3289	6105	13376	unavailable	limited	combo bonus	11	112	4	4	passion makeup	2016-11-30 15:00:00	LIVE Parade
+300320	真鍋いつき＋	真鍋いつき	NORMAL	PASSION	1804	2225	3577	7606	unavailable	usual							2016-12-09 15:00:00	local_gacha
+300322	［ひまわりサニーデイ］龍崎薫＋	龍崎薫	SS RARE	PASSION	4966	6248	4707	15921	available	usual	score bonus	11	117	4	4	passion brilliance	2016-12-09 15:00:00	gacha
+300324	［あんきら ! ？狂騒曲］諸星きらり＋	諸星きらり	S RARE	PASSION	2969	5780	3645	12394	unavailable	limited	overload	7	116	3	3	passion step	2016-12-21 15:00:00	あんきら ! ？狂騒曲
+300326	［ハッピーホーリーナイト］イヴ・サンタクロース＋	イヴ・サンタクロース	S RARE	PASSION	5914	3252	3914	13080	available	usual	score bonus	13	115	4	5	passion voice	2016-12-22 15:00:00	gacha
+300328	［メイクミー・キスユー］赤城みりあ＋	赤城みりあ	SS RARE	PASSION	7095	4700	3908	15703	available	usual	score bonus	4	117	4	1	passion voice	2017-01-10 15:00:00	gacha
+300330	［ことほぎの祈り］依田芳乃＋	依田芳乃	SS RARE	PASSION	3846	7171	4663	15680	unavailable	limited	overload	6	118	3	2	passion step	2016-12-31 15:00:00	gacha
+300334	［命燃やして恋せよ乙女］片桐早苗＋	片桐早苗	S RARE	PASSION	4221	4166	4501	12888	unavailable	limited	score bonus	7	115	3	3	passion abillity	2016-12-31 15:00:00	LIVE Groove Visual burst
+300336	［ソル・パライソ］大槻唯＋	大槻唯	SS RARE	PASSION	4596	3725	7381	15702	unavailable	limited	combo bonus	7	118	4	2	tricolore makeup	2016-12-28 15:00:00	gacha
+300338	［さいきっく☆ボイス］堀裕子＋	堀裕子	S RARE	PASSION	4317	4239	4709	13265	available	usual	life recovery	13	3	4	3	passion abillity	2016-12-31 15:00:00	gacha
+300340	［ミンナノミカタ］南条光＋	南条光	S RARE	PASSION	3657	6159	2902	12718	unavailable	limited	combo bonus	7	112	3	3	passion step	2017-01-12 15:00:00	シンデレラキャラバン
+300342	［甘いひととき］槙原志保＋	槙原志保	S RARE	PASSION	5903	3263	3920	13086	available	usual	overload	9	116	3	4	passion voice	2017-01-19 15:00:00	gacha
+300344	［重ねた花びら］相葉夕美＋	相葉夕美	SS RARE	PASSION	3828	7196	4649	15673	unavailable	limited	combo bonus	13	118	4	5	passion step	2017-01-31 15:00:00	gacha
+300346	［明日へのフライト］相馬夏美＋	相馬夏美	S RARE	PASSION	3889	3212	5966	13067	available	usual	score bonus	11	115	4	4	passion makeup	2017-01-31 15:00:00	gacha
+300348	［エキゾチックサーファー］杉坂海＋	杉坂海	S RARE	PASSION	2759	3458	5748	11965	unavailable	limited	perfect support	7	1	4	1	passion makeup	2017-02-10 15:00:00	LIVE PARTY!!
+300350	［ハイテンションスマッシュ］喜多見柚＋	喜多見柚	SS RARE	PASSION	3908	4700	7095	15703	available	usual	all round	8	113	4	2	passion makeup	2017-02-16 15:00:00	gacha
+300352	［情熱ファンファンファーレ］本田未央＋	本田未央	S RARE	PASSION	3297	3997	6151	13445	unavailable	limited	combo bonus	13	112	4	5	passion makeup	2017-02-17 15:00:00	情熱ファンファンファーレ
+300354	［情熱ファンファンファーレ］高森藍子＋	高森藍子	S RARE	PASSION	4059	4634	4155	12848	unavailable	limited	concentration	9	117	3	4	passion brilliance	2017-02-17 15:00:00	情熱ファンファンファーレ
+300356	［人波のスイマー］西島櫂＋	西島櫂	S RARE	PASSION	4324	4249	4697	13270	available	usual	demage guard	9	1	4	3	passion energy	2017-02-21 15:00:00	gacha
+300358	［1番センター］姫川友紀＋	姫川友紀	S RARE	PASSION	3212	5966	3889	13067	unavailable	limited	score bonus	9	115	4	3	passion step	2017-02-28 15:00:00	gacha
+300360	［桜の頃］依田芳乃＋	依田芳乃	S RARE	PASSION	4011	6125	3318	13454	unavailable	limited	combo bonus	11	112	3	5	passion step	2017-02-28 15:00:00	LIVE Groove Vocal burst
+300362	［セクシーBANG☆BANG］片桐早苗＋	片桐早苗	SS RARE	PASSION	3904	4697	7100	15701	available	usual	score bonus	4	117	4	1	passion makeup	2017-03-09 15:00:00	gacha
+300364	［∀NSWER］星輝子＋	星輝子	S RARE	PASSION	3708	3071	5652	12431	unavailable	limited	perfect support	9	1	3	2	passion makeup	2017-03-21 15:00:00	∀NSWER
+300366	［センター・キャプテン］愛野渚＋	愛野渚	S RARE	PASSION	4725	4390	4444	13559	available	usual	score bonus	6	115	3	2	passion brilliance	2017-03-22 15:00:00	gacha
+300368	［サークル☆オブ☆フレンズ］城ヶ崎莉嘉＋	城ヶ崎莉嘉	SS RARE	PASSION	7126	4683	3883	15692	unavailable	limited	overload	7	118	3	3	passion voice	2017-03-31 22:00:00	gacha
+300370	［shabon song］赤城みりあ＋	赤城みりあ	S RARE	PASSION	3066	3706	5658	12430	unavailable	limited	score bonus	4	115	4	1	passion makeup	2017-04-01 15:00:00	LIVE Parade
+300372	［あたしの磨き方］衛藤美紗希＋	衛藤美紗希	S RARE	PASSION	4104	4880	4233	13217	available	usual	life recovery	6	3	3	1	passion energy	2017-04-09 15:00:00	gacha
+300374	［学園の超☆新星］冴島清美＋	冴島清美	S RARE	PASSION	5903	3107	3785	12795	unavailable	limited	combo bonus	9	112	3	4	passion voice	2017-04-11 15:00:00	LIVE PARTY!!
+300376	［ポジティブパッション］日野茜＋	日野茜	SS RARE	PASSION	3892	4691	7112	15695	available	usual	concentration	7	119	4	2	passion makeup	2017-04-17 15:00:00	gacha
+300378	［レッツゴー☆パレード］姫川友紀＋	姫川友紀	SS RARE	PASSION	7188	4652	3832	15672	unavailable	limited	passion focus	11	116	4	4	passion princess	2017-04-30 15:00:00	gacha
+300380	［セクシーサーファー］沢田麻理菜＋	沢田麻理菜	S RARE	PASSION	5909	3258	3917	13084	available	usual	score bonus	4	115	4	1	passion voice	2017-04-30 15:00:00	gacha
+300382	［アクティブビューティー］斉藤洋子＋	斉藤洋子	S RARE	PASSION	3221	5954	3895	13070	available	usual	perfect support	11	1	4	2	passion step	2017-05-18 15:00:00	gacha
+300384	［モーレツ★世直しギルティ ! ］堀裕子＋	堀裕子	S RARE	PASSION	6100	4023	3339	13462	unavailable	limited	combo bonus	4	112	3	1	passion voice	2017-05-19 15:00:00	モーレツ★世直しギルティ !
+300386	［モーレツ★世直しギルティ ! ］及川雫＋	及川雫	S RARE	PASSION	3651	5767	2980	12398	unavailable	limited	concentration	7	117	4	2	passion step	2017-05-19 15:00:00	モーレツ★世直しギルティ !
+300388	［こぶし・紅］村上巴＋	村上巴	SS RARE	PASSION	4972	4720	6236	15928	available	usual	score bonus	7	117	4	2	passion brilliance	2017-05-23 15:00:00	gacha
+300392	［With Love］諸星きらり＋	諸星きらり	S RARE	PASSION	4005	3306	6139	13450	unavailable	limited	combo bonus	6	112	3	2	passion makeup	2017-05-31 15:00:00	LIVE Parade
+300394	［はぁとの嫁入り］佐藤心＋	佐藤心	S RARE	PASSION	4311	4724	4228	13263	unavailable	limited	demage guard	9	1	4	3	passion energy	2017-05-31 15:00:00	gacha
+300398	［FEEL SO FREE］木村夏樹＋	木村夏樹	SS RARE	PASSION	7106	4694	3897	15697	available	usual	concentration	11	119	4	4	passion voice	2017-06-09 15:00:00	gacha
+300400	［お喋りチアー］キャシー・グラハム＋	キャシー・グラハム	S RARE	PASSION	5734	3466	2768	11968	unavailable	limited	score bonus	11	115	3	5	passion voice	2017-06-12 15:00:00	LIVE PARTY!!
+300402	［ろでお☆がーる］野々村そら＋	野々村そら	S RARE	PASSION	4399	4451	4710	13560	available	usual	overload	7	116	4	2	passion brilliance	2017-06-22 15:00:00	gacha
+300404	［ラブ・モゥ・スイート］及川雫＋	及川雫	SS RARE	PASSION	3832	4652	7188	15672	unavailable	limited	passion focus	7	116	4	2	passion princess	2017-07-02 15:00:00	gacha
+300406	［プニョフワ乙女］海老原菜帆＋	海老原菜帆	S RARE	PASSION	3889	5966	3212	13067	available	usual	score bonus	13	115	4	5	passion step	2017-07-10 15:00:00	gacha
+300408	［妄想お姫様］喜多日菜子＋	喜多日菜子	S RARE	PASSION	2932	6119	3677	12728	unavailable	limited	combo bonus	13	112	4	5	passion step	2017-07-12 15:00:00	シンデレラキャラバン
+300410	［ビビッド★エゴイスト］的場梨沙＋	的場梨沙	SS RARE	PASSION	4706	7081	3918	15705	available	usual	all round	5	113	4	1	passion step	2017-07-18 15:00:00	gacha
+300412	［プライベート・メイド］十時愛梨＋	十時愛梨	SS RARE	PASSION	4596	7381	3725	15702	unavailable	limited	skill boost	8	1	4	4	tricolore abillity	2017-08-31 15:00:00	gacha
+300414	［炎天の女王］向井拓海＋	向井拓海	S RARE	PASSION	5946	3899	3226	13071	unavailable	limited	all round	11	110	3	3	passion voice	2017-07-31 15:00:00	gacha
+300416	［Take me☆Take you］依田芳乃＋	依田芳乃	S RARE	PASSION	3688	3041	5690	12419	unavailable	limited	perfect support	6	1	3	1	passion makeup	2017-07-31 15:00:00	LIVE Parade
+300418	［本日の主役］難波笑美＋	難波笑美	SS RARE	PASSION	3908	7095	4700	15703	available	usual	score bonus	13	117	4	5	passion step	2017-08-10 15:00:00	gacha
+300420	［メディアの女王］財前時子＋	財前時子	S RARE	PASSION	4289	4193	4767	13249	unavailable	limited	combo bonus	7	112	4	2	passion brilliance	2017-08-12 15:00:00	LIVE PARTY!!
+300422	［セクシーディーヴァ］浜川愛結奈＋	浜川愛結奈	S RARE	PASSION	4736	4218	4304	13258	available	usual	life recovery	7	3	4	1	passion energy	2017-08-23 15:00:00	gacha
+300424	［ブリリアント・はぁと］佐藤心＋	佐藤心	SS RARE	PASSION	7188	3832	4652	15672	unavailable	limited	passion focus	9	116	4	3	passion princess	2017-09-03 15:00:00	gacha
+300426	［チアフル・ロワイヤル］若林智香＋	若林智香	S RARE	PASSION	3883	3200	5979	13062	available	usual	overload	7	116	4	2	passion makeup	2017-09-19 15:00:00	gacha
+300428	［Twin☆くるっ★テール］城ヶ崎美嘉＋	城ヶ崎美嘉	S RARE	PASSION	4565	4604	4804	13973	unavailable	limited	combo bonus	6	112	3	2	passion brilliance	2017-09-20 15:00:00	Twin☆くるっ★テール
+300430	［Twin☆くるっ★テール］城ヶ崎莉嘉＋	城ヶ崎莉嘉	S RARE	PASSION	5780	3645	2969	12394	unavailable	limited	concentration	13	117	4	5	passion voice	2017-09-20 15:00:00	Twin☆くるっ★テール
+300432	［ヒートビート・サンバ ! ］ナターリア＋	ナターリア	SS RARE	PASSION	4694	7106	3897	15697	available	usual	concentration	9	119	4	3	passion step	2017-09-23 15:00:00	gacha
+300434	［はろうぃんもんすたー］市原仁奈＋	市原仁奈	SS RARE	PASSION	4652	7188	3832	15672	unavailable	limited	passion focus	6	116	3	2	passion princess	2017-09-30 15:00:00	gacha
+300436	［深緑の魔女］高森藍子＋	高森藍子	S RARE	PASSION	3883	5979	3200	13062	unavailable	limited	all round	8	110	4	2	passion abillity	2017-09-30 15:00:00	gacha
+300438	［キミのそばでずっと］浜口あやめ＋	浜口あやめ	S RARE	PASSION	4023	6100	3339	13462	unavailable	limited	combo bonus	7	112	4	2	passion step	2017-09-30 15:00:00	LIVE Parade
+300440	［ハッピープレジャー］真鍋いつき＋	真鍋いつき	S RARE	PASSION	3472	5722	2780	11974	unavailable	limited	perfect support	15	1	3	4	passion step	2017-10-12 15:00:00	シンデレラキャラバン
+300442	［プレイ・ザ・ゲーム ! ］三好紗南＋	三好紗南	SS RARE	PASSION	7120	3888	4688	15696	available	usual	all round	9	113	3	3	passion voice	2017-10-18 15:00:00	gacha
+300444	［ジョイフル・ロワイヤル］北川真尋＋	北川真尋	S RARE	PASSION	5966	3889	3212	13067	available	usual	score bonus	11	115	4	4	passion voice	2017-10-23 15:00:00	gacha
+300446	［秋風に手を振って］相葉夕美＋	相葉夕美	S RARE	PASSION	5755	3657	2989	12401	unavailable	limited	score bonus	6	115	3	2	passion voice	2017-10-31 15:00:00	LIVE Groove Dance burst
+300448	［トリック☆ジョーカー］堀裕子＋	堀裕子	SS RARE	PASSION	4972	6236	4720	15928	unavailable	limited	overload	7	118	3	3	passion brilliance	2017-11-02 15:00:00	gacha
+300450	［秋色のお出かけ］並木芽衣子＋	並木芽衣子	S RARE	PASSION	3843	3140	6056	13039	unavailable	limited	all round	5	110	4	1	passion abillity	2017-11-02 15:00:00	gacha
+300452	［マジカルガール・フレイム］小関麗奈＋	小関麗奈	S RARE	PASSION	3004	3722	6031	12757	unavailable	limited	combo bonus	7	112	4	2	passion makeup	2017-11-10 15:00:00	シンデレラキャラバン
+300454	［ロリポップ・ハニー］大槻唯＋	大槻唯	SS RARE	PASSION	4720	4972	6236	15928	available	usual	score bonus	4	117	4	1	passion brilliance	2017-11-17 15:00:00	gacha
+300456	［おませなリトルガール］メアリー・コクラン＋	メアリー・コクラン	S RARE	PASSION	4188	4286	4775	13249	available	usual	life recovery	11	3	3	3	passion energy	2017-11-22 15:00:00	gacha
+300458	［カレイドスノー］本田未央＋	本田未央	SS RARE	PASSION	6236	4720	4972	15928	unavailable	limited	passion focus	9	116	4	3	passion princess	2017-11-30 15:00:00	gacha
+300460	［ふわふわホーリーナイト］イヴ・サンタクロース＋	イヴ・サンタクロース	S RARE	PASSION	3233	5940	3903	13076	available	usual	perfect support	12	1	3	3	passion step	2017-12-10 15:00:00	gacha
+300462	［冬空プレシャス］姫川友紀＋	姫川友紀	S RARE	PASSION	3997	3297	6151	13445	unavailable	limited	combo bonus	11	112	3	5	passion makeup	2017-12-20 15:00:00	冬空プレシャス
+300464	［冬空プレシャス］片桐早苗＋	片桐早苗	S RARE	PASSION	4020	4492	4098	12610	unavailable	limited	life recovery	8	3	3	2	passion energy	2017-12-20 15:00:00	冬空プレシャス
+300466	［桃色怒髪天］向井拓海＋	向井拓海	SS RARE	PASSION	3888	7120	4688	15696	available	usual	concentration	7	119	4	2	passion step	2017-12-22 15:00:00	gacha
+300468	［はぴはぴ☆わんだーらんど］諸星きらり＋	諸星きらり	SS RARE	PASSION	7381	4596	3725	15702	unavailable	limited	skill boost	10	1	4	5	tricolore abillity	2017-12-31 15:00:00	gacha
+300470	［Happy New Yeah ! ］佐藤心＋	佐藤心	S RARE	PASSION	6139	3306	4005	13450	unavailable	limited	combo bonus	9	112	4	3	passion voice	2018-01-01 15:00:00	LIVE Groove Visual burst
+300472	［にゅーいやー］市原仁奈＋	市原仁奈	S RARE	PASSION	3130	3837	6068	13035	unavailable	limited	all round	8	110	4	2	passion abillity	2018-01-04 15:00:00	gacha
+300474	［クイーン・オブ・クイーン］財前時子＋	財前時子	SS RARE	PASSION	7132	4680	3878	15690	available	usual	concentration	9	119	4	3	passion voice	2018-01-12 15:00:00	gacha
+300476	［手鞠の芸達者］首藤葵＋	首藤葵	S RARE	PASSION	3466	2768	5734	11968	unavailable	limited	overload	7	116	3	3	passion makeup	2018-01-22 15:00:00	ススメ ! シンデレラロード
+300478	［超☆スーパーモデル］冴島清美＋	冴島清美	S RARE	PASSION	4438	4737	4377	13552	available	usual	score bonus	9	115	3	4	passion brilliance	2018-01-19 15:00:00	gacha
+300480	［ドキワク ! ユズレシピ］喜多見柚＋	喜多見柚	SS RARE	PASSION	4649	3828	7196	15673	unavailable	limited	life sparkle	9	1	4	3	passion cheer	2018-01-31 15:00:00	gacha
+300482	［ビターバレンタイン］衛藤美紗希＋	衛藤美紗希	S RARE	PASSION	5979	3200	3883	13062	available	usual	score bonus	9	115	4	3	passion voice	2018-01-31 15:00:00	gacha
+300484	［always］村上巴＋	村上巴	S RARE	PASSION	4790	4575	4610	13975	unavailable	limited	combo bonus	11	112	4	4	passion brilliance	2018-01-31 15:00:00	LIVE Parade
+300486	［スウィートハニーハート］的場梨沙＋	的場梨沙	S RARE	PASSION	2780	3472	5722	11974	unavailable	limited	score bonus	13	115	4	5	passion makeup	2018-02-12 15:00:00	シンデレラキャラバン
+300488	［センター・オブ・ストリート］城ヶ崎美嘉＋	城ヶ崎美嘉	SS RARE	PASSION	3878	7132	4680	15690	available	usual	all round	8	113	4	2	passion step	2018-02-16 15:00:00	gacha
+300490	［ドルフィンチアー］西島櫂＋	西島櫂	S RARE	PASSION	3909	5928	3242	13079	available	usual	perfect support	18	1	3	5	passion step	2018-02-20 15:00:00	gacha
+300492	［ポッピン・ハイ☆］赤城みりあ＋	赤城みりあ	SS RARE	PASSION	4655	7182	3837	15674	unavailable	limited	passion focus	11	116	4	4	passion princess	2018-03-03 15:00:00	gacha
+300494	［無限大の夢］南条光＋	南条光	S RARE	PASSION	4619	4313	4364	13296	available	usual	life recovery	14	3	3	4	passion energy	2018-03-12 15:00:00	gacha
+300496	［トロピカルダンサー］小松伊吹＋	小松伊吹	S RARE	PASSION	5928	3773	3086	12787	unavailable	limited	combo bonus	11	112	4	4	passion voice	2018-03-12 15:00:00	ススメ ! シンデレラロード
+300498	［バーン・アンド・ドーン ! ! ］小関麗奈＋	小関麗奈	SS RARE	PASSION	7120	4688	3888	15696	available	usual	all round	5	113	4	1	passion voice	2018-03-19 15:00:00	gacha
+300500	［放課後トライ］日野茜＋	日野茜	S RARE	PASSION	3149	3851	6043	13043	unavailable	limited	all round	11	110	3	3	passion abillity	2018-03-31 15:00:00	gacha
+300502	［ニューウェーブ・サルファー］土屋亜子＋	土屋亜子	SS RARE	PASSION	7081	4706	3918	15705	available	usual	perfect support	12	1	4	3	passion voice	2018-04-11 15:00:00	gacha
+300504	［Spring Screaming］喜多見柚＋	喜多見柚	S RARE	PASSION	3318	4011	6125	13454	unavailable	limited	life sparkle	9	2	4	3	tricolore makeup	2018-04-19 15:00:00	Spring Screaming
+300506	［Spring Screaming］龍崎薫＋	龍崎薫	S RARE	PASSION	2929	5832	3619	12380	unavailable	limited	concentration	13	117	4	5	passion step	2018-04-19 15:00:00	Spring Screaming
+300508	［ふわふわファクトリー］矢口美羽＋	矢口美羽	S RARE	PASSION	5954	3895	3221	13070	available	usual	score bonus	7	115	3	3	passion voice	2018-04-23 15:00:00	gacha
+300510	［姉御の心粋］村上巴＋	村上巴	SS RARE	PASSION	7132	3878	4680	15690	unavailable	limited	life sparkle	13	1	4	5	passion cheer	2018-05-03 15:00:00	gacha
+300512	［シークレット☆モード］城ヶ崎莉嘉＋	城ヶ崎莉嘉	S RARE	PASSION	4350	4292	4645	13287	unavailable	limited	demage guard	11	1	3	5	passion abillity	2018-05-03 15:00:00	gacha
+300514	［ミッション☆コンプリート］三好紗南＋	三好紗南	S RARE	PASSION	5940	3765	3075	12780	unavailable	limited	combo bonus	7	112	3	3	passion voice	2018-05-10 15:00:00	ススメ ! シンデレラロード
+300516	［至福のボリューム］槙原志保＋	槙原志保	S RARE	PASSION	3899	5946	3226	13071	unavailable	usual	score bonus	11	115	3	5	passion step	2018-05-20 15:00:00	gacha
+300518	［ときめきトラベラー］並木芽衣子＋	並木芽衣子	SS RARE	PASSION	4694	3897	7106	15697	unavailable	usual	concentration	11	119	4	4	passion makeup	2018-05-23 15:00:00	gacha
+300520	［永遠の相棒］片桐早苗＋	片桐早苗	SS RARE	PASSION	7207	4644	3816	15667	unavailable	limited	passion focus	6	116	3	2	passion princess	2018-05-31 15:00:00	gacha
+300522	［Virgin Love］向井拓海＋	向井拓海	S RARE	PASSION	4017	6114	3327	13458	unavailable	limited	life sparkle	13	2	4	5	tricolore step	2018-05-31 15:00:00	LIVE Parade
+300524	［ラフ＆ガーリー］キャシー・グラハム＋	キャシー・グラハム	S RARE	PASSION	3212	3889	5966	13067	unavailable	usual	score bonus	7	115	3	3	passion makeup	2018-06-11 15:00:00	gacha
+300526	［パワフル・ロワイヤル］仙崎恵磨＋	仙崎恵磨	S RARE	PASSION	5748	2759	3458	11965	unavailable	limited	overload	7	116	4	2	passion voice	2018-06-11 15:00:00	シンデレラキャラバン
+300528	［笑うたい樹］上田鈴帆＋	上田鈴帆	SS RARE	PASSION	4707	4966	6248	15921	unavailable	usual	all round	9	113	3	3	passion brilliance	2018-06-18 15:00:00	gacha
+300530	［うたかたの結び手］依田芳乃＋	依田芳乃	SS RARE	PASSION	2388	1671	11641	15700	unavailable	limited	tricolore synergy	11	116	4	4	cinderella charm	2018-06-30 12:00:00	gacha
+300532	［華夜紅炎］木村夏樹＋	木村夏樹	S RARE	PASSION	6145	3800	3068	13013	unavailable	limited	perfect support	7	1	4	1	passion voice	2018-07-03 15:00:00	gacha
+300534	［超☆志貫徹］冴島清美＋	冴島清美	SS RARE	PASSION	7106	3897	4694	15697	unavailable	usual	concentration	13	119	4	5	passion voice	2018-07-13 15:00:00	gacha
+300536	［SUN♡FLOWER］諸星きらり＋	諸星きらり	S RARE	PASSION	6125	4011	3318	13454	unavailable	limited	life sparkle	9	2	4	3	tricolore voice	2018-07-19 15:00:00	SUN♡FLOWER
+300538	［SUN♡FLOWER］城ヶ崎美嘉＋	城ヶ崎美嘉	S RARE	PASSION	3606	2908	5857	12371	unavailable	limited	overload	9	116	3	4	passion makeup	2018-07-19 15:00:00	SUN♡FLOWER
+300540	［シューティングチアー］愛野渚＋	愛野渚	S RARE	PASSION	4370	4605	4323	13298	unavailable	usual	life recovery	17	3	3	5	passion energy	2018-07-23 15:00:00	gacha
+300542	［サマーサニーブーケ］相葉夕美＋	相葉夕美	SS RARE	PASSION	3867	7145	4675	15687	unavailable	limited	life sparkle	11	1	4	4	passion cheer	2018-07-31 15:00:00	gacha
+300544	［凸凹スピードスター］佐藤心＋	佐藤心	S RARE	PASSION	3612	5844	2917	12373	unavailable	limited	concentration	9	117	3	4	passion step	2018-07-31 15:00:00	LIVE Parade
+320210	杉坂海＋	杉坂海	NORMAL	PASSION	1846	2252	3522	7620	unavailable	usual							2016-05-09 15:00:00	local_gacha
+320224	斉藤洋子＋	斉藤洋子	NORMAL	PASSION	2764	2515	2465	7744	unavailable	usual							2016-06-08 15:00:00	local_gacha
+320226	［生存本能ヴァルキュリア］高森藍子＋	高森藍子	S RARE	PASSION	5626	2953	3601	12180	unavailable	limited	perfect support	18	1	3	5	passion voice	2016-04-30 15:00:00	LIVE Groove Visual burst
+900002	千川ちひろ＋	千川ちひろ	SS RARE	4	1358	1358	1358	4074	unavailable	limited								
+900004	ぴにゃこら太＋	ぴにゃこら太	RARE	4	1358	1358	1358	4074	unavailable	limited								
+900006	うさぎ＋	うさぎ	RARE	4	1358	1358	1358	4074	unavailable	limited								
+900010	［ぷち］島村卯月＋	島村卯月(コミュ用）	SS RARE	CUTE	1358	1358	1358	4074	unavailable	limited								
+900012	［ぷち］渋谷凛＋	渋谷凛(コミュ用）	SS RARE	COOL	1358	1358	1358	4074	unavailable	limited								
+900014	［ぷち］本田未央＋	本田未央(コミュ用）	SS RARE	PASSION	1358	1358	1358	4074	unavailable	limited								
+900016	きらり博士＋	きらり博士	S RARE	PASSION	1358	1358	1358	4074	unavailable	limited								
+900018	あんず＋	あんず	S RARE	CUTE	1358	1358	1358	4074	unavailable	limited								
+900020	きらりんロボ＋	きらりんロボ	SS RARE	4	1358	1358	1358	4074	unavailable	limited								
+900022	［合体］きらりんロボ＋	きらりんロボ	SS RARE	4	1358	1358	1358	4074	unavailable	limited								
