@@ -16,8 +16,7 @@ namespace WindowsFormsApp1
     public partial class Form1 : Form
     {
 
-        int ALL_LIMITED_SSR = 0;
-        int NO_LIMITED_SSR = 1;
+        int SelectGacha = 0;
          
         int SSRvalue = 0;
         int SRvalue = 0;
@@ -56,6 +55,7 @@ namespace WindowsFormsApp1
             String log = "";
             StreamReader sr = new StreamReader("carddb.csv", Encoding.GetEncoding("UTF-8"));
             int i = 0;
+            All.Checked = true;
             while (!sr.EndOfStream)
             {
                 string s = sr.ReadLine();
@@ -230,7 +230,6 @@ namespace WindowsFormsApp1
                         int number = r.Next(0, SSRList.Count);
                         returncard = (Card)SSRList[number];
                         break;
-                        break;
                     }
             }
             return returncard;
@@ -322,7 +321,7 @@ namespace WindowsFormsApp1
             int number = r.Next(0, 1000);
             if (number < 30)
             {
-                resultCard = SSRGet(0);
+                resultCard = SSRGet(SelectGacha);
                 SSRvalue++;
             }
             else if (number < 130)
@@ -385,7 +384,7 @@ namespace WindowsFormsApp1
                 number = r.Next(0, 1000);
                 if (number < 30)
                 {
-                    resultCard[i] = SSRGet(0);
+                    resultCard[i] = SSRGet(SelectGacha);
                     SSRvalue++;
                 }
                 else if (number < 150)
@@ -427,7 +426,7 @@ namespace WindowsFormsApp1
 
             if (number < 30)
             {
-                resultCard[9] = SSRGet(0);
+                resultCard[9] = SSRGet(SelectGacha);
                 SSRvalue++;
             }
             else if (number < 150)
@@ -544,6 +543,116 @@ namespace WindowsFormsApp1
 
             GachaResultText.Text = GachaResult;
 
+        }
+
+        private void CuteOnly_CheckedChanged(object sender, EventArgs e)
+        {
+            if(CuteOnly.Checked == true)
+            {
+                SelectGacha = 1;
+            }
+        }
+
+        private void CoolOnly_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CoolOnly.Checked == true)
+            {
+                SelectGacha = 2;
+            }
+        }
+
+        private void PassionOnly_CheckedChanged(object sender, EventArgs e)
+        {
+            if (PassionOnly.Checked == true)
+            {
+                SelectGacha = 3;
+            }
+        }
+
+        private void All_CheckedChanged(object sender, EventArgs e)
+        {
+            if (All.Checked == true)
+            {
+                SelectGacha = 0;
+            }
+        }
+
+        private void InfiniteGacha_Click(object sender, EventArgs e)
+        {
+            int get = 0;
+            int count = 0;
+            String GachaResult = "";
+            Card resultCard;
+            while (true){
+                
+                int number = r.Next(0, 1000);
+                if (number < 30)
+                {
+                    get = 1;
+                    resultCard = SSRGet(0);
+                    SSRvalue++;
+                }
+                else if (number < 130)
+                {
+                    resultCard = SRGet(0);
+                    SRvalue++;
+                }
+                else
+                {
+                    resultCard = RGet(0);
+                    Rvalue++;
+                }
+                if(count == 0)
+                {
+                    GachaResult += "［" + resultCard.Rarity + "］" + resultCard.CardName;
+                }
+                else
+                {
+                    GachaResult += "\n［" + resultCard.Rarity + "］" + resultCard.CardName;
+                }
+                
+                switch (resultCard.Attr)
+                {
+                    case "CUTE":
+                        {
+                            Cutevalue++;
+                            break;
+                        }
+                    case "COOL":
+                        {
+                            Coolvalue++;
+                            break;
+                        }
+                    case "PASSION":
+                        {
+                            Passionvalue++;
+                            break;
+                        }
+                }
+
+                count++;
+                if(get == 1)
+                {
+                    break;
+                }
+            }
+            Cute.Text = "Cute : " + Cutevalue;
+            Cool.Text = "Cute : " + Coolvalue;
+            Passion.Text = "Cute : " + Passionvalue;
+
+            Cutevalue = 0;
+            Coolvalue = 0;
+            Passionvalue = 0;
+
+            SSR.Text = "SSR : " + SSRvalue;
+            SR.Text = "SR : " + SRvalue;
+            R.Text = "R : " + Rvalue;
+
+            SSRvalue = 0;
+            SRvalue = 0;
+            Rvalue = 0;
+
+            GachaResultText.Text = GachaResult;
         }
     }
 }
