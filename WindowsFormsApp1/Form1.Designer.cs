@@ -53,12 +53,12 @@
             this.SR = new System.Windows.Forms.Label();
             this.SSR = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.GachaResultText = new System.Windows.Forms.RichTextBox();
             this.InfiniteGacha = new System.Windows.Forms.Button();
             this.TenGacha = new System.Windows.Forms.Button();
             this.GoldGacha = new System.Windows.Forms.Button();
             this.OneGacha = new System.Windows.Forms.Button();
             this.InfoMenu = new System.Windows.Forms.TabPage();
-            this.GachaResultText = new System.Windows.Forms.RichTextBox();
             this.MainMenu.SuspendLayout();
             this.GachaMenu.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -73,7 +73,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(572, 40);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Deresute Gacha Simulator Remake Beta 1";
+            this.label1.Text = "Deresute Gacha Simulator Remake Beta 2";
             // 
             // InformationButton
             // 
@@ -152,7 +152,7 @@
             // 
             this.GachaResultTitle.AutoSize = true;
             this.GachaResultTitle.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.GachaResultTitle.Location = new System.Drawing.Point(226, 61);
+            this.GachaResultTitle.Location = new System.Drawing.Point(239, 54);
             this.GachaResultTitle.Name = "GachaResultTitle";
             this.GachaResultTitle.Size = new System.Drawing.Size(95, 25);
             this.GachaResultTitle.TabIndex = 6;
@@ -340,6 +340,16 @@
             this.panel1.Size = new System.Drawing.Size(572, 268);
             this.panel1.TabIndex = 4;
             // 
+            // GachaResultText
+            // 
+            this.GachaResultText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.GachaResultText.Font = new System.Drawing.Font("돋움", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.GachaResultText.Location = new System.Drawing.Point(0, 1);
+            this.GachaResultText.Name = "GachaResultText";
+            this.GachaResultText.Size = new System.Drawing.Size(571, 265);
+            this.GachaResultText.TabIndex = 0;
+            this.GachaResultText.Text = "";
+            // 
             // InfiniteGacha
             // 
             this.InfiniteGacha.Location = new System.Drawing.Point(120, 92);
@@ -389,16 +399,6 @@
             this.InfoMenu.TabIndex = 2;
             this.InfoMenu.Text = "정보";
             this.InfoMenu.UseVisualStyleBackColor = true;
-            // 
-            // GachaResultText
-            // 
-            this.GachaResultText.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.GachaResultText.Font = new System.Drawing.Font("돋움", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.GachaResultText.Location = new System.Drawing.Point(0, 1);
-            this.GachaResultText.Name = "GachaResultText";
-            this.GachaResultText.Size = new System.Drawing.Size(571, 265);
-            this.GachaResultText.TabIndex = 0;
-            this.GachaResultText.Text = "";
             // 
             // Form1
             // 

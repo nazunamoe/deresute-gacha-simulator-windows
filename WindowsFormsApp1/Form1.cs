@@ -56,6 +56,7 @@ namespace WindowsFormsApp1
             StreamReader sr = new StreamReader("carddb.csv", Encoding.GetEncoding("UTF-8"));
             int i = 0;
             All.Checked = true;
+            
             while (!sr.EndOfStream)
             {
                 string s = sr.ReadLine();
