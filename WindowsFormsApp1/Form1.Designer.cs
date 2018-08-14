@@ -35,6 +35,7 @@
             this.MoneyPage = new System.Windows.Forms.TabPage();
             this.GachaMenu = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.LimitedSwitch = new System.Windows.Forms.CheckBox();
             this.Passion = new System.Windows.Forms.Label();
             this.Cool = new System.Windows.Forms.Label();
             this.Cute = new System.Windows.Forms.Label();
@@ -48,7 +49,6 @@
             this.GoldGacha = new System.Windows.Forms.Button();
             this.OneGacha = new System.Windows.Forms.Button();
             this.InfoMenu = new System.Windows.Forms.TabPage();
-            this.LimitedSwitch = new System.Windows.Forms.RadioButton();
             this.MainMenu.SuspendLayout();
             this.GachaMenu.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -68,7 +68,7 @@
             // InformationButton
             // 
             this.InformationButton.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.InformationButton.Location = new System.Drawing.Point(472, 33);
+            this.InformationButton.Location = new System.Drawing.Point(680, 352);
             this.InformationButton.Name = "InformationButton";
             this.InformationButton.Size = new System.Drawing.Size(75, 23);
             this.InformationButton.TabIndex = 1;
@@ -79,7 +79,7 @@
             // ExitButton
             // 
             this.ExitButton.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ExitButton.Location = new System.Drawing.Point(558, 33);
+            this.ExitButton.Location = new System.Drawing.Point(766, 352);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(75, 23);
             this.ExitButton.TabIndex = 2;
@@ -96,7 +96,7 @@
             this.MainMenu.Location = new System.Drawing.Point(12, 70);
             this.MainMenu.Name = "MainMenu";
             this.MainMenu.SelectedIndex = 0;
-            this.MainMenu.Size = new System.Drawing.Size(625, 271);
+            this.MainMenu.Size = new System.Drawing.Size(830, 276);
             this.MainMenu.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.MainMenu.TabIndex = 3;
             // 
@@ -121,7 +121,7 @@
             this.GachaMenu.Location = new System.Drawing.Point(4, 24);
             this.GachaMenu.Name = "GachaMenu";
             this.GachaMenu.Padding = new System.Windows.Forms.Padding(3);
-            this.GachaMenu.Size = new System.Drawing.Size(617, 243);
+            this.GachaMenu.Size = new System.Drawing.Size(822, 248);
             this.GachaMenu.TabIndex = 1;
             this.GachaMenu.Text = "가챠";
             this.GachaMenu.UseVisualStyleBackColor = true;
@@ -138,8 +138,18 @@
             this.panel2.Controls.Add(this.SSR);
             this.panel2.Location = new System.Drawing.Point(12, 99);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(205, 132);
+            this.panel2.Size = new System.Drawing.Size(205, 137);
             this.panel2.TabIndex = 5;
+            // 
+            // LimitedSwitch
+            // 
+            this.LimitedSwitch.AutoSize = true;
+            this.LimitedSwitch.Location = new System.Drawing.Point(15, 99);
+            this.LimitedSwitch.Name = "LimitedSwitch";
+            this.LimitedSwitch.Size = new System.Drawing.Size(106, 19);
+            this.LimitedSwitch.TabIndex = 7;
+            this.LimitedSwitch.Text = "한정 카드 토글";
+            this.LimitedSwitch.UseVisualStyleBackColor = true;
             // 
             // Passion
             // 
@@ -201,7 +211,7 @@
             this.panel1.Controls.Add(this.GachaResultText);
             this.panel1.Location = new System.Drawing.Point(233, 15);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(378, 217);
+            this.panel1.Size = new System.Drawing.Size(572, 221);
             this.panel1.TabIndex = 4;
             // 
             // GachaResultText
@@ -240,6 +250,7 @@
             this.GoldGacha.TabIndex = 1;
             this.GoldGacha.Text = "연금가챠";
             this.GoldGacha.UseVisualStyleBackColor = true;
+            this.GoldGacha.Click += new System.EventHandler(this.GoldGacha_Click);
             // 
             // OneGacha
             // 
@@ -261,23 +272,12 @@
             this.InfoMenu.Text = "정보";
             this.InfoMenu.UseVisualStyleBackColor = true;
             // 
-            // LimitedSwitch
-            // 
-            this.LimitedSwitch.AutoSize = true;
-            this.LimitedSwitch.Location = new System.Drawing.Point(11, 96);
-            this.LimitedSwitch.Name = "LimitedSwitch";
-            this.LimitedSwitch.Size = new System.Drawing.Size(95, 19);
-            this.LimitedSwitch.TabIndex = 6;
-            this.LimitedSwitch.TabStop = true;
-            this.LimitedSwitch.Text = "radioButton1";
-            this.LimitedSwitch.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(649, 353);
+            this.ClientSize = new System.Drawing.Size(854, 383);
             this.Controls.Add(this.MainMenu);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.InformationButton);
@@ -321,7 +321,7 @@
         private System.Windows.Forms.Button TenGacha;
         private System.Windows.Forms.Button GoldGacha;
         private System.Windows.Forms.Button OneGacha;
-        private System.Windows.Forms.RadioButton LimitedSwitch;
+        private System.Windows.Forms.CheckBox LimitedSwitch;
     }
 }
 
