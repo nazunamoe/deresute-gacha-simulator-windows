@@ -335,7 +335,7 @@ namespace WindowsFormsApp1
                 resultCard = RGet(0);
                 Rvalue++;
             }
-            GachaResult += "［" + resultCard.Rarity + "］" + resultCard.CardName;
+            GachaResult += "[" + resultCard.Rarity + "] " + resultCard.CardName;
             switch (resultCard.Attr)
             {
                 case "CUTE":
@@ -355,8 +355,8 @@ namespace WindowsFormsApp1
                     }
             }
             Cute.Text = "Cute : " + Cutevalue;
-            Cool.Text = "Cute : " + Coolvalue;
-            Passion.Text = "Cute : " + Passionvalue;
+            Cool.Text = "Cool : " + Coolvalue;
+            Passion.Text = "Passion : " + Passionvalue;
 
             Cutevalue = 0;
             Coolvalue = 0;
@@ -420,7 +420,7 @@ namespace WindowsFormsApp1
                 {
                     GachaResult += "\n";
                 }
-                GachaResult += "［" + resultCard[i].Rarity + "］" + resultCard[i].CardName;
+                GachaResult += "[" + resultCard[i].Rarity + "] " + resultCard[i].CardName;
             }
 
             number = r.Next(0, 150);
@@ -455,12 +455,12 @@ namespace WindowsFormsApp1
             }
 
 
-            GachaResult += "\n" + "［" + resultCard[9].Rarity + "］" + resultCard[9].CardName;
+            GachaResult += "\n" + "[" + resultCard[9].Rarity + "] " + resultCard[9].CardName;
             GachaResultText.Text = GachaResult;
 
             Cute.Text = "Cute : " + Cutevalue;
-            Cool.Text = "Cute : " + Coolvalue;
-            Passion.Text = "Cute : " + Passionvalue;
+            Cool.Text = "Cool : " + Coolvalue;
+            Passion.Text = "Passion : " + Passionvalue;
 
             Cutevalue = 0;
             Coolvalue = 0;
@@ -507,7 +507,7 @@ namespace WindowsFormsApp1
                 resultCard = RGet(0);
                 Rvalue++;
             }
-            GachaResult += "［" + resultCard.Rarity + "］" + resultCard.CardName;
+            GachaResult += "[" + resultCard.Rarity + "] " + resultCard.CardName;
             switch (resultCard.Attr)
             {
                 case "CUTE":
@@ -527,8 +527,8 @@ namespace WindowsFormsApp1
                     }
             }
             Cute.Text = "Cute : " + Cutevalue;
-            Cool.Text = "Cute : " + Coolvalue;
-            Passion.Text = "Cute : " + Passionvalue;
+            Cool.Text = "Cool : " + Coolvalue;
+            Passion.Text = "Passion : " + Passionvalue;
 
             Cutevalue = 0;
             Coolvalue = 0;
@@ -638,8 +638,8 @@ namespace WindowsFormsApp1
                 }
             }
             Cute.Text = "Cute : " + Cutevalue;
-            Cool.Text = "Cute : " + Coolvalue;
-            Passion.Text = "Cute : " + Passionvalue;
+            Cool.Text = "Cool : " + Coolvalue;
+            Passion.Text = "Passion : " + Passionvalue;
 
             Cutevalue = 0;
             Coolvalue = 0;
