@@ -33,6 +33,10 @@ namespace WindowsFormsApp1
         int Coolvalue = 0;
         int Passionvalue = 0;
 
+        int skill_time = 0;
+        int skill_prob = 0;
+        int skill_dura = 0;
+
         double SSRp;
         double SRp;
         double Rp;
@@ -52,8 +56,8 @@ namespace WindowsFormsApp1
         ArrayList CoolRList = new ArrayList();
         ArrayList PassionRList = new ArrayList();
 
-        ArrayList CardList = new ArrayList();
-
+        ArrayList GachaCardList = new ArrayList();
+        ArrayList AllCardList = new ArrayList();
 
         Random r = new Random();
         public Form1()
@@ -88,110 +92,125 @@ namespace WindowsFormsApp1
                 int dance = int.Parse(temp[6]);
                 int visual = int.Parse(temp[7]);
                 int total = int.Parse(temp[8]);
-                CardList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
-
-                if (no < 900000 && temp[18] == "gacha")
+                if (temp[3] == "NORMAL" || no > 900000)
                 {
-                    if (mode == 0)
+                }
+                else
+                {
+                    skill_time = int.Parse(temp[12]);
+                    skill_prob = int.Parse(temp[14]);
+                    skill_dura = int.Parse(temp[15]);
+                }
+                if (no < 900000)
+                {
+                    CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
+                    AllCardList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
+                    if (temp[18] == "gacha")
                     {
-                        if (temp[3] == "SS RARE")
-                        {
-                            SSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
-                            if (temp[4] == "CUTE")
-                            {
-                                CuteSSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
-                            }
-                            else if (temp[4] == "COOL")
-                            {
-                                CoolSSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
-                            }
-                            else if (temp[4] == "PASSION")
-                            {
-                                PassionSSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
-                            }
-                        }
-                        else if (temp[3] == "S RARE")
-                        {
-                            SRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
-                            if (temp[4] == "CUTE")
-                            {
-                                CuteSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
-                            }
-                            else if (temp[4] == "COOL")
-                            {
-                                CoolSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
-                            }
-                            else if (temp[4] == "PASSION")
-                            {
-                                PassionSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
-                            }
-                        }
-                        else if (temp[3] == "RARE")
-                        {
-                            RList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
-                            if (temp[4] == "CUTE")
-                            {
-                                CuteRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
-                            }
-                            else if (temp[4] == "COOL")
-                            {
-                                CoolRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
-                            }
-                            else if (temp[4] == "PASSION")
-                            {
-                                PassionRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
-                            }
-                        }
-                    } else if (mode == 1)
-                    {
-                        if (temp[10] == "usual")
+                        GachaCardList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
+
+                        if (mode == 0)
                         {
                             if (temp[3] == "SS RARE")
                             {
-                                SSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
+                                SSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
                                 if (temp[4] == "CUTE")
                                 {
-                                    CuteSSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
+                                    CuteSSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
                                 }
                                 else if (temp[4] == "COOL")
                                 {
-                                    CoolSSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
+                                    CoolSSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
                                 }
                                 else if (temp[4] == "PASSION")
                                 {
-                                    PassionSSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
+                                    PassionSSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
                                 }
                             }
                             else if (temp[3] == "S RARE")
                             {
-                                SRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
+                                SRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
                                 if (temp[4] == "CUTE")
                                 {
-                                    CuteSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
+                                    CuteSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
                                 }
                                 else if (temp[4] == "COOL")
                                 {
-                                    CoolSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
+                                    CoolSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
                                 }
                                 else if (temp[4] == "PASSION")
                                 {
-                                    PassionSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
+                                    PassionSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
                                 }
                             }
                             else if (temp[3] == "RARE")
                             {
-                                RList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
+                                RList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
                                 if (temp[4] == "CUTE")
                                 {
-                                    CuteRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
+                                    CuteRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
                                 }
                                 else if (temp[4] == "COOL")
                                 {
-                                    CoolRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
+                                    CoolRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
                                 }
                                 else if (temp[4] == "PASSION")
                                 {
-                                    PassionRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], temp[16]));
+                                    PassionRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
+                                }
+                            }
+                        }
+                        else if (mode == 1)
+                        {
+                            if (temp[10] == "usual")
+                            {
+                                if (temp[3] == "SS RARE")
+                                {
+                                    SSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
+                                    if (temp[4] == "CUTE")
+                                    {
+                                        CuteSSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
+                                    }
+                                    else if (temp[4] == "COOL")
+                                    {
+                                        CoolSSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
+                                    }
+                                    else if (temp[4] == "PASSION")
+                                    {
+                                        PassionSSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
+                                    }
+                                }
+                                else if (temp[3] == "S RARE")
+                                {
+                                    SRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
+                                    if (temp[4] == "CUTE")
+                                    {
+                                        CuteSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
+                                    }
+                                    else if (temp[4] == "COOL")
+                                    {
+                                        CoolSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
+                                    }
+                                    else if (temp[4] == "PASSION")
+                                    {
+                                        PassionSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
+                                    }
+                                }
+                                else if (temp[3] == "RARE")
+                                {
+                                    RList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
+                                    if (temp[4] == "CUTE")
+                                    {
+                                        CuteRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
+                                    }
+                                    else if (temp[4] == "COOL")
+                                    {
+                                        CoolRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
+                                    }
+                                    else if (temp[4] == "PASSION")
+                                    {
+                                        PassionRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
+                                    }
                                 }
                             }
                         }
@@ -489,8 +508,6 @@ namespace WindowsFormsApp1
                             break;
                         }
                 }
-
-
                 GachaResult += "\n" + "[" + resultCard[9].Rarity + "] " + resultCard[9].CardName;
                 GachaResultText.Text = GachaResult;
 
@@ -548,7 +565,7 @@ namespace WindowsFormsApp1
                 }
                 else if (number < 999 * (SRp * 0.01))
                 {
-                    resultCard = SRGet(0);
+                    resultCard7 = SRGet(0);
                     SRvalue++;
                 }
                 else
@@ -950,7 +967,234 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void GachaMenu_Click(object sender, EventArgs e)
+
+        private void CardInfoList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Card selected = returnByName(CardInfoList.SelectedItem.ToString());
+            CardInfoName.Text = "이름 : "+selected.CardName;
+            CardInfoRarity.Text = "등급 : " + selected.Rarity;
+
+            CardInfoVocal.Text = "보컬 : " + selected.Vocal;
+            CardInfoDance.Text = "댄스 : " + selected.Dance;
+            CardInfoVisual.Text = "비쥬얼 : " + selected.Visual;
+            CardInfoTotal.Text = "총합 : " + selected.Total;
+            String CardSkillText = "";
+            int CardSkillProb = 0;
+            switch (selected.Skill_probability)
+            {
+                case 2:
+                    {
+                        CardSkillProb = 30;
+                        break;
+                    }
+                case 3:
+                    {
+                        CardSkillProb = 35;
+                        break;
+                    }
+                case 4:
+                    {
+                        CardSkillProb = 40;
+                        break;
+                    }
+            }
+            switch (selected.Skill)
+            {
+                /*
+                 * 스킬 확률
+                 * 2 - 30%
+                 * 3 - 35%
+                 * 4 - 40%
+                 * */
+                case "all round":
+                    {
+                        if(selected.Rarity == "S RARE")
+                        {
+                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 COMBO 보너스 10% 상승, PERFECT로 라이브 1 회복";
+                        }else if(selected.Rarity == "SS RARE")
+                        {
+                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 COMBO 보너스 13% 상승, PERFECT로 라이브 1 회복";
+                        }
+                        break;
+                    }
+                case "combo bonus":
+                    {
+                        if (selected.Rarity == "RARE")
+                        {
+                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 COMBO 보너스 8% 상승";
+                        }
+                        else if (selected.Rarity == "S RARE")
+                        {
+                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 COMBO 보너스 12% 상승";
+                        }
+                        else if (selected.Rarity == "SS RARE")
+                        {
+                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 COMBO 보너스 18% 상승";
+                        }
+                        break;
+                    }
+                case "combo support":
+                    {
+                        CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 NICE여도 콤보가 끊기지 않음";
+                        break;
+                    }
+                case "concentration":
+                    {
+                        if (selected.Rarity == "S RARE")
+                        {
+                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 17% 상승, PERFECT 판정 시간이 짧아짐";
+                        }
+                        else if (selected.Rarity == "SS RARE")
+                        {
+                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 19% 상승, PERFECT 판정 시간이 짧아짐";
+                        }
+                        break;
+                    }
+                case "cool focus":
+                    {
+                        CardSkillText = "쿨 아이돌만 편성시 "+selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 16% 상승, COMBO 보너스 14% 상승";
+                        break;
+                    }
+                case "cute focus":
+                    {
+                        CardSkillText = "큐트 아이돌만 편성시 " + selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 16% 상승, COMBO 보너스 14% 상승";
+                        break;
+                    }
+                case "demage guard":
+                    {
+                        CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 라이프가 감소하지 않음";
+                        break;
+                    }
+                case "encore":
+                    {
+                        CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안, 직전에 발동한 다른 아이돌의 특기효과 반복";
+                        break;
+                    }
+                case "life recovery":
+                    {
+                        if(selected.Rarity == "RARE")
+                        {
+                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT로 라이프 2 회복";
+                        }
+                        else
+                        {
+                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT로 라이프 3 회복";
+                        }          
+                        break;
+                    }
+                case "life sparkle":
+                    {
+                        CardSkillText = "패션 아이돌만 편성시 " + selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 라이프가 많을 수록 COMBO 보너스 상승";
+                        break;
+                    }
+                case "overload":
+                    {
+                        if (selected.Rarity == "S RARE")
+                        {
+                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 라이프를 11 소모하여 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 16% 상승,\n         NICE/BAD여도 콤보가 끊기지 않음";
+                        }
+                        else if (selected.Rarity == "SS RARE")
+                        {
+                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 라이프를 9 소모하여 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 18% 상승,\n        NICE/BAD여도 콤보가 끊기지 않음";
+                        }
+                        break;
+                    }
+                case "passion focus":
+                    {
+                        CardSkillText = "패션 아이돌만 편성시 " + selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 16% 상승, COMBO 보너스 14% 상승";
+                        break;
+                    }
+                case "perfect support":
+                    {
+                        if (selected.Rarity == "RARE")
+                        {
+                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 GREAT를 PERFECT로 만듬";
+                        }
+                        else if (selected.Rarity == "S RARE")
+                        {
+                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 GREAT/NICE를 PERFECT로 만듬";
+                        }
+                        else if (selected.Rarity == "SS RARE")
+                        {
+                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 GREAT/NICE/BAD를 PERFECT로 만듬";
+                        }
+                        break;
+                    }
+                case "score bonus":
+                    {
+                        if (selected.Rarity == "RARE")
+                        {
+                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 10% 상승";
+                        }
+                        else if (selected.Rarity == "S RARE")
+                        {
+                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 12% 상승";
+                        }
+                        else if (selected.Rarity == "SS RARE")
+                        {
+                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 18% 상승";
+                        }
+                        break;
+                    }
+                case "skill boost":
+                    {
+                        CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 다른 아이돌의 특기효과를 크게 상승";
+                        break;
+                    }
+                case "tricolore synergy":
+                    {
+                        CardSkillText = "3 타입 아이돌 편성 시 " + selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 16% 상승,\n        라이프 1회복, COMBO 보너스 15% 상승";
+                        break;
+                    }
+            }
+            CardInfoSkill.Text = "스킬 : " + CardSkillText;
+
+            String[] centre_skill = selected.Center_Skill.Split(' ');
+            switch (centre_skill[0])
+            {
+                case "cinderella":
+                    {
+                        break;
+                    }
+                case "fortune":
+                    {
+                        break;
+                    }
+                case "shiny":
+                    {
+                        break;
+                    }
+                case "tricolore":
+                    {
+                        break;
+                    }
+                default:
+                    {
+                        centre_threetype(centre_skill[0], centre_skill[1]);
+                        break;
+                    }
+            }
+        }
+
+        private void centre_threetype(String value, String type) //0 cute 1 cool 2 passion
+        {
+
+        }
+
+        private Card returnByName(String input)
+        {
+            Card card = null;
+            for(int b=0; b<AllCardList.Count; b++)
+            {
+                if (("["+ ((Card)AllCardList[b]).Rarity+"] "+((Card)AllCardList[b]).CardName).Equals(input))
+                {
+                    card = (Card)AllCardList[b];
+                }
+            }
+            return card;
+        }
+
+        private void InfoMenu_Click(object sender, EventArgs e)
         {
 
         }
@@ -975,9 +1219,12 @@ namespace Info
         public int Total;
 
         public String Skill;
+        public int Skill_probability;
+        public int Skill_timing;
+        public int SKill_duration;
         public String Center_Skill;
 
-        public Card(int num, string v1, string v2, string v3, string v4, int v5, int v6, int v7, int v8, string v9, string v10)
+        public Card(int num, string v1, string v2, string v3, string v4, int v5, int v6, int v7, int v8, string v9, int v10, int v11, int v12, string v13)
         {
             this.number = num;
             this.CardName = v1;
@@ -989,7 +1236,11 @@ namespace Info
             this.Visual = v7;
             this.Total = v8;
             this.Skill = v9;
-            this.Center_Skill = v10;
+            this.Skill_timing = v10;
+            this.Skill_probability = v11;
+            this.SKill_duration = v12;
+            this.Center_Skill = v13;
+
         }
     }
 }
