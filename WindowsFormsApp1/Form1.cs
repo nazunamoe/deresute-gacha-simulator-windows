@@ -1,14 +1,8 @@
 ﻿using Info;
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -565,7 +559,7 @@ namespace WindowsFormsApp1
                 }
                 else if (number < 999 * (SRp * 0.01))
                 {
-                    resultCard7 = SRGet(0);
+                    resultCard = SRGet(0);
                     SRvalue++;
                 }
                 else
@@ -1148,37 +1142,405 @@ namespace WindowsFormsApp1
                     }
             }
             CardInfoSkill.Text = "스킬 : " + CardSkillText;
-
-            String[] centre_skill = selected.Center_Skill.Split(' ');
-            switch (centre_skill[0])
+            String CentreSkillText = "";
+            if(selected.Rarity == "RARE" || selected.Rarity == "S RARE" || selected.Rarity =="SS RARE")
             {
-                case "cinderella":
-                    {
-                        break;
-                    }
-                case "fortune":
-                    {
-                        break;
-                    }
-                case "shiny":
-                    {
-                        break;
-                    }
-                case "tricolore":
-                    {
-                        break;
-                    }
-                default:
-                    {
-                        centre_threetype(centre_skill[0], centre_skill[1]);
-                        break;
-                    }
+                string[] centre_skill = selected.Center_Skill.Split(' ');
+                switch (centre_skill[0])
+                {
+                    case "cinderella":
+                        {
+                            CentreSkillText = "라이브 클리어시, 획득 팬 수 30% 상승";
+                            break;
+                        }
+                    case "fortune":
+                        {
+                            CentreSkillText = "라이브 클리어시, 특별 보수를 추가로 획득";
+                            break;
+                        }
+                    case "shiny":
+                        {
+                            CentreSkillText = "모두의 보컬 어필 수치 48% 상승";
+                            break;
+                        }
+                    case "tricolore":
+                        {
+                            switch (centre_skill[1])
+                            {
+                                case "abillity":
+                                    {
+                                        CentreSkillText = "3타입 아이돌이 모두 편성되어 있을 경우, 모두의 특기 발동 확률 50% 상승";
+                                        break;
+                                    }
+                                case "makeup":
+                                    {
+                                        if (selected.Rarity == "S RARE")
+                                        {
+                                            CentreSkillText = "3타입 아이돌이 모두 편성되어 있을 경우, 모두의 비쥬얼 어필 수치 80% 상승";
+                                        }
+                                        else if (selected.Rarity == "SS RARE")
+                                        {
+                                            CentreSkillText = "3타입 아이돌이 모두 편성되어 있을 경우, 모두의 비쥬얼 어필 수치 100% 상승";
+                                        }
+                                        break;
+                                    }
+                                case "step":
+                                    {
+                                        if (selected.Rarity == "S RARE")
+                                        {
+                                            CentreSkillText = "3타입 아이돌이 모두 편성되어 있을 경우, 모두의 댄스 어필 수치 80% 상승";
+                                        }
+                                        else if (selected.Rarity == "SS RARE")
+                                        {
+                                            CentreSkillText = "3타입 아이돌이 모두 편성되어 있을 경우, 모두의 댄스 어필 수치 100% 상승";
+                                        }
+                                        break;
+                                    }
+                                case "voice":
+                                    {
+                                        if (selected.Rarity == "S RARE")
+                                        {
+                                            CentreSkillText = "3타입 아이돌이 모두 편성되어 있을 경우, 모두의 보컬 어필 수치 80% 상승";
+                                        }
+                                        else if (selected.Rarity == "SS RARE")
+                                        {
+                                            CentreSkillText = "3타입 아이돌이 모두 편성되어 있을 경우, 모두의 보컬 어필 수치 100% 상승";
+                                        }
+                                        break;
+                                    }
+                            }
+                            break;
+                        }
+                    case "cute":
+                        {
+                            switch (centre_skill[1])
+                            {
+                                case "abillity":
+                                    {
+                                        if (selected.Rarity == "RARE")
+                                        {
+                                            CentreSkillText = "큐트 아이돌의 특기 발동 확률 15% 상승";
+                                        }
+                                        else if (selected.Rarity == "SS RARE")
+                                        {
+                                            CentreSkillText = "큐트 아이돌의 특기 발동 확률 30% 상승";
+                                        }
+                                        break;
+                                    }
+                                case "brilliance":
+                                    {
+                                        if (selected.Rarity == "RARE")
+                                        {
+                                            CentreSkillText = "큐트 아이돌의 모든 어필 수치 10% 상승";
+                                        }
+                                        else if (selected.Rarity == "S RARE")
+                                        {
+                                            CentreSkillText = "큐트 아이돌의 모든 어필 수치 20% 상승";
+                                        }
+                                        else if (selected.Rarity == "SS RARE")
+                                        {
+                                            CentreSkillText = "큐트 아이돌의 모든 어필 수치 30% 상승";
+                                        }
+                                        break;
+                                    }
+                                case "cheer":
+                                    {
+                                        CentreSkillText = "큐트 아이돌만 편성시, 모두의 라이프 40% 상승";
+                                        break;
+                                    }
+                                case "energy":
+                                    {
+                                        if (selected.Rarity == "RARE")
+                                        {
+                                            CentreSkillText = "큐트 아이돌의 라이프 10% 상승";
+                                        }
+                                        else if (selected.Rarity == "S RARE")
+                                        {
+                                            CentreSkillText = "큐트 아이돌의 라이프 20% 상승";
+                                        }
+                                        else if (selected.Rarity == "SS RARE")
+                                        {
+                                            CentreSkillText = "큐트 아이돌의 라이프 30% 상승";
+                                        }
+                                        break;
+                                    }
+                                case "makeup":
+                                    {
+                                        if (selected.Rarity == "RARE")
+                                        {
+                                            CentreSkillText = "큐트 아이돌의 비쥬얼 어필 수치 30% 상승";
+                                        }
+                                        else if (selected.Rarity == "S RARE")
+                                        {
+                                            CentreSkillText = "큐트 아이돌의 비쥬얼 어필 수치 60% 상승";
+                                        }
+                                        else if (selected.Rarity == "SS RARE")
+                                        {
+                                            CentreSkillText = "큐트 아이돌의 비쥬얼 어필 수치 90% 상승";
+                                        }
+                                        break;
+                                    }
+                                case "princess":
+                                    {
+                                        CentreSkillText = "큐트 아이돌만 편성시, 모두의 모든 어필 수치 50% 상승";
+                                        break;
+                                    }
+                                case "step":
+                                    {
+                                        if (selected.Rarity == "RARE")
+                                        {
+                                            CentreSkillText = "큐트 아이돌의 댄스 어필 수치 30% 상승";
+                                        }
+                                        else if (selected.Rarity == "S RARE")
+                                        {
+                                            CentreSkillText = "큐트 아이돌의 댄스 어필 수치 60% 상승";
+                                        }
+                                        else if (selected.Rarity == "SS RARE")
+                                        {
+                                            CentreSkillText = "큐트 아이돌의 댄스 어필 수치 90% 상승";
+                                        }
+                                        break;
+                                    }
+                                case "voice":
+                                    {
+                                        if (selected.Rarity == "RARE")
+                                        {
+                                            CentreSkillText = "큐트 아이돌의 보컬 어필 수치 30% 상승";
+                                        }
+                                        else if (selected.Rarity == "S RARE")
+                                        {
+                                            CentreSkillText = "큐트 아이돌의 보컬 어필 수치 60% 상승";
+                                        }
+                                        else if (selected.Rarity == "SS RARE")
+                                        {
+                                            CentreSkillText = "큐트 아이돌의 보컬 어필 수치 90% 상승";
+                                        }
+                                        break;
+                                    }
+                            }
+                            break;
+                        }
+                    case "cool":
+                        {
+                            switch (centre_skill[1])
+                            {
+                                case "abillity":
+                                    {
+                                        if (selected.Rarity == "RARE")
+                                        {
+                                            CentreSkillText = "쿨 아이돌의 특기 발동 확률 15% 상승";
+                                        }
+                                        else if (selected.Rarity == "SS RARE")
+                                        {
+                                            CentreSkillText = "쿨 아이돌의 특기 발동 확률 30% 상승";
+                                        }
+                                        break;
+                                    }
+                                case "brilliance":
+                                    {
+                                        if (selected.Rarity == "RARE")
+                                        {
+                                            CentreSkillText = "쿨 아이돌의 모든 어필 수치 10% 상승";
+                                        }
+                                        else if (selected.Rarity == "S RARE")
+                                        {
+                                            CentreSkillText = "쿨 아이돌의 모든 어필 수치 20% 상승";
+                                        }
+                                        else if (selected.Rarity == "SS RARE")
+                                        {
+                                            CentreSkillText = "쿨 아이돌의 모든 어필 수치 30% 상승";
+                                        }
+                                        break;
+                                    }
+                                case "cheer":
+                                    {
+                                        CentreSkillText = "쿨 아이돌만 편성시, 모두의 라이프 40% 상승";
+                                        break;
+                                    }
+                                case "energy":
+                                    {
+                                        if (selected.Rarity == "RARE")
+                                        {
+                                            CentreSkillText = "쿨 아이돌의 라이프 10% 상승";
+                                        }
+                                        else if (selected.Rarity == "S RARE")
+                                        {
+                                            CentreSkillText = "쿨 아이돌의 라이프 20% 상승";
+                                        }
+                                        else if (selected.Rarity == "SS RARE")
+                                        {
+                                            CentreSkillText = "쿨 아이돌의 라이프 30% 상승";
+                                        }
+                                        break;
+                                    }
+                                case "makeup":
+                                    {
+                                        if (selected.Rarity == "RARE")
+                                        {
+                                            CentreSkillText = "쿨 아이돌의 비쥬얼 어필 수치 30% 상승";
+                                        }
+                                        else if (selected.Rarity == "S RARE")
+                                        {
+                                            CentreSkillText = "쿨 아이돌의 비쥬얼 어필 수치 60% 상승";
+                                        }
+                                        else if (selected.Rarity == "SS RARE")
+                                        {
+                                            CentreSkillText = "쿨 아이돌의 비쥬얼 어필 수치 90% 상승";
+                                        }
+                                        break;
+                                    }
+                                case "princess":
+                                    {
+                                        CentreSkillText = "쿨 아이돌만 편성시, 모두의 모든 어필 수치 50% 상승";
+                                        break;
+                                    }
+                                case "step":
+                                    {
+                                        if (selected.Rarity == "RARE")
+                                        {
+                                            CentreSkillText = "쿨 아이돌의 댄스 어필 수치 30% 상승";
+                                        }
+                                        else if (selected.Rarity == "S RARE")
+                                        {
+                                            CentreSkillText = "쿨 아이돌의 댄스 어필 수치 60% 상승";
+                                        }
+                                        else if (selected.Rarity == "SS RARE")
+                                        {
+                                            CentreSkillText = "쿨 아이돌의 댄스 어필 수치 90% 상승";
+                                        }
+                                        break;
+                                    }
+                                case "voice":
+                                    {
+                                        if (selected.Rarity == "RARE")
+                                        {
+                                            CentreSkillText = "쿨 아이돌의 보컬 어필 수치 30% 상승";
+                                        }
+                                        else if (selected.Rarity == "S RARE")
+                                        {
+                                            CentreSkillText = "쿨 아이돌의 보컬 어필 수치 60% 상승";
+                                        }
+                                        else if (selected.Rarity == "SS RARE")
+                                        {
+                                            CentreSkillText = "쿨 아이돌의 보컬 어필 수치 90% 상승";
+                                        }
+                                        break;
+                                    }
+                            }
+                            break;
+                        }
+                    case "passion":
+                        {
+                            switch (centre_skill[1])
+                            {
+                                case "abillity":
+                                    {
+                                        if (selected.Rarity == "RARE")
+                                        {
+                                            CentreSkillText = "패션 아이돌의 특기 발동 확률 15% 상승";
+                                        }
+                                        else if (selected.Rarity == "SS RARE")
+                                        {
+                                            CentreSkillText = "패션 아이돌의 특기 발동 확률 30% 상승";
+                                        }
+                                        break;
+                                    }
+                                case "brilliance":
+                                    {
+                                        if (selected.Rarity == "RARE")
+                                        {
+                                            CentreSkillText = "패션 아이돌의 모든 어필 수치 10% 상승";
+                                        }
+                                        else if (selected.Rarity == "S RARE")
+                                        {
+                                            CentreSkillText = "패션 아이돌의 모든 어필 수치 20% 상승";
+                                        }
+                                        else if (selected.Rarity == "SS RARE")
+                                        {
+                                            CentreSkillText = "패션 아이돌의 모든 어필 수치 30% 상승";
+                                        }
+                                        break;
+                                    }
+                                case "cheer":
+                                    {
+                                        CentreSkillText = "패션 아이돌만 편성시, 모두의 라이프 40% 상승";
+                                        break;
+                                    }
+                                case "energy":
+                                    {
+                                        if (selected.Rarity == "RARE")
+                                        {
+                                            CentreSkillText = "패션 아이돌의 라이프 10% 상승";
+                                        }
+                                        else if (selected.Rarity == "S RARE")
+                                        {
+                                            CentreSkillText = "패션 아이돌의 라이프 20% 상승";
+                                        }
+                                        else if (selected.Rarity == "SS RARE")
+                                        {
+                                            CentreSkillText = "패션 아이돌의 라이프 30% 상승";
+                                        }
+                                        break;
+                                    }
+                                case "makeup":
+                                    {
+                                        if (selected.Rarity == "RARE")
+                                        {
+                                            CentreSkillText = "패션 아이돌의 비쥬얼 어필 수치 30% 상승";
+                                        }
+                                        else if (selected.Rarity == "S RARE")
+                                        {
+                                            CentreSkillText = "패션 아이돌의 비쥬얼 어필 수치 60% 상승";
+                                        }
+                                        else if (selected.Rarity == "SS RARE")
+                                        {
+                                            CentreSkillText = "패션 아이돌의 비쥬얼 어필 수치 90% 상승";
+                                        }
+                                        break;
+                                    }
+                                case "princess":
+                                    {
+                                        CentreSkillText = "패션 아이돌만 편성시, 모두의 모든 어필 수치 50% 상승";
+                                        break;
+                                    }
+                                case "step":
+                                    {
+                                        if (selected.Rarity == "RARE")
+                                        {
+                                            CentreSkillText = "패션 아이돌의 댄스 어필 수치 30% 상승";
+                                        }
+                                        else if (selected.Rarity == "S RARE")
+                                        {
+                                            CentreSkillText = "패션 아이돌의 댄스 어필 수치 60% 상승";
+                                        }
+                                        else if (selected.Rarity == "SS RARE")
+                                        {
+                                            CentreSkillText = "패션 아이돌의 댄스 어필 수치 90% 상승";
+                                        }
+                                        break;
+                                    }
+                                case "voice":
+                                    {
+                                        if (selected.Rarity == "RARE")
+                                        {
+                                            CentreSkillText = "패션 아이돌의 보컬 어필 수치 30% 상승";
+                                        }
+                                        else if (selected.Rarity == "S RARE")
+                                        {
+                                            CentreSkillText = "패션 아이돌의 보컬 어필 수치 60% 상승";
+                                        }
+                                        else if (selected.Rarity == "SS RARE")
+                                        {
+                                            CentreSkillText = "패션 아이돌의 보컬 어필 수치 90% 상승";
+                                        }
+                                        break;
+                                    }
+                            }
+                            break;
+                        }
+                }
             }
-        }
-
-        private void centre_threetype(String value, String type) //0 cute 1 cool 2 passion
-        {
-
+            CardInfoCenterSkill.Text = "센터 스킬 : " + CentreSkillText;
         }
 
         private Card returnByName(String input)

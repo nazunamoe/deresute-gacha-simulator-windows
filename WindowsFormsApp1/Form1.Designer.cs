@@ -67,6 +67,7 @@
             this.OneGacha = new System.Windows.Forms.Button();
             this.InfoMenu = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.panel3 = new System.Windows.Forms.Panel();
             this.CardInfoCenterSkill = new System.Windows.Forms.Label();
             this.CardInfoSkill = new System.Windows.Forms.Label();
@@ -82,7 +83,6 @@
             this.UsedJewelStatus = new System.Windows.Forms.Label();
             this.UsedYenStatus = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.MainMenu.SuspendLayout();
             this.MoneyPage.SuspendLayout();
             this.GachaMenu.SuspendLayout();
@@ -101,7 +101,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(576, 40);
             this.label1.TabIndex = 0;
-            this.label1.Text = "데레스테 가챠 시뮬레이터 리메이크 베타 3";
+            this.label1.Text = "데레스테 가챠 시뮬레이터 리메이크 베타 4";
             // 
             // InformationButton
             // 
@@ -532,6 +532,13 @@
             this.panel4.Size = new System.Drawing.Size(263, 109);
             this.panel4.TabIndex = 10;
             // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Location = new System.Drawing.Point(244, 0);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(17, 107);
+            this.vScrollBar1.TabIndex = 0;
+            // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -680,13 +687,6 @@
             this.label7.Size = new System.Drawing.Size(121, 15);
             this.label7.TabIndex = 8;
             this.label7.Text = "Made by nazunamoe";
-            // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(244, 0);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 107);
-            this.vScrollBar1.TabIndex = 0;
             // 
             // Form1
             // 
