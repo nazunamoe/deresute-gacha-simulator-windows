@@ -122,14 +122,15 @@ namespace WindowsFormsApp1
                 }
                 if (no < 900000)
                 {
+                    
                     if (!initexit)
                     {
-                        initexit = true;
+                        AllCardList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
                         if (temp[18] == "gacha" || temp[18] == "local_gacha")
                         {
                             GachaCardList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
                         }
-                        AllCardList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
+                        
                         if (temp[10] == "usual")
                         {
                             if (temp[3] == "SS RARE")
@@ -280,7 +281,7 @@ namespace WindowsFormsApp1
                     }
                 }
             }
-            //sr.Close();
+            initexit = true;
         }
 
 
