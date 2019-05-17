@@ -66,6 +66,10 @@
             this.GoldGacha = new System.Windows.Forms.Button();
             this.OneGacha = new System.Windows.Forms.Button();
             this.InfoMenu = new System.Windows.Forms.TabPage();
+            this.TypeOnlyButtonTitle = new System.Windows.Forms.Label();
+            this.PassionOnlyButton = new System.Windows.Forms.CheckBox();
+            this.CoolOnlyButton = new System.Windows.Forms.CheckBox();
+            this.CuteOnlyButton = new System.Windows.Forms.CheckBox();
             this.NOnlyButton = new System.Windows.Forms.CheckBox();
             this.OnlyButtonTitle = new System.Windows.Forms.Label();
             this.ROnlyButton = new System.Windows.Forms.CheckBox();
@@ -87,6 +91,7 @@
             this.UsedJewelStatus = new System.Windows.Forms.Label();
             this.UsedYenStatus = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.readme = new System.Windows.Forms.Label();
             this.MainMenu.SuspendLayout();
             this.MoneyPage.SuspendLayout();
             this.GachaMenu.SuspendLayout();
@@ -515,6 +520,11 @@
             // 
             // InfoMenu
             // 
+            this.InfoMenu.Controls.Add(this.readme);
+            this.InfoMenu.Controls.Add(this.TypeOnlyButtonTitle);
+            this.InfoMenu.Controls.Add(this.PassionOnlyButton);
+            this.InfoMenu.Controls.Add(this.CoolOnlyButton);
+            this.InfoMenu.Controls.Add(this.CuteOnlyButton);
             this.InfoMenu.Controls.Add(this.NOnlyButton);
             this.InfoMenu.Controls.Add(this.OnlyButtonTitle);
             this.InfoMenu.Controls.Add(this.ROnlyButton);
@@ -529,6 +539,51 @@
             this.InfoMenu.TabIndex = 2;
             this.InfoMenu.Text = "정보";
             this.InfoMenu.UseVisualStyleBackColor = true;
+            // 
+            // TypeOnlyButtonTitle
+            // 
+            this.TypeOnlyButtonTitle.AutoSize = true;
+            this.TypeOnlyButtonTitle.Cursor = System.Windows.Forms.Cursors.NoMoveVert;
+            this.TypeOnlyButtonTitle.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TypeOnlyButtonTitle.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.TypeOnlyButtonTitle.Location = new System.Drawing.Point(523, 30);
+            this.TypeOnlyButtonTitle.Name = "TypeOnlyButtonTitle";
+            this.TypeOnlyButtonTitle.Size = new System.Drawing.Size(42, 21);
+            this.TypeOnlyButtonTitle.TabIndex = 14;
+            this.TypeOnlyButtonTitle.Text = "속성";
+            // 
+            // PassionOnlyButton
+            // 
+            this.PassionOnlyButton.AutoSize = true;
+            this.PassionOnlyButton.Location = new System.Drawing.Point(527, 104);
+            this.PassionOnlyButton.Name = "PassionOnlyButton";
+            this.PassionOnlyButton.Size = new System.Drawing.Size(66, 19);
+            this.PassionOnlyButton.TabIndex = 17;
+            this.PassionOnlyButton.Text = "Passion";
+            this.PassionOnlyButton.UseVisualStyleBackColor = true;
+            this.PassionOnlyButton.CheckedChanged += new System.EventHandler(this.PassionOnlyButton_CheckedChanged);
+            // 
+            // CoolOnlyButton
+            // 
+            this.CoolOnlyButton.AutoSize = true;
+            this.CoolOnlyButton.Location = new System.Drawing.Point(527, 79);
+            this.CoolOnlyButton.Name = "CoolOnlyButton";
+            this.CoolOnlyButton.Size = new System.Drawing.Size(51, 19);
+            this.CoolOnlyButton.TabIndex = 16;
+            this.CoolOnlyButton.Text = "Cool";
+            this.CoolOnlyButton.UseVisualStyleBackColor = true;
+            this.CoolOnlyButton.CheckedChanged += new System.EventHandler(this.CoolOnlyButton_CheckedChanged);
+            // 
+            // CuteOnlyButton
+            // 
+            this.CuteOnlyButton.AutoSize = true;
+            this.CuteOnlyButton.Location = new System.Drawing.Point(527, 54);
+            this.CuteOnlyButton.Name = "CuteOnlyButton";
+            this.CuteOnlyButton.Size = new System.Drawing.Size(51, 19);
+            this.CuteOnlyButton.TabIndex = 15;
+            this.CuteOnlyButton.Text = "Cute";
+            this.CuteOnlyButton.UseVisualStyleBackColor = true;
+            this.CuteOnlyButton.CheckedChanged += new System.EventHandler(this.CuteOnlyButton_CheckedChanged);
             // 
             // NOnlyButton
             // 
@@ -744,6 +799,19 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Made by nazunamoe";
             // 
+            // readme
+            // 
+            this.readme.AutoSize = true;
+            this.readme.Cursor = System.Windows.Forms.Cursors.NoMoveVert;
+            this.readme.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.readme.ForeColor = System.Drawing.Color.Black;
+            this.readme.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.readme.Location = new System.Drawing.Point(485, 13);
+            this.readme.Name = "readme";
+            this.readme.Size = new System.Drawing.Size(200, 15);
+            this.readme.TabIndex = 18;
+            this.readme.Text = "타입->속성 순으로 선택해 주십시오";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -843,6 +911,11 @@
         private System.Windows.Forms.CheckBox SROnlyButton;
         private System.Windows.Forms.CheckBox SSROnlyButton;
         private System.Windows.Forms.CheckBox NOnlyButton;
+        private System.Windows.Forms.Label TypeOnlyButtonTitle;
+        private System.Windows.Forms.CheckBox PassionOnlyButton;
+        private System.Windows.Forms.CheckBox CoolOnlyButton;
+        private System.Windows.Forms.CheckBox CuteOnlyButton;
+        private System.Windows.Forms.Label readme;
     }
 }
 
