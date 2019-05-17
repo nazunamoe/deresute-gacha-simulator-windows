@@ -45,6 +45,7 @@
             this.YenGo = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.GachaMenu = new System.Windows.Forms.TabPage();
+            this.GachaResultTitle = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.GachaResultText = new System.Windows.Forms.RichTextBox();
             this.OKGachaButton = new System.Windows.Forms.Button();
@@ -66,6 +67,7 @@
             this.GoldGacha = new System.Windows.Forms.Button();
             this.OneGacha = new System.Windows.Forms.Button();
             this.InfoMenu = new System.Windows.Forms.TabPage();
+            this.readme = new System.Windows.Forms.Label();
             this.TypeOnlyButtonTitle = new System.Windows.Forms.Label();
             this.PassionOnlyButton = new System.Windows.Forms.CheckBox();
             this.CoolOnlyButton = new System.Windows.Forms.CheckBox();
@@ -91,7 +93,6 @@
             this.UsedJewelStatus = new System.Windows.Forms.Label();
             this.UsedYenStatus = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.readme = new System.Windows.Forms.Label();
             this.MainMenu.SuspendLayout();
             this.MoneyPage.SuspendLayout();
             this.GachaMenu.SuspendLayout();
@@ -296,6 +297,7 @@
             // 
             // GachaMenu
             // 
+            this.GachaMenu.Controls.Add(this.GachaResultTitle);
             this.GachaMenu.Controls.Add(this.panel1);
             this.GachaMenu.Controls.Add(this.OKGachaButton);
             this.GachaMenu.Controls.Add(this.panel2);
@@ -311,6 +313,15 @@
             this.GachaMenu.Text = "가챠";
             this.GachaMenu.UseVisualStyleBackColor = true;
             // 
+            // GachaResultTitle
+            // 
+            this.GachaResultTitle.AutoSize = true;
+            this.GachaResultTitle.Location = new System.Drawing.Point(256, 22);
+            this.GachaResultTitle.Name = "GachaResultTitle";
+            this.GachaResultTitle.Size = new System.Drawing.Size(63, 15);
+            this.GachaResultTitle.TabIndex = 17;
+            this.GachaResultTitle.Text = "가챠 결과 ";
+            // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -323,10 +334,10 @@
             // GachaResultText
             // 
             this.GachaResultText.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.GachaResultText.Font = new System.Drawing.Font("돋움", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.GachaResultText.Location = new System.Drawing.Point(3, 3);
+            this.GachaResultText.Font = new System.Drawing.Font("돋움", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.GachaResultText.Location = new System.Drawing.Point(3, 25);
             this.GachaResultText.Name = "GachaResultText";
-            this.GachaResultText.Size = new System.Drawing.Size(425, 184);
+            this.GachaResultText.Size = new System.Drawing.Size(425, 162);
             this.GachaResultText.TabIndex = 0;
             this.GachaResultText.Text = "";
             // 
@@ -539,6 +550,19 @@
             this.InfoMenu.TabIndex = 2;
             this.InfoMenu.Text = "정보";
             this.InfoMenu.UseVisualStyleBackColor = true;
+            // 
+            // readme
+            // 
+            this.readme.AutoSize = true;
+            this.readme.Cursor = System.Windows.Forms.Cursors.NoMoveVert;
+            this.readme.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.readme.ForeColor = System.Drawing.Color.Black;
+            this.readme.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.readme.Location = new System.Drawing.Point(485, 13);
+            this.readme.Name = "readme";
+            this.readme.Size = new System.Drawing.Size(200, 15);
+            this.readme.TabIndex = 18;
+            this.readme.Text = "타입->속성 순으로 선택해 주십시오";
             // 
             // TypeOnlyButtonTitle
             // 
@@ -799,19 +823,6 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Made by nazunamoe";
             // 
-            // readme
-            // 
-            this.readme.AutoSize = true;
-            this.readme.Cursor = System.Windows.Forms.Cursors.NoMoveVert;
-            this.readme.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.readme.ForeColor = System.Drawing.Color.Black;
-            this.readme.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.readme.Location = new System.Drawing.Point(485, 13);
-            this.readme.Name = "readme";
-            this.readme.Size = new System.Drawing.Size(200, 15);
-            this.readme.TabIndex = 18;
-            this.readme.Text = "타입->속성 순으로 선택해 주십시오";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -838,6 +849,7 @@
             this.MoneyPage.ResumeLayout(false);
             this.MoneyPage.PerformLayout();
             this.GachaMenu.ResumeLayout(false);
+            this.GachaMenu.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -916,6 +928,7 @@
         private System.Windows.Forms.CheckBox CoolOnlyButton;
         private System.Windows.Forms.CheckBox CuteOnlyButton;
         private System.Windows.Forms.Label readme;
+        private System.Windows.Forms.Label GachaResultTitle;
     }
 }
 

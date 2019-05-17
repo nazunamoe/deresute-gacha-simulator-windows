@@ -122,7 +122,7 @@ namespace WindowsFormsApp1
                 }
                 if (no < 900000)
                 {
-                    
+
                     if (!initexit)
                     {
                         AllCardList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
@@ -130,7 +130,7 @@ namespace WindowsFormsApp1
                         {
                             GachaCardList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
                         }
-                        
+
                         if (temp[10] == "usual")
                         {
                             if (temp[3] == "SS RARE")
@@ -203,6 +203,82 @@ namespace WindowsFormsApp1
                     {
                         if (temp[10] == "usual")
                         {
+                            if (temp[3] == "SS RARE")
+                            {
+                                if (SSROnly)
+                                {
+                                    if (temp[4] == "CUTE" && CuteOnly)
+                                    {
+                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
+                                    }
+                                    if (temp[4] == "COOL" && CoolOnly)
+                                    {
+                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
+                                    }
+                                    if (temp[4] == "PASSION" && PassionOnly)
+                                    {
+                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
+                                    }
+                                }
+
+                            }
+                            else if (temp[3] == "S RARE")
+                            {
+                                if (SROnly)
+                                {
+                                    if (temp[4] == "CUTE" && CuteOnly)
+                                    {
+                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
+                                    }
+                                    if (temp[4] == "COOL" && CoolOnly)
+                                    {
+                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
+                                    }
+                                    if (temp[4] == "PASSION" && PassionOnly)
+                                    {
+                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
+                                    }
+                                }
+
+                            }
+                            else if (temp[3] == "RARE")
+                            {
+                                if (ROnly)
+                                {
+                                    if (temp[4] == "CUTE" && CuteOnly)
+                                    {
+                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
+                                    }
+                                    if (temp[4] == "COOL" && CoolOnly)
+                                    {
+                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
+                                    }
+                                    if (temp[4] == "PASSION" && PassionOnly)
+                                    {
+                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
+                                    }
+                                }
+                            }
+                            else if (temp[3] == "NORMAL")
+                            {
+                                if (NOnly)
+                                {
+                                    if (temp[4] == "CUTE" && CuteOnly)
+                                    {
+                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
+                                    }
+                                    if (temp[4] == "COOL" && CoolOnly)
+                                    {
+                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
+                                    }
+                                    if (temp[4] == "PASSION" && PassionOnly)
+                                    {
+                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
+                                    }
+                                } 
+                            }
+                        }
+                        else if(temp[10] == "limited"){
                             if (temp[3] == "SS RARE")
                             {
                                 if (SSROnly)
@@ -958,7 +1034,7 @@ namespace WindowsFormsApp1
 
         private void charge(int cyen, int cjewel)
         {
-            if (yen > cyen)
+            if (yen >= cyen)
             {
                 if (jewel < 1000000)
                 {
