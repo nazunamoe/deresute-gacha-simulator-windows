@@ -66,8 +66,11 @@
             this.GoldGacha = new System.Windows.Forms.Button();
             this.OneGacha = new System.Windows.Forms.Button();
             this.InfoMenu = new System.Windows.Forms.TabPage();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.NOnlyButton = new System.Windows.Forms.CheckBox();
+            this.OnlyButtonTitle = new System.Windows.Forms.Label();
+            this.ROnlyButton = new System.Windows.Forms.CheckBox();
+            this.SROnlyButton = new System.Windows.Forms.CheckBox();
+            this.SSROnlyButton = new System.Windows.Forms.CheckBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.CardInfoCenterSkill = new System.Windows.Forms.Label();
             this.CardInfoSkill = new System.Windows.Forms.Label();
@@ -78,6 +81,7 @@
             this.CardInfoRarity = new System.Windows.Forms.Label();
             this.CardInfoName = new System.Windows.Forms.Label();
             this.CardInfoList = new System.Windows.Forms.ListBox();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.YenStatus = new System.Windows.Forms.Label();
             this.JewelStatus = new System.Windows.Forms.Label();
             this.UsedJewelStatus = new System.Windows.Forms.Label();
@@ -89,7 +93,6 @@
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.InfoMenu.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,7 +104,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(576, 40);
             this.label1.TabIndex = 0;
-            this.label1.Text = "데레스테 가챠 시뮬레이터 리메이크 베타 4";
+            this.label1.Text = "데레스테 가챠 시뮬레이터 리메이크 베타 5";
             // 
             // InformationButton
             // 
@@ -132,6 +135,7 @@
             this.MainMenu.Controls.Add(this.MoneyPage);
             this.MainMenu.Controls.Add(this.GachaMenu);
             this.MainMenu.Controls.Add(this.InfoMenu);
+            this.MainMenu.Controls.Add(this.tabPage1);
             this.MainMenu.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.MainMenu.Location = new System.Drawing.Point(16, 74);
             this.MainMenu.Name = "MainMenu";
@@ -511,7 +515,11 @@
             // 
             // InfoMenu
             // 
-            this.InfoMenu.Controls.Add(this.panel4);
+            this.InfoMenu.Controls.Add(this.NOnlyButton);
+            this.InfoMenu.Controls.Add(this.OnlyButtonTitle);
+            this.InfoMenu.Controls.Add(this.ROnlyButton);
+            this.InfoMenu.Controls.Add(this.SROnlyButton);
+            this.InfoMenu.Controls.Add(this.SSROnlyButton);
             this.InfoMenu.Controls.Add(this.panel3);
             this.InfoMenu.Controls.Add(this.CardInfoList);
             this.InfoMenu.Location = new System.Drawing.Point(4, 24);
@@ -521,23 +529,61 @@
             this.InfoMenu.TabIndex = 2;
             this.InfoMenu.Text = "정보";
             this.InfoMenu.UseVisualStyleBackColor = true;
-            this.InfoMenu.Click += new System.EventHandler(this.InfoMenu_Click);
             // 
-            // panel4
+            // NOnlyButton
             // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.vScrollBar1);
-            this.panel4.Location = new System.Drawing.Point(422, 16);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(263, 109);
-            this.panel4.TabIndex = 10;
+            this.NOnlyButton.AutoSize = true;
+            this.NOnlyButton.Location = new System.Drawing.Point(432, 107);
+            this.NOnlyButton.Name = "NOnlyButton";
+            this.NOnlyButton.Size = new System.Drawing.Size(76, 19);
+            this.NOnlyButton.TabIndex = 13;
+            this.NOnlyButton.Text = "NORMAL";
+            this.NOnlyButton.UseVisualStyleBackColor = true;
+            this.NOnlyButton.CheckedChanged += new System.EventHandler(this.NOnlyButton_CheckedChanged);
             // 
-            // vScrollBar1
+            // OnlyButtonTitle
             // 
-            this.vScrollBar1.Location = new System.Drawing.Point(244, 0);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 107);
-            this.vScrollBar1.TabIndex = 0;
+            this.OnlyButtonTitle.AutoSize = true;
+            this.OnlyButtonTitle.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.OnlyButtonTitle.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.OnlyButtonTitle.Location = new System.Drawing.Point(428, 8);
+            this.OnlyButtonTitle.Name = "OnlyButtonTitle";
+            this.OnlyButtonTitle.Size = new System.Drawing.Size(42, 21);
+            this.OnlyButtonTitle.TabIndex = 8;
+            this.OnlyButtonTitle.Text = "타입";
+            // 
+            // ROnlyButton
+            // 
+            this.ROnlyButton.AutoSize = true;
+            this.ROnlyButton.Location = new System.Drawing.Point(432, 82);
+            this.ROnlyButton.Name = "ROnlyButton";
+            this.ROnlyButton.Size = new System.Drawing.Size(54, 19);
+            this.ROnlyButton.TabIndex = 12;
+            this.ROnlyButton.Text = "RARE";
+            this.ROnlyButton.UseVisualStyleBackColor = true;
+            this.ROnlyButton.CheckedChanged += new System.EventHandler(this.ROnlyButton_CheckedChanged);
+            // 
+            // SROnlyButton
+            // 
+            this.SROnlyButton.AutoSize = true;
+            this.SROnlyButton.Location = new System.Drawing.Point(432, 57);
+            this.SROnlyButton.Name = "SROnlyButton";
+            this.SROnlyButton.Size = new System.Drawing.Size(65, 19);
+            this.SROnlyButton.TabIndex = 11;
+            this.SROnlyButton.Text = "S RARE";
+            this.SROnlyButton.UseVisualStyleBackColor = true;
+            this.SROnlyButton.CheckedChanged += new System.EventHandler(this.SROnlyButton_CheckedChanged);
+            // 
+            // SSROnlyButton
+            // 
+            this.SSROnlyButton.AutoSize = true;
+            this.SSROnlyButton.Location = new System.Drawing.Point(432, 32);
+            this.SSROnlyButton.Name = "SSROnlyButton";
+            this.SSROnlyButton.Size = new System.Drawing.Size(72, 19);
+            this.SSROnlyButton.TabIndex = 10;
+            this.SSROnlyButton.Text = "SS RARE";
+            this.SSROnlyButton.UseVisualStyleBackColor = true;
+            this.SSROnlyButton.CheckedChanged += new System.EventHandler(this.SSROnlyButton_CheckedChanged);
             // 
             // panel3
             // 
@@ -637,6 +683,16 @@
             this.CardInfoList.TabIndex = 0;
             this.CardInfoList.SelectedIndexChanged += new System.EventHandler(this.CardInfoList_SelectedIndexChanged);
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(702, 255);
+            this.tabPage1.TabIndex = 3;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
             // YenStatus
             // 
             this.YenStatus.AutoSize = true;
@@ -718,7 +774,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.InfoMenu.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
+            this.InfoMenu.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -779,10 +835,14 @@
         private System.Windows.Forms.Label CardInfoVocal;
         private System.Windows.Forms.Label CardInfoCenterSkill;
         private System.Windows.Forms.Label CardInfoSkill;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.RichTextBox GachaResultText;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Label OnlyButtonTitle;
+        private System.Windows.Forms.CheckBox ROnlyButton;
+        private System.Windows.Forms.CheckBox SROnlyButton;
+        private System.Windows.Forms.CheckBox SSROnlyButton;
+        private System.Windows.Forms.CheckBox NOnlyButton;
     }
 }
 
