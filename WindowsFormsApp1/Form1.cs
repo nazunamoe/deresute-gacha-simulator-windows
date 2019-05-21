@@ -27,9 +27,28 @@ namespace WindowsFormsApp1
         int Coolvalue = 0;
         int Passionvalue = 0;
 
-        int skill_time = 0;
-        int skill_prob = 0;
-        int skill_dura = 0;
+        string skill_name = "";
+        string skill_explain = "";
+
+        string leaderskill_name = "";
+        string leaderskill_explain = "";
+
+        string attr;
+
+        int no = 0;
+        int hp_min = 0;
+        int vocal_min = 0;
+        int dance_min = 0;
+        int visual_min = 0;
+        int total_min = 0;
+
+        int hp_max = 0;
+        int vocal_max = 0;
+        int dance_max = 0;
+        int visual_max = 0;
+        int total_max = 0;
+
+        int num = 0;
 
         double SSRp;
         double SRp;
@@ -45,28 +64,16 @@ namespace WindowsFormsApp1
         Boolean PassionOnly = false;
 
         Boolean initexit = false;
+        Boolean limitedgacha = false;
 
         ArrayList SSRList = new ArrayList();
-        ArrayList CuteSSRList = new ArrayList();
-        ArrayList CoolSSRList = new ArrayList();
-        ArrayList PassionSSRList = new ArrayList();
 
         ArrayList SRList = new ArrayList();
-        ArrayList CuteSRList = new ArrayList();
-        ArrayList CoolSRList = new ArrayList();
-        ArrayList PassionSRList = new ArrayList();
 
         ArrayList RList = new ArrayList();
-        ArrayList CuteRList = new ArrayList();
-        ArrayList CoolRList = new ArrayList();
-        ArrayList PassionRList = new ArrayList();
 
         ArrayList NList = new ArrayList();
-        ArrayList CuteNList = new ArrayList();
-        ArrayList CoolNList = new ArrayList();
-        ArrayList PassionNList = new ArrayList();
 
-        ArrayList GachaCardList = new ArrayList();
         ArrayList AllCardList = new ArrayList();
 
         Random r = new Random();
@@ -79,7 +86,7 @@ namespace WindowsFormsApp1
             Rp = 85.0;
             InitializeComponent();
             Text = "데레스테 가챠 시뮬레이터";
-            Init(1);
+            Init(0);
         }
 
         private void Init(int mode)
@@ -90,13 +97,13 @@ namespace WindowsFormsApp1
             SelectGachaBox.Items.Add("Cool");
             SelectGachaBox.Items.Add("Passion");
             SelectGachaBox.SelectedIndex = 0;
-            sr = new StreamReader("carddb.csv", Encoding.GetEncoding("UTF-8"));
+            sr = new StreamReader("card_info_availble.csv", Encoding.GetEncoding("UTF-8"));
             initCardInfoList(sr, mode);
         }
 
         private void updateCardInfoList()
         {
-            sr = new StreamReader("carddb.csv", Encoding.GetEncoding("UTF-8"));
+            sr = new StreamReader("card_info_availble.csv", Encoding.GetEncoding("UTF-8"));
             CardInfoList.Items.Clear();
             initCardInfoList(sr, 1);
         }
@@ -105,259 +112,298 @@ namespace WindowsFormsApp1
         {
             int i = 0;
             while (!sr.EndOfStream)
-            {
+            // 0 no . 1 cardname 2 charaname 3 rarity 4 attr
+            { //5,6,7,8,9 = hp, vocal, dance, visual, total - min ; 10,11,12,13,14 = hp, vocal, dance, visual, total - max 15,16 - skill name, exp, 17,18 - leaderskill name, exp
                 string s = sr.ReadLine();
                 string[] temp = s.Split('	');
+
                 i++;
-                int no = int.Parse(temp[0]);
-                int vocal = int.Parse(temp[5]);
-                int dance = int.Parse(temp[6]);
-                int visual = int.Parse(temp[7]);
-                int total = int.Parse(temp[8]);
-                if (!(temp[3] == "NORMAL" || no > 900000))
+
+                String rarity = "";
+
+                switch (temp[3])
                 {
-                    skill_time = int.Parse(temp[12]);
-                    skill_prob = int.Parse(temp[14]);
-                    skill_dura = int.Parse(temp[15]);
+                    case "1":
+                        {
+                            rarity = "NORMAL";
+                            break;
+                        }
+                    case "2":
+                        {
+                            rarity = "NORMAL";
+                            break;
+                        }
+                    case "3":
+                        {
+                            rarity = "RARE";
+                            break;
+                        }
+                    case "4":
+                        {
+                            rarity = "RARE";
+                            break;
+                        }
+                    case "5":
+                        {
+                            rarity = "S RARE";
+                            break;
+                        }
+                    case "6":
+                        { 
+                            rarity = "S RARE";
+                            break;
+                        }
+                    case "7":
+                        {
+                            rarity = "SS RARE";
+                            break;
+                        }
+                    case "8":
+                        {
+                            rarity = "SS RARE";
+                            break;
+                        }
                 }
-                if (no < 900000)
+
+                num = int.Parse(temp[0]);
+
+                hp_min = int.Parse(temp[5]);
+                vocal_min = int.Parse(temp[6]);
+                dance_min = int.Parse(temp[7]);
+                visual_min = int.Parse(temp[8]);
+                total_min = int.Parse(temp[9]);
+
+                hp_max = int.Parse(temp[10]);
+                vocal_max = int.Parse(temp[11]);
+                dance_max = int.Parse(temp[12]);
+                visual_max = int.Parse(temp[13]);
+                total_max = int.Parse(temp[14]);
+
+                switch (temp[4])
                 {
+                    case "1":
+                        {
+                            attr = "CUTE";
+                            break;
+                        }
+                    case "2":
+                        {
+                            attr = "COOL";
+                            break;
+                        }
+                    case "3":
+                        {
+                            attr = "PASSION";
+                            break;
+                        }
+                }
 
-                    if (!initexit)
+                if (rarity != "NORMAL" || rarity != "NORMAL+")
+                {
+                    skill_name = temp[15];
+                    skill_explain = temp[16];
+
+                    leaderskill_name = temp[17];
+                    leaderskill_explain = temp[18];
+                }
+                if (mode == 0)
+                {
+                    CardInfoList.Items.Add("［" + rarity + "］" + temp[1]);
+                    if(num % 2 == 1)
                     {
-                        AllCardList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
-                        if (temp[18] == "gacha" || temp[18] == "local_gacha")
+                        if (i >= 2)
                         {
-                            GachaCardList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
-                        }
 
-                        if (temp[10] == "usual")
+                            for (int x = 0; x < i; x++)
+                            {
+
+                                if (!CharaBox.Items.Contains("［" + attr + "］" + temp[2]))
+                                {
+                                    CharaBox.Items.Add("［" + attr + "］" + temp[2]);
+                                }
+                            }
+
+                        }
+                        else
                         {
-                            if (temp[3] == "SS RARE")
-                            {
-                                SSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
-                                if (temp[4] == "CUTE")
-                                {
-                                    CuteSSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
-                                }
-                                else if (temp[4] == "COOL")
-                                {
-                                    CoolSSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
-                                }
-                                else if (temp[4] == "PASSION")
-                                {
-                                    PassionSSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
-                                }
-                            }
-                            if (temp[3] == "S RARE")
-                            {
-                                SRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
-                                if (temp[4] == "CUTE")
-                                {
-                                    CuteSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
-                                }
-                                else if (temp[4] == "COOL")
-                                {
-                                    CoolSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
-                                }
-                                else if (temp[4] == "PASSION")
-                                {
-                                    PassionSRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
-                                }
-                            }
-                            if (temp[3] == "RARE")
-                            {
-                                RList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
-                                if (temp[4] == "CUTE")
-                                {
-                                    CuteRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
-                                }
-                                else if (temp[4] == "COOL")
-                                {
-                                    CoolRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
-                                }
-                                else if (temp[4] == "PASSION")
-                                {
-                                    PassionRList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
-                                }
-                            }
-                            if (temp[3] == "NORMAL")
-                            {
-                                NList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
-                                if (temp[4] == "CUTE")
-                                {
-                                    CuteNList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
-                                }
-                                else if (temp[4] == "COOL")
-                                {
-                                    CoolNList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
-                                }
-                                else if (temp[4] == "PASSION")
-                                {
-                                    PassionNList.Add(new Card(no, temp[1], temp[2], temp[3], temp[4], vocal, dance, visual, total, temp[11], skill_time, skill_prob, skill_dura, temp[16]));
-                                }
-                            }
+                            CharaBox.Items.Add("［" + attr + "］" + temp[2]);
                         }
-                    }
-                    if (temp[18] == "gacha" || temp[18] == "local_gacha")
-                    {
-                        if (temp[10] == "usual")
+                        //  public Card(int num, string cardname, string charaname, string rarity, string Attr, int hp_min, int vo_min, int da_min, int vi_min, int hp_max, int vo_max, int da_max, int vi_max, string skill_name, string skill_explain, string leaderskill_name, string leaderskill_explain)
+
+                        AllCardList.Add(new Card(num, temp[1], temp[2], rarity, attr, hp_min, vocal_min, dance_min, visual_min, hp_max, vocal_max, dance_max, visual_max, skill_name, skill_explain, leaderskill_name, leaderskill_explain, temp[19]));
+                        // CardInfoList = 모든 카드
+                        // SSRList
+                        // SRList
+                        // RList
+                        if(temp[19] == "")
                         {
-                            if (temp[3] == "SS RARE")
+                            switch (rarity)
                             {
-                                if (SSROnly)
-                                {
-                                    if (temp[4] == "CUTE" && CuteOnly)
+                                case "NORMAL":
                                     {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
+                                        NList.Add(new Card(num, temp[1], temp[2], rarity, attr, hp_min, vocal_min, dance_min, visual_min, hp_max, vocal_max, dance_max, visual_max, skill_name, skill_explain, leaderskill_name, leaderskill_explain, temp[19]));
+                                        break;
                                     }
-                                    if (temp[4] == "COOL" && CoolOnly)
+                                case "RARE":
                                     {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
+                                        RList.Add(new Card(num, temp[1], temp[2], rarity, attr, hp_min, vocal_min, dance_min, visual_min, hp_max, vocal_max, dance_max, visual_max, skill_name, skill_explain, leaderskill_name, leaderskill_explain, temp[19]));
+                                        break;
                                     }
-                                    if (temp[4] == "PASSION" && PassionOnly)
+                                case "S RARE":
                                     {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
+                                        SRList.Add(new Card(num, temp[1], temp[2], rarity, attr, hp_min, vocal_min, dance_min, visual_min, hp_max, vocal_max, dance_max, visual_max, skill_name, skill_explain, leaderskill_name, leaderskill_explain, temp[19]));
+                                        break;
                                     }
-                                }
-
-                            }
-                            else if (temp[3] == "S RARE")
-                            {
-                                if (SROnly)
-                                {
-                                    if (temp[4] == "CUTE" && CuteOnly)
+                                case "SS RARE":
                                     {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
+                                        SSRList.Add(new Card(num, temp[1], temp[2], rarity, attr, hp_min, vocal_min, dance_min, visual_min, hp_max, vocal_max, dance_max, visual_max, skill_name, skill_explain, leaderskill_name, leaderskill_explain, temp[19]));
+                                        break;
                                     }
-                                    if (temp[4] == "COOL" && CoolOnly)
-                                    {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
-                                    }
-                                    if (temp[4] == "PASSION" && PassionOnly)
-                                    {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
-                                    }
-                                }
-
-                            }
-                            else if (temp[3] == "RARE")
-                            {
-                                if (ROnly)
-                                {
-                                    if (temp[4] == "CUTE" && CuteOnly)
-                                    {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
-                                    }
-                                    if (temp[4] == "COOL" && CoolOnly)
-                                    {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
-                                    }
-                                    if (temp[4] == "PASSION" && PassionOnly)
-                                    {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
-                                    }
-                                }
-                            }
-                            else if (temp[3] == "NORMAL")
-                            {
-                                if (NOnly)
-                                {
-                                    if (temp[4] == "CUTE" && CuteOnly)
-                                    {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
-                                    }
-                                    if (temp[4] == "COOL" && CoolOnly)
-                                    {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
-                                    }
-                                    if (temp[4] == "PASSION" && PassionOnly)
-                                    {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
-                                    }
-                                } 
-                            }
-                        }
-                        else if(temp[10] == "limited"){
-                            if (temp[3] == "SS RARE")
-                            {
-                                if (SSROnly)
-                                {
-                                    if (temp[4] == "CUTE" && CuteOnly)
-                                    {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
-                                    }
-                                    if (temp[4] == "COOL" && CoolOnly)
-                                    {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
-                                    }
-                                    if (temp[4] == "PASSION" && PassionOnly)
-                                    {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
-                                    }
-                                }
-
-                            }
-                            else if (temp[3] == "S RARE")
-                            {
-                                if (SROnly)
-                                {
-                                    if (temp[4] == "CUTE" && CuteOnly)
-                                    {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
-                                    }
-                                    if (temp[4] == "COOL" && CoolOnly)
-                                    {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
-                                    }
-                                    if (temp[4] == "PASSION" && PassionOnly)
-                                    {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
-                                    }
-                                }
-
-                            }
-                            else if (temp[3] == "RARE")
-                            {
-                                if (ROnly)
-                                {
-                                    if (temp[4] == "CUTE" && CuteOnly)
-                                    {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
-                                    }
-                                    if (temp[4] == "COOL" && CoolOnly)
-                                    {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
-                                    }
-                                    if (temp[4] == "PASSION" && PassionOnly)
-                                    {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
-                                    }
-                                }
-                            }
-                            else if (temp[3] == "NORMAL")
-                            {
-                                if (NOnly)
-                                {
-                                    if (temp[4] == "CUTE" && CuteOnly)
-                                    {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
-                                    }
-                                    if (temp[4] == "COOL" && CoolOnly)
-                                    {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
-                                    }
-                                    if (temp[4] == "PASSION" && PassionOnly)
-                                    {
-                                        CardInfoList.Items.Add("[" + temp[3] + "] " + temp[1]);
-                                    }
-                                } 
                             }
                         }
                     }
                 }
+
+                else if (mode == 1) // data update (info list only)
+                {
+                    if (SSROnly)
+                    {
+                        if (rarity == "SS RARE")
+                        {
+                            switch (temp[4])
+                            {
+                                case "1":
+                                    {
+                                        if (CuteOnly)
+                                        {
+                                            CardInfoList.Items.Add("［" + rarity + "］" + temp[1]);
+                                        }
+                                        break;
+                                    }
+                                case "2":
+                                    {
+                                        if (CoolOnly)
+                                        {
+                                            CardInfoList.Items.Add("［" + rarity + "］" + temp[1]);
+                                        }
+                                        break;
+                                    }
+                                case "3":
+                                    {
+                                        if (PassionOnly)
+                                        {
+                                            CardInfoList.Items.Add("［" + rarity + "］" + temp[1]);
+                                        }
+                                        break;
+                                    }
+                            }
+                        }
+                    }
+
+                    if (SROnly)
+                    {
+                        if (rarity == "S RARE")
+                        {
+                            switch (temp[4])
+                            {
+                                case "1":
+                                    {
+                                        if (CuteOnly)
+                                        {
+                                            CardInfoList.Items.Add("［" + rarity + "］" + temp[1]);
+                                        }
+                                        break;
+                                    }
+                                case "2":
+                                    {
+                                        if (CoolOnly)
+                                        {
+                                            CardInfoList.Items.Add("［" + rarity + "］" + temp[1]);
+                                        }
+                                        break;
+                                    }
+                                case "3":
+                                    {
+                                        if (PassionOnly)
+                                        {
+                                            CardInfoList.Items.Add("［" + rarity + "］" + temp[1]);
+                                        }
+                                        break;
+                                    }
+                            }
+                        }
+                    }
+
+                    if (ROnly)
+                    {
+                        if (rarity == "RARE")
+                        {
+                            switch (temp[4])
+                            {
+                                case "1":
+                                    {
+                                        if (CuteOnly)
+                                        {
+                                            CardInfoList.Items.Add("［" + rarity + "］" + temp[1]);
+                                        }
+                                        break;
+                                    }
+                                case "2":
+                                    {
+                                        if (CoolOnly)
+                                        {
+                                            CardInfoList.Items.Add("［" + rarity + "］" + temp[1]);
+                                        }
+                                        break;
+                                    }
+                                case "3":
+                                    {
+                                        if (PassionOnly)
+                                        {
+                                            CardInfoList.Items.Add("［" + rarity + "］" + temp[1]);
+                                        }
+                                        break;
+                                    }
+                            }
+                        }
+                    }
+
+                    if (NOnly)
+                    {
+                        if (rarity == "NORMAL")
+                        {
+                            switch (temp[4])
+                            {
+                                case "1":
+                                    {
+                                        if (CuteOnly)
+                                        {
+                                            CardInfoList.Items.Add("［" + rarity + "］" + temp[1]);
+                                        }
+                                        break;
+                                    }
+                                case "2":
+                                    {
+                                        if (CoolOnly)
+                                        {
+                                            CardInfoList.Items.Add("［" + rarity + "］" + temp[1]);
+                                        }
+                                        break;
+                                    }
+                                case "3":
+                                    {
+                                        if (PassionOnly)
+                                        {
+                                            CardInfoList.Items.Add("［" + rarity + "］" + temp[1]);
+                                        }
+                                        break;
+                                    }
+                            }
+                        }
+                    }
+                }
+                initexit = true;
             }
-            initexit = true;
         }
 
 
@@ -379,35 +425,57 @@ namespace WindowsFormsApp1
         private Card SSRGet(int attr)
         {
             Card returncard = null;
+            int number = 0;
             switch (attr)
             {
                 case 0:
                     {
-                        int number = r.Next(0, SSRList.Count);
+                        number = r.Next(0, SSRList.Count);
                         returncard = (Card)SSRList[number];
                         break;
                     }
                 case 1:
                     {
-                        int number = r.Next(0, CuteSSRList.Count);
-                        returncard = (Card)CuteSSRList[number];
+                        while (true)
+                        {
+                            number = r.Next(0, SSRList.Count);
+                            returncard = (Card)SSRList[number];
+                            if (returncard.Attr == "CUTE")
+                            {
+                                break;
+                            }
+                        }
                         break;
                     }
                 case 2:
                     {
-                        int number = r.Next(0, CoolSSRList.Count);
-                        returncard = (Card)CoolSSRList[number];
+                        while (true)
+                        {
+                            number = r.Next(0, SSRList.Count);
+                            returncard = (Card)SSRList[number];
+                            if (returncard.Attr == "COOL")
+                            {
+                                break;
+                            }
+                        }
                         break;
                     }
                 case 3:
                     {
-                        int number = r.Next(0, PassionSSRList.Count);
-                        returncard = (Card)PassionSSRList[number];
+                        while (true)
+                        {
+                            number = r.Next(0, SSRList.Count);
+                            returncard = (Card)SSRList[number];
+                            if (returncard.Attr == "PASSION")
+                            {
+                                break;
+                            }
+                        }
                         break;
                     }
                 default:
                     {
-                        int number = r.Next(0, SSRList.Count);
+                        number = r.Next(0, SSRList.Count);
                         returncard = (Card)SSRList[number];
                         break;
                     }
@@ -417,38 +485,59 @@ namespace WindowsFormsApp1
 
         private Card SRGet(int attr)
         {
+            int number = 0;
             Card returncard = null;
             switch (attr)
             {
                 case 0:
                     {
-                        int number = r.Next(0, SRList.Count);
+                        number = r.Next(0, SRList.Count);
                         returncard = (Card)SRList[number];
                         break;
                     }
                 case 1:
                     {
-                        int number = r.Next(0, CuteSRList.Count);
-                        returncard = (Card)CuteSRList[number];
+                        while (true)
+                        {
+                            number = r.Next(0, SRList.Count);
+                            returncard = (Card)SRList[number];
+                            if (returncard.Attr == "CUTE")
+                            {
+                                break;
+                            }
+                        }
                         break;
                     }
                 case 2:
                     {
-                        int number = r.Next(0, CoolSRList.Count);
-                        returncard = (Card)CoolSRList[number];
+                        while (true)
+                        {
+                            number = r.Next(0, SRList.Count);
+                            returncard = (Card)SRList[number];
+                            if (returncard.Attr == "COOL")
+                            {
+                                break;
+                            }
+                        }
                         break;
                     }
                 case 3:
                     {
-                        int number = r.Next(0, PassionSRList.Count);
-                        returncard = (Card)PassionSRList[number];
+                        while (true)
+                        {
+                            number = r.Next(0, SRList.Count);
+                            returncard = (Card)SRList[number];
+                            if (returncard.Attr == "PASSION")
+                            {
+                                break;
+                            }
+                        }
                         break;
                     }
                 default:
                     {
-                        int number = r.Next(0, SRList.Count);
+                        number = r.Next(0, SRList.Count);
                         returncard = (Card)SRList[number];
-                        break;
                         break;
                     }
             }
@@ -457,36 +546,58 @@ namespace WindowsFormsApp1
 
         private Card RGet(int attr)
         {
+            int number = 0;
             Card returncard = null;
             switch (attr)
             {
                 case 0:
                     {
-                        int number = r.Next(0, RList.Count);
+                        number = r.Next(0, RList.Count);
                         returncard = (Card)RList[number];
                         break;
                     }
                 case 1:
                     {
-                        int number = r.Next(0, CuteRList.Count);
-                        returncard = (Card)CuteRList[number];
+                        while (true)
+                        {
+                            number = r.Next(0, RList.Count);
+                            returncard = (Card)RList[number];
+                            if (returncard.Attr == "CUTE")
+                            {
+                                break;
+                            }
+                        }
                         break;
                     }
                 case 2:
                     {
-                        int number = r.Next(0, CoolRList.Count);
-                        returncard = (Card)CoolRList[number];
+                        while (true)
+                        {
+                            number = r.Next(0, RList.Count);
+                            returncard = (Card)RList[number];
+                            if (returncard.Attr == "COOL")
+                            {
+                                break;
+                            }
+                        }
                         break;
                     }
                 case 3:
                     {
-                        int number = r.Next(0, PassionRList.Count);
-                        returncard = (Card)PassionRList[number];
+                        while (true)
+                        {
+                            number = r.Next(0, RList.Count);
+                            returncard = (Card)RList[number];
+                            if (returncard.Attr == "PASSION")
+                            {
+                                break;
+                            }
+                        }
                         break;
                     }
                 default:
                     {
-                        int number = r.Next(0, RList.Count);
+                        number = r.Next(0, RList.Count);
                         returncard = (Card)RList[number];
                         break;
                     }
@@ -513,12 +624,12 @@ namespace WindowsFormsApp1
                 }
                 else if (number < 130)
                 {
-                    resultCard = SRGet(0);
+                    resultCard = SRGet(SelectGacha);
                     SRvalue++;
                 }
                 else
                 {
-                    resultCard = RGet(0);
+                    resultCard = RGet(SelectGacha);
                     Rvalue++;
                 }
                 GachaResult += "[" + resultCard.Rarity + "] " + resultCard.CardName;
@@ -588,12 +699,12 @@ namespace WindowsFormsApp1
                     }
                     else if (number < 999 * (SRp * 0.01))
                     {
-                        resultCard[i] = SRGet(0);
+                        resultCard[i] = SRGet(SelectGacha);
                         SRvalue++;
                     }
                     else
                     {
-                        resultCard[i] = RGet(0);
+                        resultCard[i] = RGet(SelectGacha);
                         Rvalue++;
                     }
                     switch (resultCard[i].Attr)
@@ -629,7 +740,7 @@ namespace WindowsFormsApp1
                 }
                 else
                 {
-                    resultCard[9] = SRGet(0);
+                    resultCard[9] = SRGet(SelectGacha);
                     SRvalue++;
                 }
                 switch (resultCard[9].Attr)
@@ -675,18 +786,6 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void LimitedSwitch_CheckedChanged(object sender, EventArgs e)
-        {
-            if (LimitedSwitch.Checked == true)
-            {
-                Init(1);
-            }
-            else
-            {
-                Init(0);
-            }
-        }
-
         private void GoldGacha_Click(object sender, EventArgs e)
         {
             if (jewel > 60 || free == true)
@@ -702,17 +801,17 @@ namespace WindowsFormsApp1
                 int number = r.Next(0, 999);
                 if (number < 999 * (SSRp * 0.01))
                 {
-                    resultCard = SSRGet(0);
+                    resultCard = SSRGet(SelectGacha);
                     SSRvalue++;
                 }
                 else if (number < 999 * (SRp * 0.01))
                 {
-                    resultCard = SRGet(0);
+                    resultCard = SRGet(SelectGacha);
                     SRvalue++;
                 }
                 else
                 {
-                    resultCard = RGet(0);
+                    resultCard = RGet(SelectGacha);
                     Rvalue++;
                 }
                 GachaResult += "[" + resultCard.Rarity + "] " + resultCard.CardName;
@@ -772,18 +871,18 @@ namespace WindowsFormsApp1
                     int number = r.Next(0, 999);
                     if (number < 999 * (SSRp * 0.01))
                     {
-                        resultCard = SSRGet(0);
+                        resultCard = SSRGet(SelectGacha);
                         SSRvalue++;
                         get = 1;
                     }
                     else if (number < 999 * (SRp * 0.01))
                     {
-                        resultCard = SRGet(0);
+                        resultCard = SRGet(SelectGacha);
                         SRvalue++;
                     }
                     else
                     {
-                        resultCard = RGet(0);
+                        resultCard = RGet(SelectGacha);
                         Rvalue++;
                     }
                     if (count == 0)
@@ -867,12 +966,12 @@ namespace WindowsFormsApp1
                     }
                     else if (number < 999 * (SRp * 0.01))
                     {
-                        resultCard[i] = SRGet(0);
+                        resultCard[i] = SRGet(SelectGacha);
                         SRvalue++;
                     }
                     else
                     {
-                        resultCard[i] = RGet(0);
+                        resultCard[i] = RGet(SelectGacha);
                         Rvalue++;
                     }
                     switch (resultCard[i].Attr)
@@ -990,16 +1089,6 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void toolTip1_Popup(object sender, PopupEventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!(char.IsDigit(e.KeyChar) || e.KeyChar == Convert.ToChar(Keys.Back)))
@@ -1111,6 +1200,19 @@ namespace WindowsFormsApp1
             }
         }
 
+        private void CharaBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CardInfoList.Items.Clear();
+            String selected = CharaBox.SelectedItem.ToString();
+            for (int a = 0; a < AllCardList.Count; a++)
+            {
+                if (("［" + ((Card)AllCardList[a]).Attr + "］" + ((Card)AllCardList[a]).CharaName).Equals(selected))
+                {
+                    CardInfoList.Items.Add("［" + ((Card)AllCardList[a]).Rarity + "］" + ((Card)AllCardList[a]).CardName);
+                }
+            }
+
+        }
 
         private void CardInfoList_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -1118,580 +1220,37 @@ namespace WindowsFormsApp1
             CardInfoName.Text = "이름 : " + selected.CardName;
             CardInfoRarity.Text = "등급 : " + selected.Rarity;
 
-            CardInfoVocal.Text = "보컬 : " + selected.Vocal;
-            CardInfoDance.Text = "댄스 : " + selected.Dance;
-            CardInfoVisual.Text = "비쥬얼 : " + selected.Visual;
-            CardInfoTotal.Text = "총합 : " + selected.Total;
-            String CardSkillText = "";
-            int CardSkillProb = 0;
-            switch (selected.Skill_probability)
+            CardInfoVocal.Text = "보컬 : " + selected.Vocal_max;
+            CardInfoDance.Text = "댄스 : " + selected.Dance_max;
+            CardInfoVisual.Text = "비쥬얼 : " + selected.Visual_max;
+            CardInfoTotal.Text = "총합 : " + selected.Total_max;
+            if(selected.Rarity == "NORMAL"||selected.Rarity == "NORMAL+")
             {
-                case 2:
-                    {
-                        CardSkillProb = 30;
-                        break;
-                    }
-                case 3:
-                    {
-                        CardSkillProb = 35;
-                        break;
-                    }
-                case 4:
-                    {
-                        CardSkillProb = 40;
-                        break;
-                    }
+                CardInfoSkill.Text = "스킬 : ";
+                CardInfoCenterSkill.Text = "센터 스킬 : ";
             }
-            switch (selected.Skill)
+            else
             {
-                /*
-                 * 스킬 확률
-                 * 2 - 30%
-                 * 3 - 35%
-                 * 4 - 40%
-                 * */
-                case "all round":
-                    {
-                        if (selected.Rarity == "S RARE")
-                        {
-                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 COMBO 보너스 10% 상승, PERFECT로 라이브 1 회복";
-                        }
-                        else if (selected.Rarity == "SS RARE")
-                        {
-                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 COMBO 보너스 13% 상승, PERFECT로 라이브 1 회복";
-                        }
-                        break;
-                    }
-                case "combo bonus":
-                    {
-                        if (selected.Rarity == "RARE")
-                        {
-                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 COMBO 보너스 8% 상승";
-                        }
-                        else if (selected.Rarity == "S RARE")
-                        {
-                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 COMBO 보너스 12% 상승";
-                        }
-                        else if (selected.Rarity == "SS RARE")
-                        {
-                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 COMBO 보너스 18% 상승";
-                        }
-                        break;
-                    }
-                case "combo support":
-                    {
-                        CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 NICE여도 콤보가 끊기지 않음";
-                        break;
-                    }
-                case "concentration":
-                    {
-                        if (selected.Rarity == "S RARE")
-                        {
-                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 17% 상승, PERFECT 판정 시간이 짧아짐";
-                        }
-                        else if (selected.Rarity == "SS RARE")
-                        {
-                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 19% 상승, PERFECT 판정 시간이 짧아짐";
-                        }
-                        break;
-                    }
-                case "cool focus":
-                    {
-                        CardSkillText = "쿨 아이돌만 편성시 " + selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 16% 상승, COMBO 보너스 14% 상승";
-                        break;
-                    }
-                case "cute focus":
-                    {
-                        CardSkillText = "큐트 아이돌만 편성시 " + selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 16% 상승, COMBO 보너스 14% 상승";
-                        break;
-                    }
-                case "demage guard":
-                    {
-                        CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 라이프가 감소하지 않음";
-                        break;
-                    }
-                case "encore":
-                    {
-                        CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안, 직전에 발동한 다른 아이돌의 특기효과 반복";
-                        break;
-                    }
-                case "life recovery":
-                    {
-                        if (selected.Rarity == "RARE")
-                        {
-                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT로 라이프 2 회복";
-                        }
-                        else
-                        {
-                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT로 라이프 3 회복";
-                        }
-                        break;
-                    }
-                case "life sparkle":
-                    {
-                        CardSkillText = "패션 아이돌만 편성시 " + selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 라이프가 많을 수록 COMBO 보너스 상승";
-                        break;
-                    }
-                case "overload":
-                    {
-                        if (selected.Rarity == "S RARE")
-                        {
-                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 라이프를 11 소모하여 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 16% 상승,\n         NICE/BAD여도 콤보가 끊기지 않음";
-                        }
-                        else if (selected.Rarity == "SS RARE")
-                        {
-                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 라이프를 9 소모하여 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 18% 상승,\n        NICE/BAD여도 콤보가 끊기지 않음";
-                        }
-                        break;
-                    }
-                case "passion focus":
-                    {
-                        CardSkillText = "패션 아이돌만 편성시 " + selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 16% 상승, COMBO 보너스 14% 상승";
-                        break;
-                    }
-                case "perfect support":
-                    {
-                        if (selected.Rarity == "RARE")
-                        {
-                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 GREAT를 PERFECT로 만듬";
-                        }
-                        else if (selected.Rarity == "S RARE")
-                        {
-                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 GREAT/NICE를 PERFECT로 만듬";
-                        }
-                        else if (selected.Rarity == "SS RARE")
-                        {
-                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 GREAT/NICE/BAD를 PERFECT로 만듬";
-                        }
-                        break;
-                    }
-                case "score bonus":
-                    {
-                        if (selected.Rarity == "RARE")
-                        {
-                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 10% 상승";
-                        }
-                        else if (selected.Rarity == "S RARE")
-                        {
-                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 12% 상승";
-                        }
-                        else if (selected.Rarity == "SS RARE")
-                        {
-                            CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 18% 상승";
-                        }
-                        break;
-                    }
-                case "skill boost":
-                    {
-                        CardSkillText = selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 다른 아이돌의 특기효과를 크게 상승";
-                        break;
-                    }
-                case "tricolore synergy":
-                    {
-                        CardSkillText = "3 타입 아이돌 편성 시 " + selected.Skill_timing + "초 마다 " + CardSkillProb + "%의 확률로 " + selected.SKill_duration + "초 동안 PERFECT 스코어가 16% 상승,\n        라이프 1회복, COMBO 보너스 15% 상승";
-                        break;
-                    }
-            }
-            CardInfoSkill.Text = "스킬 : " + CardSkillText;
-            String CentreSkillText = "";
-            if (selected.Rarity == "RARE" || selected.Rarity == "S RARE" || selected.Rarity == "SS RARE")
-            {
-                string[] centre_skill = selected.Center_Skill.Split(' ');
-                switch (centre_skill[0])
+                if (selected.SkillExplain.Length >= 43)
                 {
-                    case "cinderella":
-                        {
-                            CentreSkillText = "라이브 클리어시, 획득 팬 수 30% 상승";
-                            break;
-                        }
-                    case "fortune":
-                        {
-                            CentreSkillText = "라이브 클리어시, 특별 보수를 추가로 획득";
-                            break;
-                        }
-                    case "shiny":
-                        {
-                            CentreSkillText = "모두의 보컬 어필 수치 48% 상승";
-                            break;
-                        }
-                    case "tricolore":
-                        {
-                            switch (centre_skill[1])
-                            {
-                                case "abillity":
-                                    {
-                                        CentreSkillText = "3타입 아이돌이 모두 편성되어 있을 경우, 모두의 특기 발동 확률 50% 상승";
-                                        break;
-                                    }
-                                case "makeup":
-                                    {
-                                        if (selected.Rarity == "S RARE")
-                                        {
-                                            CentreSkillText = "3타입 아이돌이 모두 편성되어 있을 경우, 모두의 비쥬얼 어필 수치 80% 상승";
-                                        }
-                                        else if (selected.Rarity == "SS RARE")
-                                        {
-                                            CentreSkillText = "3타입 아이돌이 모두 편성되어 있을 경우, 모두의 비쥬얼 어필 수치 100% 상승";
-                                        }
-                                        break;
-                                    }
-                                case "step":
-                                    {
-                                        if (selected.Rarity == "S RARE")
-                                        {
-                                            CentreSkillText = "3타입 아이돌이 모두 편성되어 있을 경우, 모두의 댄스 어필 수치 80% 상승";
-                                        }
-                                        else if (selected.Rarity == "SS RARE")
-                                        {
-                                            CentreSkillText = "3타입 아이돌이 모두 편성되어 있을 경우, 모두의 댄스 어필 수치 100% 상승";
-                                        }
-                                        break;
-                                    }
-                                case "voice":
-                                    {
-                                        if (selected.Rarity == "S RARE")
-                                        {
-                                            CentreSkillText = "3타입 아이돌이 모두 편성되어 있을 경우, 모두의 보컬 어필 수치 80% 상승";
-                                        }
-                                        else if (selected.Rarity == "SS RARE")
-                                        {
-                                            CentreSkillText = "3타입 아이돌이 모두 편성되어 있을 경우, 모두의 보컬 어필 수치 100% 상승";
-                                        }
-                                        break;
-                                    }
-                            }
-                            break;
-                        }
-                    case "cute":
-                        {
-                            switch (centre_skill[1])
-                            {
-                                case "abillity":
-                                    {
-                                        if (selected.Rarity == "RARE")
-                                        {
-                                            CentreSkillText = "큐트 아이돌의 특기 발동 확률 15% 상승";
-                                        }
-                                        else if (selected.Rarity == "SS RARE")
-                                        {
-                                            CentreSkillText = "큐트 아이돌의 특기 발동 확률 30% 상승";
-                                        }
-                                        break;
-                                    }
-                                case "brilliance":
-                                    {
-                                        if (selected.Rarity == "RARE")
-                                        {
-                                            CentreSkillText = "큐트 아이돌의 모든 어필 수치 10% 상승";
-                                        }
-                                        else if (selected.Rarity == "S RARE")
-                                        {
-                                            CentreSkillText = "큐트 아이돌의 모든 어필 수치 20% 상승";
-                                        }
-                                        else if (selected.Rarity == "SS RARE")
-                                        {
-                                            CentreSkillText = "큐트 아이돌의 모든 어필 수치 30% 상승";
-                                        }
-                                        break;
-                                    }
-                                case "cheer":
-                                    {
-                                        CentreSkillText = "큐트 아이돌만 편성시, 모두의 라이프 40% 상승";
-                                        break;
-                                    }
-                                case "energy":
-                                    {
-                                        if (selected.Rarity == "RARE")
-                                        {
-                                            CentreSkillText = "큐트 아이돌의 라이프 10% 상승";
-                                        }
-                                        else if (selected.Rarity == "S RARE")
-                                        {
-                                            CentreSkillText = "큐트 아이돌의 라이프 20% 상승";
-                                        }
-                                        else if (selected.Rarity == "SS RARE")
-                                        {
-                                            CentreSkillText = "큐트 아이돌의 라이프 30% 상승";
-                                        }
-                                        break;
-                                    }
-                                case "makeup":
-                                    {
-                                        if (selected.Rarity == "RARE")
-                                        {
-                                            CentreSkillText = "큐트 아이돌의 비쥬얼 어필 수치 30% 상승";
-                                        }
-                                        else if (selected.Rarity == "S RARE")
-                                        {
-                                            CentreSkillText = "큐트 아이돌의 비쥬얼 어필 수치 60% 상승";
-                                        }
-                                        else if (selected.Rarity == "SS RARE")
-                                        {
-                                            CentreSkillText = "큐트 아이돌의 비쥬얼 어필 수치 90% 상승";
-                                        }
-                                        break;
-                                    }
-                                case "princess":
-                                    {
-                                        CentreSkillText = "큐트 아이돌만 편성시, 모두의 모든 어필 수치 50% 상승";
-                                        break;
-                                    }
-                                case "step":
-                                    {
-                                        if (selected.Rarity == "RARE")
-                                        {
-                                            CentreSkillText = "큐트 아이돌의 댄스 어필 수치 30% 상승";
-                                        }
-                                        else if (selected.Rarity == "S RARE")
-                                        {
-                                            CentreSkillText = "큐트 아이돌의 댄스 어필 수치 60% 상승";
-                                        }
-                                        else if (selected.Rarity == "SS RARE")
-                                        {
-                                            CentreSkillText = "큐트 아이돌의 댄스 어필 수치 90% 상승";
-                                        }
-                                        break;
-                                    }
-                                case "voice":
-                                    {
-                                        if (selected.Rarity == "RARE")
-                                        {
-                                            CentreSkillText = "큐트 아이돌의 보컬 어필 수치 30% 상승";
-                                        }
-                                        else if (selected.Rarity == "S RARE")
-                                        {
-                                            CentreSkillText = "큐트 아이돌의 보컬 어필 수치 60% 상승";
-                                        }
-                                        else if (selected.Rarity == "SS RARE")
-                                        {
-                                            CentreSkillText = "큐트 아이돌의 보컬 어필 수치 90% 상승";
-                                        }
-                                        break;
-                                    }
-                            }
-                            break;
-                        }
-                    case "cool":
-                        {
-                            switch (centre_skill[1])
-                            {
-                                case "abillity":
-                                    {
-                                        if (selected.Rarity == "RARE")
-                                        {
-                                            CentreSkillText = "쿨 아이돌의 특기 발동 확률 15% 상승";
-                                        }
-                                        else if (selected.Rarity == "SS RARE")
-                                        {
-                                            CentreSkillText = "쿨 아이돌의 특기 발동 확률 30% 상승";
-                                        }
-                                        break;
-                                    }
-                                case "brilliance":
-                                    {
-                                        if (selected.Rarity == "RARE")
-                                        {
-                                            CentreSkillText = "쿨 아이돌의 모든 어필 수치 10% 상승";
-                                        }
-                                        else if (selected.Rarity == "S RARE")
-                                        {
-                                            CentreSkillText = "쿨 아이돌의 모든 어필 수치 20% 상승";
-                                        }
-                                        else if (selected.Rarity == "SS RARE")
-                                        {
-                                            CentreSkillText = "쿨 아이돌의 모든 어필 수치 30% 상승";
-                                        }
-                                        break;
-                                    }
-                                case "cheer":
-                                    {
-                                        CentreSkillText = "쿨 아이돌만 편성시, 모두의 라이프 40% 상승";
-                                        break;
-                                    }
-                                case "energy":
-                                    {
-                                        if (selected.Rarity == "RARE")
-                                        {
-                                            CentreSkillText = "쿨 아이돌의 라이프 10% 상승";
-                                        }
-                                        else if (selected.Rarity == "S RARE")
-                                        {
-                                            CentreSkillText = "쿨 아이돌의 라이프 20% 상승";
-                                        }
-                                        else if (selected.Rarity == "SS RARE")
-                                        {
-                                            CentreSkillText = "쿨 아이돌의 라이프 30% 상승";
-                                        }
-                                        break;
-                                    }
-                                case "makeup":
-                                    {
-                                        if (selected.Rarity == "RARE")
-                                        {
-                                            CentreSkillText = "쿨 아이돌의 비쥬얼 어필 수치 30% 상승";
-                                        }
-                                        else if (selected.Rarity == "S RARE")
-                                        {
-                                            CentreSkillText = "쿨 아이돌의 비쥬얼 어필 수치 60% 상승";
-                                        }
-                                        else if (selected.Rarity == "SS RARE")
-                                        {
-                                            CentreSkillText = "쿨 아이돌의 비쥬얼 어필 수치 90% 상승";
-                                        }
-                                        break;
-                                    }
-                                case "princess":
-                                    {
-                                        CentreSkillText = "쿨 아이돌만 편성시, 모두의 모든 어필 수치 50% 상승";
-                                        break;
-                                    }
-                                case "step":
-                                    {
-                                        if (selected.Rarity == "RARE")
-                                        {
-                                            CentreSkillText = "쿨 아이돌의 댄스 어필 수치 30% 상승";
-                                        }
-                                        else if (selected.Rarity == "S RARE")
-                                        {
-                                            CentreSkillText = "쿨 아이돌의 댄스 어필 수치 60% 상승";
-                                        }
-                                        else if (selected.Rarity == "SS RARE")
-                                        {
-                                            CentreSkillText = "쿨 아이돌의 댄스 어필 수치 90% 상승";
-                                        }
-                                        break;
-                                    }
-                                case "voice":
-                                    {
-                                        if (selected.Rarity == "RARE")
-                                        {
-                                            CentreSkillText = "쿨 아이돌의 보컬 어필 수치 30% 상승";
-                                        }
-                                        else if (selected.Rarity == "S RARE")
-                                        {
-                                            CentreSkillText = "쿨 아이돌의 보컬 어필 수치 60% 상승";
-                                        }
-                                        else if (selected.Rarity == "SS RARE")
-                                        {
-                                            CentreSkillText = "쿨 아이돌의 보컬 어필 수치 90% 상승";
-                                        }
-                                        break;
-                                    }
-                            }
-                            break;
-                        }
-                    case "passion":
-                        {
-                            switch (centre_skill[1])
-                            {
-                                case "abillity":
-                                    {
-                                        if (selected.Rarity == "RARE")
-                                        {
-                                            CentreSkillText = "패션 아이돌의 특기 발동 확률 15% 상승";
-                                        }
-                                        else if (selected.Rarity == "SS RARE")
-                                        {
-                                            CentreSkillText = "패션 아이돌의 특기 발동 확률 30% 상승";
-                                        }
-                                        break;
-                                    }
-                                case "brilliance":
-                                    {
-                                        if (selected.Rarity == "RARE")
-                                        {
-                                            CentreSkillText = "패션 아이돌의 모든 어필 수치 10% 상승";
-                                        }
-                                        else if (selected.Rarity == "S RARE")
-                                        {
-                                            CentreSkillText = "패션 아이돌의 모든 어필 수치 20% 상승";
-                                        }
-                                        else if (selected.Rarity == "SS RARE")
-                                        {
-                                            CentreSkillText = "패션 아이돌의 모든 어필 수치 30% 상승";
-                                        }
-                                        break;
-                                    }
-                                case "cheer":
-                                    {
-                                        CentreSkillText = "패션 아이돌만 편성시, 모두의 라이프 40% 상승";
-                                        break;
-                                    }
-                                case "energy":
-                                    {
-                                        if (selected.Rarity == "RARE")
-                                        {
-                                            CentreSkillText = "패션 아이돌의 라이프 10% 상승";
-                                        }
-                                        else if (selected.Rarity == "S RARE")
-                                        {
-                                            CentreSkillText = "패션 아이돌의 라이프 20% 상승";
-                                        }
-                                        else if (selected.Rarity == "SS RARE")
-                                        {
-                                            CentreSkillText = "패션 아이돌의 라이프 30% 상승";
-                                        }
-                                        break;
-                                    }
-                                case "makeup":
-                                    {
-                                        if (selected.Rarity == "RARE")
-                                        {
-                                            CentreSkillText = "패션 아이돌의 비쥬얼 어필 수치 30% 상승";
-                                        }
-                                        else if (selected.Rarity == "S RARE")
-                                        {
-                                            CentreSkillText = "패션 아이돌의 비쥬얼 어필 수치 60% 상승";
-                                        }
-                                        else if (selected.Rarity == "SS RARE")
-                                        {
-                                            CentreSkillText = "패션 아이돌의 비쥬얼 어필 수치 90% 상승";
-                                        }
-                                        break;
-                                    }
-                                case "princess":
-                                    {
-                                        CentreSkillText = "패션 아이돌만 편성시, 모두의 모든 어필 수치 50% 상승";
-                                        break;
-                                    }
-                                case "step":
-                                    {
-                                        if (selected.Rarity == "RARE")
-                                        {
-                                            CentreSkillText = "패션 아이돌의 댄스 어필 수치 30% 상승";
-                                        }
-                                        else if (selected.Rarity == "S RARE")
-                                        {
-                                            CentreSkillText = "패션 아이돌의 댄스 어필 수치 60% 상승";
-                                        }
-                                        else if (selected.Rarity == "SS RARE")
-                                        {
-                                            CentreSkillText = "패션 아이돌의 댄스 어필 수치 90% 상승";
-                                        }
-                                        break;
-                                    }
-                                case "voice":
-                                    {
-                                        if (selected.Rarity == "RARE")
-                                        {
-                                            CentreSkillText = "패션 아이돌의 보컬 어필 수치 30% 상승";
-                                        }
-                                        else if (selected.Rarity == "S RARE")
-                                        {
-                                            CentreSkillText = "패션 아이돌의 보컬 어필 수치 60% 상승";
-                                        }
-                                        else if (selected.Rarity == "SS RARE")
-                                        {
-                                            CentreSkillText = "패션 아이돌의 보컬 어필 수치 90% 상승";
-                                        }
-                                        break;
-                                    }
-                            }
-                            break;
-                        }
+                    CardInfoSkill.Text = "스킬 : ［" + selected.Skill + "］ " + selected.SkillExplain.Substring(0, 42) + "\n       " + selected.SkillExplain.Substring(42, selected.SkillExplain.Length - 42);
+                }
+                else
+                {
+                    CardInfoSkill.Text = "스킬 : ［" + selected.Skill + "］ " + selected.SkillExplain;
+                }
+
+                if (selected.Center_SkillExplain.Length >= 35)
+                {
+                    CardInfoCenterSkill.Text = "스킬 : ［" + selected.Center_Skill + "］ " + selected.Center_SkillExplain.Substring(0, 34) + "\n       " + selected.Center_SkillExplain.Substring(34, selected.Center_SkillExplain.Length - 34);
+                }
+                else
+                {
+                    CardInfoCenterSkill.Text = "스킬 : ［" + selected.Center_Skill + "］ " + selected.Center_SkillExplain;
                 }
             }
-            CardInfoCenterSkill.Text = "센터 스킬 : " + CentreSkillText;
+            
+            HP.Text = "HP : " + selected.Hp_max;
         }
 
         private Card returnByName(String input)
@@ -1699,14 +1258,16 @@ namespace WindowsFormsApp1
             Card card = null;
             for (int b = 0; b < AllCardList.Count; b++)
             {
-                if (("[" + ((Card)AllCardList[b]).Rarity + "] " + ((Card)AllCardList[b]).CardName).Equals(input))
+                if (("［" + ((Card)AllCardList[b]).Rarity + "］" + ((Card)AllCardList[b]).CardName).Equals(input))
                 {
+                    card = (Card)AllCardList[b];
+                }else if (("［" + ((Card)AllCardList[b]).Rarity + "］" + ((Card)AllCardList[b]).CardName + "＋").Equals(input))
+                  {
                     card = (Card)AllCardList[b];
                 }
             }
             return card;
         }
-
 
         private void SSROnlyButton_CheckedChanged(object sender, EventArgs e)
         {
@@ -1756,6 +1317,12 @@ namespace WindowsFormsApp1
             else PassionOnly = false;
             updateCardInfoList();
         }
+
+        private void CardInfoListTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
 
@@ -1771,33 +1338,53 @@ namespace Info
         public String Rarity;
         public String Attr;
 
-        public int Vocal;
-        public int Dance;
-        public int Visual;
-        public int Total;
+        public int Hp_min;
+        public int Vocal_min;
+        public int Dance_min;
+        public int Visual_min;
+        public int Total_min;
+
+        public int Hp_max;
+        public int Vocal_max;
+        public int Dance_max;
+        public int Visual_max;
+        public int Total_max;
 
         public String Skill;
-        public int Skill_probability;
-        public int Skill_timing;
-        public int SKill_duration;
-        public String Center_Skill;
+        public String SkillExplain;
 
-        public Card(int num, string v1, string v2, string v3, string v4, int v5, int v6, int v7, int v8, string v9, int v10, int v11, int v12, string v13)
+        public String Center_Skill;
+        public String Center_SkillExplain;
+        
+        public String eventname;
+
+        public Card(int num, string cardname, string charaname, string rarity, string Attr, int hp_min, int vo_min, int da_min, int vi_min, int hp_max, int vo_max, int da_max, int vi_max, string skill_name, string skill_explain, string leaderskill_name, string leaderskill_explain, string eventname)
         {
             this.number = num;
-            this.CardName = v1;
-            this.CharaName = v2;
-            this.Rarity = v3;
-            this.Attr = v4;
-            this.Vocal = v5;
-            this.Dance = v6;
-            this.Visual = v7;
-            this.Total = v8;
-            this.Skill = v9;
-            this.Skill_timing = v10;
-            this.Skill_probability = v11;
-            this.SKill_duration = v12;
-            this.Center_Skill = v13;
+
+            this.CardName = cardname;
+            this.CharaName = charaname;
+            this.Rarity = rarity;
+            this.Attr = Attr;
+
+            this.Hp_min = hp_min;
+            this.Vocal_min = vo_min;
+            this.Dance_min = da_min;
+            this.Visual_min = vi_min;
+            this.Total_min = vo_min + da_min + vi_min;
+
+            this.Hp_max = hp_max;
+            this.Vocal_max = vo_max;
+            this.Dance_max = da_max;
+            this.Visual_max = vi_max;
+            this.Total_max = vo_max + da_max + vi_max;
+
+            this.Skill = skill_name;
+            this.SkillExplain = skill_explain;
+
+            this.Center_Skill = leaderskill_name;
+            this.Center_SkillExplain = leaderskill_explain;
+            this.eventname = eventname;
         }
     }
 }

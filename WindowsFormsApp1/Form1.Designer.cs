@@ -33,6 +33,7 @@
             this.ExitButton = new System.Windows.Forms.Button();
             this.MainMenu = new System.Windows.Forms.TabControl();
             this.MoneyPage = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.JewelSet7Button = new System.Windows.Forms.Button();
             this.JewelSet6Button = new System.Windows.Forms.Button();
             this.JewelSet5Button = new System.Windows.Forms.Button();
@@ -55,7 +56,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.FreeGachaToggle = new System.Windows.Forms.CheckBox();
             this.FesToggle = new System.Windows.Forms.CheckBox();
-            this.LimitedSwitch = new System.Windows.Forms.CheckBox();
             this.Passion = new System.Windows.Forms.Label();
             this.Cool = new System.Windows.Forms.Label();
             this.Cute = new System.Windows.Forms.Label();
@@ -67,7 +67,9 @@
             this.GoldGacha = new System.Windows.Forms.Button();
             this.OneGacha = new System.Windows.Forms.Button();
             this.InfoMenu = new System.Windows.Forms.TabPage();
-            this.readme = new System.Windows.Forms.Label();
+            this.CharaBoxListTitle = new System.Windows.Forms.Label();
+            this.CardInfoListTitle = new System.Windows.Forms.Label();
+            this.CharaBox = new System.Windows.Forms.ListBox();
             this.TypeOnlyButtonTitle = new System.Windows.Forms.Label();
             this.PassionOnlyButton = new System.Windows.Forms.CheckBox();
             this.CoolOnlyButton = new System.Windows.Forms.CheckBox();
@@ -78,6 +80,7 @@
             this.SROnlyButton = new System.Windows.Forms.CheckBox();
             this.SSROnlyButton = new System.Windows.Forms.CheckBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.HP = new System.Windows.Forms.Label();
             this.CardInfoCenterSkill = new System.Windows.Forms.Label();
             this.CardInfoSkill = new System.Windows.Forms.Label();
             this.CardInfoVisual = new System.Windows.Forms.Label();
@@ -87,14 +90,16 @@
             this.CardInfoRarity = new System.Windows.Forms.Label();
             this.CardInfoName = new System.Windows.Forms.Label();
             this.CardInfoList = new System.Windows.Forms.ListBox();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.YenStatus = new System.Windows.Forms.Label();
             this.JewelStatus = new System.Windows.Forms.Label();
             this.UsedJewelStatus = new System.Windows.Forms.Label();
             this.UsedYenStatus = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.VersionTitle = new System.Windows.Forms.Label();
+            this.Twitter = new System.Windows.Forms.Label();
             this.MainMenu.SuspendLayout();
             this.MoneyPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.GachaMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -108,9 +113,9 @@
             this.label1.Font = new System.Drawing.Font("맑은 고딕", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(23, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(576, 40);
+            this.label1.Size = new System.Drawing.Size(356, 40);
             this.label1.TabIndex = 0;
-            this.label1.Text = "데레스테 가챠 시뮬레이터 리메이크 베타 5";
+            this.label1.Text = "데레스테 가챠 시뮬레이터";
             // 
             // InformationButton
             // 
@@ -141,7 +146,6 @@
             this.MainMenu.Controls.Add(this.MoneyPage);
             this.MainMenu.Controls.Add(this.GachaMenu);
             this.MainMenu.Controls.Add(this.InfoMenu);
-            this.MainMenu.Controls.Add(this.tabPage1);
             this.MainMenu.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.MainMenu.Location = new System.Drawing.Point(16, 74);
             this.MainMenu.Name = "MainMenu";
@@ -152,6 +156,7 @@
             // 
             // MoneyPage
             // 
+            this.MoneyPage.Controls.Add(this.pictureBox1);
             this.MoneyPage.Controls.Add(this.JewelSet7Button);
             this.MoneyPage.Controls.Add(this.JewelSet6Button);
             this.MoneyPage.Controls.Add(this.JewelSet5Button);
@@ -170,6 +175,18 @@
             this.MoneyPage.TabIndex = 0;
             this.MoneyPage.Text = "과금";
             this.MoneyPage.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.ImageLocation = "C:\\Users\\nazunamoe\\source\\repos\\deresute_gacha_simulator_remake\\WindowsFormsApp1\\" +
+    "images.jpg";
+            this.pictureBox1.Location = new System.Drawing.Point(179, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(293, 230);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
             // JewelSet7Button
             // 
@@ -269,7 +286,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(13, 10);
+            this.label5.Location = new System.Drawing.Point(8, 11);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(95, 25);
             this.label5.TabIndex = 7;
@@ -280,7 +297,7 @@
             this.YenGo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.YenGo.Location = new System.Drawing.Point(13, 77);
             this.YenGo.Name = "YenGo";
-            this.YenGo.Size = new System.Drawing.Size(115, 29);
+            this.YenGo.Size = new System.Drawing.Size(149, 29);
             this.YenGo.TabIndex = 1;
             this.YenGo.Text = "엔화 결제";
             this.YenGo.UseVisualStyleBackColor = true;
@@ -290,9 +307,8 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(13, 42);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(115, 23);
+            this.textBox1.Size = new System.Drawing.Size(149, 23);
             this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // GachaMenu
@@ -344,9 +360,9 @@
             // OKGachaButton
             // 
             this.OKGachaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OKGachaButton.Location = new System.Drawing.Point(529, 218);
+            this.OKGachaButton.Location = new System.Drawing.Point(509, 218);
             this.OKGachaButton.Name = "OKGachaButton";
-            this.OKGachaButton.Size = new System.Drawing.Size(120, 27);
+            this.OKGachaButton.Size = new System.Drawing.Size(110, 27);
             this.OKGachaButton.TabIndex = 8;
             this.OKGachaButton.Text = "확정 10회 가챠";
             this.OKGachaButton.UseVisualStyleBackColor = true;
@@ -360,7 +376,6 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.FreeGachaToggle);
             this.panel2.Controls.Add(this.FesToggle);
-            this.panel2.Controls.Add(this.LimitedSwitch);
             this.panel2.Controls.Add(this.Passion);
             this.panel2.Controls.Add(this.Cool);
             this.panel2.Controls.Add(this.Cute);
@@ -402,7 +417,7 @@
             // FreeGachaToggle
             // 
             this.FreeGachaToggle.AutoSize = true;
-            this.FreeGachaToggle.Location = new System.Drawing.Point(11, 168);
+            this.FreeGachaToggle.Location = new System.Drawing.Point(11, 144);
             this.FreeGachaToggle.Name = "FreeGachaToggle";
             this.FreeGachaToggle.Size = new System.Drawing.Size(53, 19);
             this.FreeGachaToggle.TabIndex = 9;
@@ -413,23 +428,13 @@
             // FesToggle
             // 
             this.FesToggle.AutoSize = true;
-            this.FesToggle.Location = new System.Drawing.Point(11, 143);
+            this.FesToggle.Location = new System.Drawing.Point(11, 119);
             this.FesToggle.Name = "FesToggle";
             this.FesToggle.Size = new System.Drawing.Size(74, 19);
             this.FesToggle.TabIndex = 8;
             this.FesToggle.Text = "신데페스";
             this.FesToggle.UseVisualStyleBackColor = true;
             this.FesToggle.CheckedChanged += new System.EventHandler(this.FesToggle_CheckedChanged);
-            // 
-            // LimitedSwitch
-            // 
-            this.LimitedSwitch.AutoSize = true;
-            this.LimitedSwitch.Location = new System.Drawing.Point(11, 118);
-            this.LimitedSwitch.Name = "LimitedSwitch";
-            this.LimitedSwitch.Size = new System.Drawing.Size(78, 19);
-            this.LimitedSwitch.TabIndex = 7;
-            this.LimitedSwitch.Text = "한정 카드";
-            this.LimitedSwitch.UseVisualStyleBackColor = true;
             // 
             // Passion
             // 
@@ -488,9 +493,9 @@
             // InfiniteGacha
             // 
             this.InfiniteGacha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.InfiniteGacha.Location = new System.Drawing.Point(410, 218);
+            this.InfiniteGacha.Location = new System.Drawing.Point(400, 218);
             this.InfiniteGacha.Name = "InfiniteGacha";
-            this.InfiniteGacha.Size = new System.Drawing.Size(120, 27);
+            this.InfiniteGacha.Size = new System.Drawing.Size(110, 27);
             this.InfiniteGacha.TabIndex = 3;
             this.InfiniteGacha.Text = "무한가챠";
             this.InfiniteGacha.UseVisualStyleBackColor = true;
@@ -499,9 +504,9 @@
             // TenGacha
             // 
             this.TenGacha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TenGacha.Location = new System.Drawing.Point(173, 218);
+            this.TenGacha.Location = new System.Drawing.Point(183, 218);
             this.TenGacha.Name = "TenGacha";
-            this.TenGacha.Size = new System.Drawing.Size(120, 27);
+            this.TenGacha.Size = new System.Drawing.Size(110, 27);
             this.TenGacha.TabIndex = 2;
             this.TenGacha.Text = "10회 가챠";
             this.TenGacha.UseVisualStyleBackColor = true;
@@ -512,7 +517,7 @@
             this.GoldGacha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GoldGacha.Location = new System.Drawing.Point(291, 218);
             this.GoldGacha.Name = "GoldGacha";
-            this.GoldGacha.Size = new System.Drawing.Size(120, 27);
+            this.GoldGacha.Size = new System.Drawing.Size(110, 27);
             this.GoldGacha.TabIndex = 1;
             this.GoldGacha.Text = "연금가챠";
             this.GoldGacha.UseVisualStyleBackColor = true;
@@ -521,9 +526,9 @@
             // OneGacha
             // 
             this.OneGacha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OneGacha.Location = new System.Drawing.Point(54, 218);
+            this.OneGacha.Location = new System.Drawing.Point(74, 218);
             this.OneGacha.Name = "OneGacha";
-            this.OneGacha.Size = new System.Drawing.Size(120, 27);
+            this.OneGacha.Size = new System.Drawing.Size(110, 27);
             this.OneGacha.TabIndex = 0;
             this.OneGacha.Text = "1회 가챠";
             this.OneGacha.UseVisualStyleBackColor = true;
@@ -531,7 +536,9 @@
             // 
             // InfoMenu
             // 
-            this.InfoMenu.Controls.Add(this.readme);
+            this.InfoMenu.Controls.Add(this.CharaBoxListTitle);
+            this.InfoMenu.Controls.Add(this.CardInfoListTitle);
+            this.InfoMenu.Controls.Add(this.CharaBox);
             this.InfoMenu.Controls.Add(this.TypeOnlyButtonTitle);
             this.InfoMenu.Controls.Add(this.PassionOnlyButton);
             this.InfoMenu.Controls.Add(this.CoolOnlyButton);
@@ -551,18 +558,42 @@
             this.InfoMenu.Text = "정보";
             this.InfoMenu.UseVisualStyleBackColor = true;
             // 
-            // readme
+            // CharaBoxListTitle
             // 
-            this.readme.AutoSize = true;
-            this.readme.Cursor = System.Windows.Forms.Cursors.NoMoveVert;
-            this.readme.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.readme.ForeColor = System.Drawing.Color.Black;
-            this.readme.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.readme.Location = new System.Drawing.Point(485, 13);
-            this.readme.Name = "readme";
-            this.readme.Size = new System.Drawing.Size(200, 15);
-            this.readme.TabIndex = 18;
-            this.readme.Text = "타입->속성 순으로 선택해 주십시오";
+            this.CharaBoxListTitle.AutoSize = true;
+            this.CharaBoxListTitle.Cursor = System.Windows.Forms.Cursors.NoMoveVert;
+            this.CharaBoxListTitle.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CharaBoxListTitle.ForeColor = System.Drawing.Color.Black;
+            this.CharaBoxListTitle.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.CharaBoxListTitle.Location = new System.Drawing.Point(327, 6);
+            this.CharaBoxListTitle.Name = "CharaBoxListTitle";
+            this.CharaBoxListTitle.Size = new System.Drawing.Size(112, 21);
+            this.CharaBoxListTitle.TabIndex = 21;
+            this.CharaBoxListTitle.Text = "아이돌 리스트";
+            // 
+            // CardInfoListTitle
+            // 
+            this.CardInfoListTitle.AutoSize = true;
+            this.CardInfoListTitle.Cursor = System.Windows.Forms.Cursors.NoMoveVert;
+            this.CardInfoListTitle.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CardInfoListTitle.ForeColor = System.Drawing.Color.Black;
+            this.CardInfoListTitle.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.CardInfoListTitle.Location = new System.Drawing.Point(14, 6);
+            this.CardInfoListTitle.Name = "CardInfoListTitle";
+            this.CardInfoListTitle.Size = new System.Drawing.Size(96, 21);
+            this.CardInfoListTitle.TabIndex = 20;
+            this.CardInfoListTitle.Text = "카드 리스트";
+            this.CardInfoListTitle.Click += new System.EventHandler(this.CardInfoListTitle_Click);
+            // 
+            // CharaBox
+            // 
+            this.CharaBox.Font = new System.Drawing.Font("맑은 고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CharaBox.FormattingEnabled = true;
+            this.CharaBox.Location = new System.Drawing.Point(330, 29);
+            this.CharaBox.Name = "CharaBox";
+            this.CharaBox.Size = new System.Drawing.Size(212, 95);
+            this.CharaBox.TabIndex = 19;
+            this.CharaBox.SelectedIndexChanged += new System.EventHandler(this.CharaBox_SelectedIndexChanged);
             // 
             // TypeOnlyButtonTitle
             // 
@@ -570,7 +601,7 @@
             this.TypeOnlyButtonTitle.Cursor = System.Windows.Forms.Cursors.NoMoveVert;
             this.TypeOnlyButtonTitle.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.TypeOnlyButtonTitle.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.TypeOnlyButtonTitle.Location = new System.Drawing.Point(523, 30);
+            this.TypeOnlyButtonTitle.Location = new System.Drawing.Point(622, 28);
             this.TypeOnlyButtonTitle.Name = "TypeOnlyButtonTitle";
             this.TypeOnlyButtonTitle.Size = new System.Drawing.Size(42, 21);
             this.TypeOnlyButtonTitle.TabIndex = 14;
@@ -579,7 +610,7 @@
             // PassionOnlyButton
             // 
             this.PassionOnlyButton.AutoSize = true;
-            this.PassionOnlyButton.Location = new System.Drawing.Point(527, 104);
+            this.PassionOnlyButton.Location = new System.Drawing.Point(626, 103);
             this.PassionOnlyButton.Name = "PassionOnlyButton";
             this.PassionOnlyButton.Size = new System.Drawing.Size(66, 19);
             this.PassionOnlyButton.TabIndex = 17;
@@ -590,7 +621,7 @@
             // CoolOnlyButton
             // 
             this.CoolOnlyButton.AutoSize = true;
-            this.CoolOnlyButton.Location = new System.Drawing.Point(527, 79);
+            this.CoolOnlyButton.Location = new System.Drawing.Point(626, 77);
             this.CoolOnlyButton.Name = "CoolOnlyButton";
             this.CoolOnlyButton.Size = new System.Drawing.Size(51, 19);
             this.CoolOnlyButton.TabIndex = 16;
@@ -601,7 +632,7 @@
             // CuteOnlyButton
             // 
             this.CuteOnlyButton.AutoSize = true;
-            this.CuteOnlyButton.Location = new System.Drawing.Point(527, 54);
+            this.CuteOnlyButton.Location = new System.Drawing.Point(626, 52);
             this.CuteOnlyButton.Name = "CuteOnlyButton";
             this.CuteOnlyButton.Size = new System.Drawing.Size(51, 19);
             this.CuteOnlyButton.TabIndex = 15;
@@ -612,7 +643,7 @@
             // NOnlyButton
             // 
             this.NOnlyButton.AutoSize = true;
-            this.NOnlyButton.Location = new System.Drawing.Point(432, 107);
+            this.NOnlyButton.Location = new System.Drawing.Point(552, 103);
             this.NOnlyButton.Name = "NOnlyButton";
             this.NOnlyButton.Size = new System.Drawing.Size(76, 19);
             this.NOnlyButton.TabIndex = 13;
@@ -625,16 +656,16 @@
             this.OnlyButtonTitle.AutoSize = true;
             this.OnlyButtonTitle.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.OnlyButtonTitle.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.OnlyButtonTitle.Location = new System.Drawing.Point(428, 8);
+            this.OnlyButtonTitle.Location = new System.Drawing.Point(548, 28);
             this.OnlyButtonTitle.Name = "OnlyButtonTitle";
-            this.OnlyButtonTitle.Size = new System.Drawing.Size(42, 21);
+            this.OnlyButtonTitle.Size = new System.Drawing.Size(58, 21);
             this.OnlyButtonTitle.TabIndex = 8;
-            this.OnlyButtonTitle.Text = "타입";
+            this.OnlyButtonTitle.Text = "레어도";
             // 
             // ROnlyButton
             // 
             this.ROnlyButton.AutoSize = true;
-            this.ROnlyButton.Location = new System.Drawing.Point(432, 82);
+            this.ROnlyButton.Location = new System.Drawing.Point(552, 86);
             this.ROnlyButton.Name = "ROnlyButton";
             this.ROnlyButton.Size = new System.Drawing.Size(54, 19);
             this.ROnlyButton.TabIndex = 12;
@@ -645,7 +676,7 @@
             // SROnlyButton
             // 
             this.SROnlyButton.AutoSize = true;
-            this.SROnlyButton.Location = new System.Drawing.Point(432, 57);
+            this.SROnlyButton.Location = new System.Drawing.Point(552, 69);
             this.SROnlyButton.Name = "SROnlyButton";
             this.SROnlyButton.Size = new System.Drawing.Size(65, 19);
             this.SROnlyButton.TabIndex = 11;
@@ -656,7 +687,7 @@
             // SSROnlyButton
             // 
             this.SSROnlyButton.AutoSize = true;
-            this.SSROnlyButton.Location = new System.Drawing.Point(432, 32);
+            this.SSROnlyButton.Location = new System.Drawing.Point(552, 52);
             this.SSROnlyButton.Name = "SSROnlyButton";
             this.SSROnlyButton.Size = new System.Drawing.Size(72, 19);
             this.SSROnlyButton.TabIndex = 10;
@@ -667,6 +698,7 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.HP);
             this.panel3.Controls.Add(this.CardInfoCenterSkill);
             this.panel3.Controls.Add(this.CardInfoSkill);
             this.panel3.Controls.Add(this.CardInfoVisual);
@@ -675,10 +707,19 @@
             this.panel3.Controls.Add(this.CardInfoVocal);
             this.panel3.Controls.Add(this.CardInfoRarity);
             this.panel3.Controls.Add(this.CardInfoName);
-            this.panel3.Location = new System.Drawing.Point(13, 132);
+            this.panel3.Location = new System.Drawing.Point(13, 130);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(672, 112);
+            this.panel3.Size = new System.Drawing.Size(672, 114);
             this.panel3.TabIndex = 9;
+            // 
+            // HP
+            // 
+            this.HP.AutoSize = true;
+            this.HP.Location = new System.Drawing.Point(545, 8);
+            this.HP.Name = "HP";
+            this.HP.Size = new System.Drawing.Size(34, 15);
+            this.HP.TabIndex = 8;
+            this.HP.Text = "HP : ";
             // 
             // CardInfoCenterSkill
             // 
@@ -754,23 +795,13 @@
             // 
             // CardInfoList
             // 
+            this.CardInfoList.Font = new System.Drawing.Font("맑은 고딕", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.CardInfoList.FormattingEnabled = true;
-            this.CardInfoList.ItemHeight = 15;
-            this.CardInfoList.Location = new System.Drawing.Point(13, 16);
+            this.CardInfoList.Location = new System.Drawing.Point(13, 29);
             this.CardInfoList.Name = "CardInfoList";
-            this.CardInfoList.Size = new System.Drawing.Size(403, 109);
+            this.CardInfoList.Size = new System.Drawing.Size(311, 95);
             this.CardInfoList.TabIndex = 0;
             this.CardInfoList.SelectedIndexChanged += new System.EventHandler(this.CardInfoList_SelectedIndexChanged);
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(702, 255);
-            this.tabPage1.TabIndex = 3;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // YenStatus
             // 
@@ -823,6 +854,27 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Made by nazunamoe";
             // 
+            // VersionTitle
+            // 
+            this.VersionTitle.AutoSize = true;
+            this.VersionTitle.Font = new System.Drawing.Font("맑은 고딕", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VersionTitle.Location = new System.Drawing.Point(620, 9);
+            this.VersionTitle.Name = "VersionTitle";
+            this.VersionTitle.Size = new System.Drawing.Size(101, 40);
+            this.VersionTitle.TabIndex = 9;
+            this.VersionTitle.Text = "Beta 5";
+            // 
+            // Twitter
+            // 
+            this.Twitter.AutoSize = true;
+            this.Twitter.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Twitter.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.Twitter.Location = new System.Drawing.Point(599, 51);
+            this.Twitter.Name = "Twitter";
+            this.Twitter.Size = new System.Drawing.Size(122, 15);
+            this.Twitter.TabIndex = 10;
+            this.Twitter.Text = "Twitter @nazunamoe";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -830,6 +882,8 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(738, 409);
+            this.Controls.Add(this.Twitter);
+            this.Controls.Add(this.VersionTitle);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.UsedYenStatus);
             this.Controls.Add(this.UsedJewelStatus);
@@ -848,6 +902,7 @@
             this.MainMenu.ResumeLayout(false);
             this.MoneyPage.ResumeLayout(false);
             this.MoneyPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.GachaMenu.ResumeLayout(false);
             this.GachaMenu.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -882,7 +937,6 @@
         private System.Windows.Forms.Button TenGacha;
         private System.Windows.Forms.Button GoldGacha;
         private System.Windows.Forms.Button OneGacha;
-        private System.Windows.Forms.CheckBox LimitedSwitch;
         private System.Windows.Forms.CheckBox FesToggle;
         private System.Windows.Forms.CheckBox FreeGachaToggle;
         private System.Windows.Forms.Label label4;
@@ -917,7 +971,6 @@
         private System.Windows.Forms.Label CardInfoSkill;
         private System.Windows.Forms.RichTextBox GachaResultText;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Label OnlyButtonTitle;
         private System.Windows.Forms.CheckBox ROnlyButton;
         private System.Windows.Forms.CheckBox SROnlyButton;
@@ -927,8 +980,14 @@
         private System.Windows.Forms.CheckBox PassionOnlyButton;
         private System.Windows.Forms.CheckBox CoolOnlyButton;
         private System.Windows.Forms.CheckBox CuteOnlyButton;
-        private System.Windows.Forms.Label readme;
         private System.Windows.Forms.Label GachaResultTitle;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label VersionTitle;
+        private System.Windows.Forms.Label Twitter;
+        private System.Windows.Forms.ListBox CharaBox;
+        private System.Windows.Forms.Label HP;
+        private System.Windows.Forms.Label CharaBoxListTitle;
+        private System.Windows.Forms.Label CardInfoListTitle;
     }
 }
 
