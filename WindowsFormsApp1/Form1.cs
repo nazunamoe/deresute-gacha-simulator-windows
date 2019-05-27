@@ -117,6 +117,8 @@ namespace WindowsFormsApp1
             SelectGachaBox.Items.Add("Cool");
             SelectGachaBox.Items.Add("Passion");
             SelectGachaBox.SelectedIndex = 0;
+            SSRpBox.Text = "3.0";
+            SRpBox.Text = "12.0";
             sr = new StreamReader("card_info_availble.csv", Encoding.GetEncoding("UTF-8"));
             initCardInfoList(sr, mode);
         }
@@ -234,7 +236,6 @@ namespace WindowsFormsApp1
                 if (mode == 0)
                 {
                     CardInfoList.Items.Add("［" + rarity + "］" + temp[1]);
-
                     AllCardList.Add(new Card(num, temp[1], temp[2], rarity, attr, hp_min, vocal_min, dance_min, visual_min, hp_max, vocal_max, dance_max, visual_max, skill_name, skill_explain, leaderskill_name, leaderskill_explain, temp[19], limited, fes));
                     if (num % 2 == 1)
                     {
@@ -1276,12 +1277,6 @@ namespace WindowsFormsApp1
             }
         }
 
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void ExitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -1965,12 +1960,16 @@ namespace WindowsFormsApp1
                 SSRp = 3.0;
                 SRp = 12.0;
                 Rp = 85.0;
+                SSRpBox.Text = "3.0";
+                SRpBox.Text = "12.0";
             }
             else if (FesToggle.Checked == true)
             {
                 SSRp = 6.0;
                 SRp = 12.0;
                 Rp = 82.0;
+                SSRpBox.Text = "6.0";
+                SRpBox.Text = "12.0";
             }
         }
 
@@ -2123,6 +2122,7 @@ namespace WindowsFormsApp1
 
         private void CardInfoList_SelectedIndexChanged(object sender, EventArgs e)
         {
+            int limit = 45;
             Card selected = returnByName(CardInfoList.SelectedItem.ToString(), 0);
             CardInfoName.Text = "Name : " + selected.CardName;
             CardInfoRarity.Text = "Rarity : " + selected.Rarity;
@@ -2138,18 +2138,18 @@ namespace WindowsFormsApp1
             }
             else
             {
-                if (selected.SkillExplain.Length >= 20)
+                if (selected.SkillExplain.Length >= limit)
                 {
-                    SkillText.Text = "Skill : ［" + selected.Skill + "］ " + selected.SkillExplain.Substring(0, 19) + "\n       " + selected.SkillExplain.Substring(19, selected.SkillExplain.Length - 19);
+                    SkillText.Text = "Skill : ［" + selected.Skill + "］ " + selected.SkillExplain.Substring(0, (limit-1)) + "\n       " + selected.SkillExplain.Substring((limit - 1), selected.SkillExplain.Length - (limit - 1));
                 }
                 else
                 {
                     SkillText.Text = "Skill : ［" + selected.Skill + "］ " + selected.SkillExplain;
                 }
 
-                if (selected.Center_SkillExplain.Length >= 20)
+                if (selected.Center_SkillExplain.Length >= limit)
                 {
-                    CardInfoCenterSkill.Text = "Center Skill : ［" + selected.Center_Skill + "］ " + selected.Center_SkillExplain.Substring(0, 19) + "\n       " + selected.Center_SkillExplain.Substring(19, selected.Center_SkillExplain.Length - 19);
+                    CardInfoCenterSkill.Text = "Center Skill : ［" + selected.Center_Skill + "］ " + selected.Center_SkillExplain.Substring(0, (limit - 1)) + "\n        " + selected.Center_SkillExplain.Substring((limit - 1), selected.Center_SkillExplain.Length - (limit - 1));
                 }
                 else
                 {
@@ -2336,6 +2336,99 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void Twitter_Click(object sender, EventArgs e)
+        {
+            OpenWebsite("https://twitter.com/nazunamoe");
+        }
+
+        private void PictureBox2_Click(object sender, EventArgs e)
+        {
+            OpenWebsite("https://cinderella.idolmaster.jp/sl-stage/");
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+            OpenWebsite("https://twitter.com/imascg_stage");
+        }
+
+        private void OpenWebsite(String url)
+        {
+            string target = url;
+            try
+            {
+                System.Diagnostics.Process.Start(target);
+            }
+            catch
+                (
+                 System.ComponentModel.Win32Exception noBrowser)
+            {
+                if (noBrowser.ErrorCode == -2147467259)
+                    MessageBox.Show(noBrowser.Message);
+            }
+            catch (System.Exception other)
+            {
+                MessageBox.Show(other.Message);
+            }
+        }
+
+        private void PButton_Click(object sender, EventArgs e)
+        {
+            if((Double.Parse(SSRpBox.Text) + Double.Parse(SRpBox.Text) >= 100)|| (Double.Parse(SSRpBox.Text)>100) || (Double.Parse(SRpBox.Text)>100))
+            {
+                MessageBox.Show("확률 설정이 잘못되었습니다. 다사 설정하여 주시기 바랍니다.");
+                SSRpBox.Text = "";
+                SRpBox.Text = "";
+            }
+            else
+            {
+                SSRp = Double.Parse(SSRpBox.Text);
+                SRp = Double.Parse(SRpBox.Text);
+            }
+        }
+
+        private void SSRpBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SRpBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SSRpBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            int keyCode = (int)e.KeyChar;  // 46: Point  
+            if ((keyCode < 48 || keyCode > 57) && keyCode != 8 && keyCode != 46)
+            {
+                e.Handled = true;
+            }
+            if (keyCode == 46)
+            {
+                if (string.IsNullOrEmpty(SSRpBox.Text) || SSRpBox.Text.Contains(".") == true)
+                {
+                    e.Handled = true;
+                }
+            }
+        }
+
+        private void SRpBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            int keyCode = (int)e.KeyChar;  // 46: Point  
+            if ((keyCode < 48 || keyCode > 57) && keyCode != 8 && keyCode != 46)
+            {
+                e.Handled = true;
+            }
+            if (keyCode == 46)
+            {
+                if (string.IsNullOrEmpty(SRpBox.Text) || SRpBox.Text.Contains(".") == true)
+                {
+                    e.Handled = true;
+                }
+            }
+        }
+
     }
 }
 
