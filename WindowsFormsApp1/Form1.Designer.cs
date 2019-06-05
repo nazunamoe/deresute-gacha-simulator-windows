@@ -104,6 +104,21 @@
             this.CardInfoRarity = new System.Windows.Forms.Label();
             this.CardInfoName = new System.Windows.Forms.Label();
             this.CardInfoList = new System.Windows.Forms.ListBox();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.CharaBirthday = new System.Windows.Forms.Label();
+            this.CharaVoice = new System.Windows.Forms.Label();
+            this.CharaHobby = new System.Windows.Forms.Label();
+            this.Chara3size3 = new System.Windows.Forms.Label();
+            this.Chara3size2 = new System.Windows.Forms.Label();
+            this.Chara3size1 = new System.Windows.Forms.Label();
+            this.CharaWeight = new System.Windows.Forms.Label();
+            this.CharaHeight = new System.Windows.Forms.Label();
+            this.CharaHometown = new System.Windows.Forms.Label();
+            this.CharaAge = new System.Windows.Forms.Label();
+            this.CharaNameFurigana = new System.Windows.Forms.Label();
+            this.CharaName = new System.Windows.Forms.Label();
+            this.CharaBox2 = new System.Windows.Forms.ListBox();
             this.YenStatus = new System.Windows.Forms.Label();
             this.JewelStatus = new System.Windows.Forms.Label();
             this.UsedJewelStatus = new System.Windows.Forms.Label();
@@ -121,6 +136,8 @@
             this.panel1.SuspendLayout();
             this.InfoMenu.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -163,6 +180,7 @@
             this.MainMenu.Controls.Add(this.MoneyPage);
             this.MainMenu.Controls.Add(this.GachaMenu);
             this.MainMenu.Controls.Add(this.InfoMenu);
+            this.MainMenu.Controls.Add(this.tabPage1);
             this.MainMenu.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.MainMenu.Location = new System.Drawing.Point(15, 86);
             this.MainMenu.Name = "MainMenu";
@@ -363,7 +381,7 @@
             // Passion
             // 
             this.Passion.AutoSize = true;
-            this.Passion.Location = new System.Drawing.Point(386, 234);
+            this.Passion.Location = new System.Drawing.Point(386, 240);
             this.Passion.Name = "Passion";
             this.Passion.Size = new System.Drawing.Size(58, 15);
             this.Passion.TabIndex = 5;
@@ -384,7 +402,7 @@
             // Cool
             // 
             this.Cool.AutoSize = true;
-            this.Cool.Location = new System.Drawing.Point(311, 234);
+            this.Cool.Location = new System.Drawing.Point(311, 240);
             this.Cool.Name = "Cool";
             this.Cool.Size = new System.Drawing.Size(43, 15);
             this.Cool.TabIndex = 4;
@@ -402,7 +420,7 @@
             // Cute
             // 
             this.Cute.AutoSize = true;
-            this.Cute.Location = new System.Drawing.Point(233, 234);
+            this.Cute.Location = new System.Drawing.Point(233, 240);
             this.Cute.Name = "Cute";
             this.Cute.Size = new System.Drawing.Size(43, 15);
             this.Cute.TabIndex = 3;
@@ -420,7 +438,7 @@
             // R
             // 
             this.R.AutoSize = true;
-            this.R.Location = new System.Drawing.Point(152, 234);
+            this.R.Location = new System.Drawing.Point(152, 240);
             this.R.Name = "R";
             this.R.Size = new System.Drawing.Size(25, 15);
             this.R.TabIndex = 2;
@@ -433,14 +451,14 @@
             this.panel5.Controls.Add(this.LimitedSelectBox);
             this.panel5.Location = new System.Drawing.Point(341, 15);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(339, 209);
+            this.panel5.Size = new System.Drawing.Size(339, 216);
             this.panel5.TabIndex = 11;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label9.Location = new System.Drawing.Point(6, 3);
+            this.label9.Location = new System.Drawing.Point(3, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(118, 21);
             this.label9.TabIndex = 18;
@@ -453,14 +471,14 @@
             this.LimitedSelectBox.FormattingEnabled = true;
             this.LimitedSelectBox.Location = new System.Drawing.Point(3, 27);
             this.LimitedSelectBox.Name = "LimitedSelectBox";
-            this.LimitedSelectBox.Size = new System.Drawing.Size(331, 162);
+            this.LimitedSelectBox.Size = new System.Drawing.Size(331, 180);
             this.LimitedSelectBox.TabIndex = 10;
             this.LimitedSelectBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.LimitedSelectBox_ItemCheck);
             // 
             // SR
             // 
             this.SR.AutoSize = true;
-            this.SR.Location = new System.Drawing.Point(84, 234);
+            this.SR.Location = new System.Drawing.Point(84, 240);
             this.SR.Name = "SR";
             this.SR.Size = new System.Drawing.Size(32, 15);
             this.SR.TabIndex = 1;
@@ -473,14 +491,14 @@
             this.panel1.Controls.Add(this.GachaResultText);
             this.panel1.Location = new System.Drawing.Point(19, 15);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(326, 209);
+            this.panel1.Size = new System.Drawing.Size(326, 216);
             this.panel1.TabIndex = 9;
             // 
             // GachaResultTitle
             // 
             this.GachaResultTitle.AutoSize = true;
             this.GachaResultTitle.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.GachaResultTitle.Location = new System.Drawing.Point(3, 3);
+            this.GachaResultTitle.Location = new System.Drawing.Point(0, 0);
             this.GachaResultTitle.Name = "GachaResultTitle";
             this.GachaResultTitle.Size = new System.Drawing.Size(86, 21);
             this.GachaResultTitle.TabIndex = 17;
@@ -489,17 +507,17 @@
             // GachaResultText
             // 
             this.GachaResultText.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.GachaResultText.Font = new System.Drawing.Font("Meiryo UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GachaResultText.Location = new System.Drawing.Point(5, 27);
+            this.GachaResultText.Font = new System.Drawing.Font("Meiryo UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GachaResultText.Location = new System.Drawing.Point(2, 23);
             this.GachaResultText.Name = "GachaResultText";
-            this.GachaResultText.Size = new System.Drawing.Size(305, 177);
+            this.GachaResultText.Size = new System.Drawing.Size(313, 188);
             this.GachaResultText.TabIndex = 0;
             this.GachaResultText.Text = "";
             // 
             // SSR
             // 
             this.SSR.AutoSize = true;
-            this.SSR.Location = new System.Drawing.Point(16, 234);
+            this.SSR.Location = new System.Drawing.Point(16, 240);
             this.SSR.Name = "SSR";
             this.SSR.Size = new System.Drawing.Size(39, 15);
             this.SSR.TabIndex = 0;
@@ -983,6 +1001,169 @@
             this.CardInfoList.TabIndex = 0;
             this.CardInfoList.SelectedIndexChanged += new System.EventHandler(this.CardInfoList_SelectedIndexChanged);
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.panel2);
+            this.tabPage1.Controls.Add(this.CharaBox2);
+            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(702, 328);
+            this.tabPage1.TabIndex = 3;
+            this.tabPage1.Text = "아이돌 정보";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.CharaBirthday);
+            this.panel2.Controls.Add(this.CharaVoice);
+            this.panel2.Controls.Add(this.CharaHobby);
+            this.panel2.Controls.Add(this.Chara3size3);
+            this.panel2.Controls.Add(this.Chara3size2);
+            this.panel2.Controls.Add(this.Chara3size1);
+            this.panel2.Controls.Add(this.CharaWeight);
+            this.panel2.Controls.Add(this.CharaHeight);
+            this.panel2.Controls.Add(this.CharaHometown);
+            this.panel2.Controls.Add(this.CharaAge);
+            this.panel2.Controls.Add(this.CharaNameFurigana);
+            this.panel2.Controls.Add(this.CharaName);
+            this.panel2.Location = new System.Drawing.Point(213, 15);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(473, 298);
+            this.panel2.TabIndex = 21;
+            // 
+            // CharaBirthday
+            // 
+            this.CharaBirthday.AutoSize = true;
+            this.CharaBirthday.Font = new System.Drawing.Font("Meiryo UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CharaBirthday.Location = new System.Drawing.Point(6, 76);
+            this.CharaBirthday.Name = "CharaBirthday";
+            this.CharaBirthday.Size = new System.Drawing.Size(75, 17);
+            this.CharaBirthday.TabIndex = 12;
+            this.CharaBirthday.Text = "Birthday : ";
+            // 
+            // CharaVoice
+            // 
+            this.CharaVoice.AutoSize = true;
+            this.CharaVoice.Font = new System.Drawing.Font("Meiryo UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CharaVoice.Location = new System.Drawing.Point(6, 270);
+            this.CharaVoice.Name = "CharaVoice";
+            this.CharaVoice.Size = new System.Drawing.Size(40, 17);
+            this.CharaVoice.TabIndex = 11;
+            this.CharaVoice.Text = "CV : ";
+            // 
+            // CharaHobby
+            // 
+            this.CharaHobby.AutoSize = true;
+            this.CharaHobby.Font = new System.Drawing.Font("Meiryo UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CharaHobby.Location = new System.Drawing.Point(6, 246);
+            this.CharaHobby.Name = "CharaHobby";
+            this.CharaHobby.Size = new System.Drawing.Size(63, 17);
+            this.CharaHobby.TabIndex = 10;
+            this.CharaHobby.Text = "Hobby : ";
+            // 
+            // Chara3size3
+            // 
+            this.Chara3size3.AutoSize = true;
+            this.Chara3size3.Font = new System.Drawing.Font("Meiryo UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Chara3size3.Location = new System.Drawing.Point(6, 220);
+            this.Chara3size3.Name = "Chara3size3";
+            this.Chara3size3.Size = new System.Drawing.Size(43, 17);
+            this.Chara3size3.TabIndex = 9;
+            this.Chara3size3.Text = "Hip : ";
+            // 
+            // Chara3size2
+            // 
+            this.Chara3size2.AutoSize = true;
+            this.Chara3size2.Font = new System.Drawing.Font("Meiryo UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Chara3size2.Location = new System.Drawing.Point(6, 196);
+            this.Chara3size2.Name = "Chara3size2";
+            this.Chara3size2.Size = new System.Drawing.Size(56, 17);
+            this.Chara3size2.TabIndex = 8;
+            this.Chara3size2.Text = "Waist : ";
+            // 
+            // Chara3size1
+            // 
+            this.Chara3size1.AutoSize = true;
+            this.Chara3size1.Font = new System.Drawing.Font("Meiryo UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Chara3size1.Location = new System.Drawing.Point(6, 172);
+            this.Chara3size1.Name = "Chara3size1";
+            this.Chara3size1.Size = new System.Drawing.Size(55, 17);
+            this.Chara3size1.TabIndex = 7;
+            this.Chara3size1.Text = "Brust : ";
+            // 
+            // CharaWeight
+            // 
+            this.CharaWeight.AutoSize = true;
+            this.CharaWeight.Font = new System.Drawing.Font("Meiryo UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CharaWeight.Location = new System.Drawing.Point(6, 148);
+            this.CharaWeight.Name = "CharaWeight";
+            this.CharaWeight.Size = new System.Drawing.Size(66, 17);
+            this.CharaWeight.TabIndex = 6;
+            this.CharaWeight.Text = "Weight : ";
+            // 
+            // CharaHeight
+            // 
+            this.CharaHeight.AutoSize = true;
+            this.CharaHeight.Font = new System.Drawing.Font("Meiryo UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CharaHeight.Location = new System.Drawing.Point(6, 124);
+            this.CharaHeight.Name = "CharaHeight";
+            this.CharaHeight.Size = new System.Drawing.Size(64, 17);
+            this.CharaHeight.TabIndex = 5;
+            this.CharaHeight.Text = "Height : ";
+            // 
+            // CharaHometown
+            // 
+            this.CharaHometown.AutoSize = true;
+            this.CharaHometown.Font = new System.Drawing.Font("Meiryo UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CharaHometown.Location = new System.Drawing.Point(6, 100);
+            this.CharaHometown.Name = "CharaHometown";
+            this.CharaHometown.Size = new System.Drawing.Size(92, 17);
+            this.CharaHometown.TabIndex = 4;
+            this.CharaHometown.Text = "Hometown : ";
+            // 
+            // CharaAge
+            // 
+            this.CharaAge.AutoSize = true;
+            this.CharaAge.Font = new System.Drawing.Font("Meiryo UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CharaAge.Location = new System.Drawing.Point(6, 52);
+            this.CharaAge.Name = "CharaAge";
+            this.CharaAge.Size = new System.Drawing.Size(47, 17);
+            this.CharaAge.TabIndex = 3;
+            this.CharaAge.Text = "Age : ";
+            // 
+            // CharaNameFurigana
+            // 
+            this.CharaNameFurigana.AutoSize = true;
+            this.CharaNameFurigana.Font = new System.Drawing.Font("Meiryo UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CharaNameFurigana.Location = new System.Drawing.Point(6, 28);
+            this.CharaNameFurigana.Name = "CharaNameFurigana";
+            this.CharaNameFurigana.Size = new System.Drawing.Size(77, 17);
+            this.CharaNameFurigana.TabIndex = 2;
+            this.CharaNameFurigana.Text = "Furigana : ";
+            // 
+            // CharaName
+            // 
+            this.CharaName.AutoSize = true;
+            this.CharaName.Font = new System.Drawing.Font("Meiryo UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CharaName.Location = new System.Drawing.Point(6, 6);
+            this.CharaName.Name = "CharaName";
+            this.CharaName.Size = new System.Drawing.Size(60, 17);
+            this.CharaName.TabIndex = 1;
+            this.CharaName.Text = "Name : ";
+            // 
+            // CharaBox2
+            // 
+            this.CharaBox2.Font = new System.Drawing.Font("Meiryo UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CharaBox2.FormattingEnabled = true;
+            this.CharaBox2.ItemHeight = 14;
+            this.CharaBox2.Location = new System.Drawing.Point(15, 15);
+            this.CharaBox2.Name = "CharaBox2";
+            this.CharaBox2.Size = new System.Drawing.Size(199, 298);
+            this.CharaBox2.TabIndex = 20;
+            this.CharaBox2.SelectedIndexChanged += new System.EventHandler(this.CharaBox2_SelectedIndexChanged);
+            // 
             // YenStatus
             // 
             this.YenStatus.AutoSize = true;
@@ -1042,7 +1223,7 @@
             this.VersionTitle.Name = "VersionTitle";
             this.VersionTitle.Size = new System.Drawing.Size(101, 40);
             this.VersionTitle.TabIndex = 9;
-            this.VersionTitle.Text = "Beta 7";
+            this.VersionTitle.Text = "Beta 8";
             // 
             // Twitter
             // 
@@ -1118,6 +1299,9 @@
             this.InfoMenu.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1211,6 +1395,21 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox SSRpBox;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.ListBox CharaBox2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label CharaName;
+        private System.Windows.Forms.Label CharaNameFurigana;
+        private System.Windows.Forms.Label CharaVoice;
+        private System.Windows.Forms.Label CharaHobby;
+        private System.Windows.Forms.Label Chara3size3;
+        private System.Windows.Forms.Label Chara3size2;
+        private System.Windows.Forms.Label Chara3size1;
+        private System.Windows.Forms.Label CharaWeight;
+        private System.Windows.Forms.Label CharaHeight;
+        private System.Windows.Forms.Label CharaHometown;
+        private System.Windows.Forms.Label CharaAge;
+        private System.Windows.Forms.Label CharaBirthday;
     }
 }
 

@@ -89,10 +89,12 @@ namespace WindowsFormsApp1
 
         ArrayList AllCardList = new ArrayList();
 
+        ArrayList AllCharaList = new ArrayList();
 
 
         Random r = new Random();
         StreamReader sr;
+        StreamReader sr2;
         public Form1()
         {
 
@@ -103,15 +105,10 @@ namespace WindowsFormsApp1
             Text = "데레스테 가챠 시뮬레이터";
             Init(0);
 
-
-
-
-
         }
 
         private void Init(int mode)
         {
-
             SelectGachaBox.Items.Add("All");
             SelectGachaBox.Items.Add("Cute");
             SelectGachaBox.Items.Add("Cool");
@@ -120,6 +117,7 @@ namespace WindowsFormsApp1
             SSRpBox.Text = "3.0";
             SRpBox.Text = "12.0";
             sr = new StreamReader("card_info_availble.csv", Encoding.GetEncoding("UTF-8"));
+            sr2 = new StreamReader("chara_info.csv", Encoding.GetEncoding("UTF-8"));
             initCardInfoList(sr, mode);
         }
 
@@ -1275,6 +1273,19 @@ namespace WindowsFormsApp1
                 }
                 initexit = true;
             }
+            while (!sr2.EndOfStream)
+            {
+                string s2 = sr2.ReadLine();
+                string[] temp2 = s2.Split('	');
+                
+                CharaBox2.Items.Add("［" + temp2[0] + "］" + temp2[1]);
+
+                AllCharaList.Add(new Chara(temp2[0], temp2[1], temp2[2], temp2[3], temp2[4], temp2[5], temp2[6], temp2[7]
+                   , temp2[8], temp2[9], int.Parse(temp2[10]), int.Parse(temp2[11]), temp2[12], temp2[13]));
+
+                //(string type, string name, string nameread, int age, string hometown, int height, int weight, int threesize1, 
+                //int threesize2, int threesize3, int birthdaymonth, int birthdayday, string hobby, string cv)
+            }
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
@@ -2429,6 +2440,41 @@ namespace WindowsFormsApp1
             }
         }
 
+        private void CharaBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Chara selectedChara = returnByCharaName(CharaBox2.SelectedItem.ToString());
+
+
+            CharaName.Text = "Name : " + selectedChara.Name;
+            CharaNameFurigana.Text = "Furigana : " + selectedChara.NameRead;
+
+            CharaAge.Text = "Age : " + selectedChara.Age;
+            CharaBirthday.Text = "Birthday : " + selectedChara.BirthdayMonth+"/"+selectedChara.BirthdayDay;
+    
+            CharaHometown.Text = "Hometown : " + selectedChara.Hometown;
+
+            CharaHeight.Text = "Height : " + selectedChara.Height;
+            CharaWeight.Text = "Weight : " + selectedChara.Weight;
+            Chara3size1.Text = "Brust : " + selectedChara.Threesize1;
+            Chara3size2.Text = "Waist : " + selectedChara.Threesize2;
+            Chara3size3.Text = "Hip : " + selectedChara.Threesize3;
+
+            CharaHobby.Text = "Hobby : " + selectedChara.Hobby;
+            CharaVoice.Text = "Voice : " + selectedChara.CV;
+        }
+
+        private Chara returnByCharaName(String name)
+        {
+            Chara returnChara = null;
+            for(int a=0; a < AllCharaList.Count; a++)
+            {
+                if (("［" + ((Chara)AllCharaList[a]).Type + "］" + ((Chara)AllCharaList[a]).Name).Equals(name))
+                {
+                    returnChara = (Chara)AllCharaList[a];
+                }
+            }
+            return returnChara;
+        }
     }
 }
 
@@ -2509,6 +2555,55 @@ namespace Info
             {
                 this.fes = true;
             }
+        }
+    }
+
+
+    public class Chara
+    {
+        public string Type;
+        public string Name;
+        public string NameRead;
+
+        public string Age;
+
+        public string Hometown;
+
+        public string Height;
+        public string Weight;
+
+        public string Threesize1;
+        public string Threesize2;
+        public string Threesize3;
+
+        public int BirthdayMonth;
+        public int BirthdayDay;
+
+        public string Hobby;
+        public string CV;
+
+        public Chara(string type, string name, string nameread, string age, string hometown, string height, string weight, string threesize1, string threesize2, string threesize3, int birthdaymonth, int birthdayday, string hobby, string cv)
+        {
+            this.Type = type;
+            this.Name = name;
+            this.NameRead = nameread;
+
+            this.Age = age;
+            this.Hometown = hometown;
+
+            this.Height = height;
+            this.Weight = weight;
+
+            this.Threesize1 = threesize1;
+            this.Threesize2 = threesize2;
+            this.Threesize3 = threesize3;
+
+            this.BirthdayMonth = birthdaymonth;
+            this.BirthdayDay = birthdayday;
+
+            this.Hobby = hobby;
+            this.CV = cv;
+
         }
     }
 }
